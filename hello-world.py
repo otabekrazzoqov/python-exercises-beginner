@@ -5,7 +5,7 @@ Created on Mon May  2 23:58:13 2022
 @author: HP
 """
 
-#print("hello world")
+print("hello world")
 #print(78559*84/54)
 #print("telegram messenger")
 #ism = "aleksandr"
