@@ -5,7 +5,7 @@ Created on Mon May  2 23:58:13 2022
 @author: HP
 """
 
-print("hello world")
+#print("hello world")
 #print(78559*84/54)
 #print("telegram messenger")
 #ism = "aleksandr"
@@ -628,4 +628,88 @@ cars = ['lacetti', 'bugatti', 'bmw', 'mercedes-benz', 'tesla', 'tiko' , 'audi']
 #    print(meva)
 
 #13 DARS                            01.08.2022
+#GITHUB
+
+
+
+#14DARS                             02.08.2022
+
+#car_0 = {'model' : 'ferrari','rang' : 'qizil'}  #lug'at   kalit:qiymat 
+#print(car_0['model'])
+#print(car_0['rang'])
+
+
+#eng_uz = {'apple' : 'olma', 'apricot': 'orik', 'banana' : 'banan'}
+#print(eng_uz)
+#print(eng_uz['apple'])
+#print(eng_uz['apricot'])
+#print(eng_uz['banana'])
+
+#mevalar = {'olma': 10000, 'tarvuz': 8000, 'qovun': 10000}
+#print(f"olmaning narxi {mevalar['olma']} uzs")
+
+# lug'atlarda qiymat turli shaklda bo'lishi mumkin.(matn,son)
+#talaba_0 = {'ism' : 'razzoqov otabek', 'yoshi' : 26, 'tugilgan yili': 1996}
+#print(f"{talaba_0['ism'].title()},\
+#      {talaba_0['tugilgan yili']}-yilda tugilgan\
+#          {talaba_0['yoshi']} yoshda")
+
+#YANGI KALIT SO'Z VA QIYMAT QO'SHISH
+#talaba_0['kurs'] = 4
+#talaba_0['fakultet'] = 'informatika'
+#print(talaba_0)
+#talaba_0['ism'] = 'elbek'
+#print(talaba_0)
+
+#bo'sh lug'at yaratish
+
+#talaba_1 = {}
+#talaba_1['ism'] = 'elbek razzoqov'
+#talaba_1['kurs'] = 3
+#talaba_1['yosh'] = 20
+#print(talaba_1)
+#print(f" Talaba {talaba_1['ism'].title()}\
+#     {talaba_1['yosh']}-yoshda")
+      
+#QIYMATNI YANGILASH
+
+#talaba_1['yosh'] = 21
+#print(f" Talaba {talaba_1['ism'].title()}\
+#      {talaba_1['yosh']}-yoshda")
+      
+#KALIT SO'Z QIYMATNI O'CHIRIB TASHLASH
+#talaba_0 = {'ism' : 'razzoqov otabek', 'yoshi' : 26, 'tugilgan yili': 1996}
+#print(talaba_0)
+#del talaba_0['yoshi']  #istalgan elementni kalit so'zi yordamida o'chirish
+#print(talaba_0)
+
+#eng_uz = {'apple' : 'olma', 'apricot': 'orik', 'banana' : 'banan'}
+#print(eng_uz)
+#del eng_uz['apple']
+#print(eng_uz)
+
+#LUG'ATNI BIR NECHTA QATORDA YOZISH
+#telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#    'orif':'nokia 3310'
+#   }
+#print(telefonlar['ali'])
+
+
+
+#get() metodi
+
+
+#phone = telefonlar['ali']
+#print(f"Alining telefoni {phone}")
+
+#phone = telefonlar['hasan']
+#print(f"Hasanning telefoni {phone}")
+#phone = telefonlar.get('hasan','Bunday ism mavjud emas')
+#print(phone)
+
+#phone = telefonlar.get('hasan')
+#print(phone)
 
