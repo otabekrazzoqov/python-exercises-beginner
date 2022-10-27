@@ -1,13 +1,64 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon May  2 23:58:13 2022
+#"""
+#Created on Mon May  2 23:58:13 2022
+#@author: HP
+#"""
 
-@author: HP
-"""
+
+
+
+
+#************************** DARS 1  *************************
+
+
+
 
 #print("hello world")
+
 #print(78559*84/54)
-#print("telegram messenger")
+
+
+
+#************************* DARS 2  **************************
+
+
+print("telegram messenger")
+
+
+
+#************************ DARS 3   *************************
+#************************PRINT() FUNCTION ******************
+
+
+
+print("men \"DELL\" markasidagi laptop sotib oldim")
+print("I am going to be a \"DEVELOPER\" in the upcoming future")
+print(""" Python is dynamically-typed and garbage-collected. 
+      It supports multiple programming paradigms, 
+      including structured (particularly procedural), 
+      object-oriented and functional programming. 
+      It is often described as a "batteries included" 
+      language due to its comprehensive standard library""")
+
+
+print("""Python is a high-level, \ngeneral-purpose programming language. 
+      Its design philosophy emphasizes \ncode readability with the use of 
+      significant indentation.""")
+      
+#  \n qatorga bo'lish uchun ishlatiladi   
+
+print("g\'ani")   
+print("g\'olib")
+print(55+66+77+88+99)      
+print(50/5)
+print(50//5)
+print(55/10)
+print(55//10) #natijada kasr qismi tashlab yuboriladi
+print(2**5) # 2ning 5-darajasi 
+print(5**2) # 5 ning 2 - darajasi 
+print("5 ning kvadrati", 5**2, "ga teng")
+print('3x3 =',3**2) 
+
 #ism = "aleksandr"
 #yosh = 33
 #print(ism)
@@ -1867,11 +1918,430 @@ cars = ['lacetti', 'bugatti', 'bmw', 'mercedes-benz', 'tesla', 'tiko' , 'audi']
 #
 #bolinish_alomatlari(20)
 
+
+
+
+
+
+
+
+
+
+#20DARS *****************15.08.2022***************************
+
+#def toliq_ism_yasa(ism, familiya):
+#    """Toliq ism qaytaruvchi funksiya"""
+#    toliq_ism = f"{ism} {familiya}"
+#    return toliq_ism
+
+#talaba1 = toliq_ism_yasa('olim','hakimov')
+#talaba2 = toliq_ism_yasa('hakim','olimov')
+#print(f"Darsga kelmagan talabalar: {talaba1} va {talaba2}")
+#print(f"{talaba1} darsga kechikib keldi")
             
 
 
 
 
 
+
+#def toliq_ism_yasa(ism, familiya, otasining_ismi=''):
+#    """Toliq isma qaytaruvchi funksiya"""
+#    if otasining_ismi:
+#        toliq_ism = f"{ism} {otasining_ismi} {familiya}"
+#    else:
+#        toliq_ism = f"{ism} {familiya}"
+#    return toliq_ism.title()
+
+
+#talaba1 = toliq_ism_yasa('olim','hakimov')
+#talaba2 = toliq_ism_yasa('hakim','olimov','abrorovich')
+#print(f"Darsga kelmagan talabalar: {talaba1} va {talaba2}")
+
+
+
+
+
+
+
+#def avto_info(kompaniya, model, rangi, korobka, yili, narhi=None):
+#    avto = {'kompaniya':kompaniya,
+#            'model':model,
+#            'rang':rangi,
+#            'korobka':korobka,
+#            'yil':yili,
+#            'narh':narhi}
+#    return avto
+
+#avto1 = avto_info('GM','Malibu','Qora','Avtomat',2018)
+#avto2 = avto_info('GM','Gentra','Oq','Mexanika',2016,15000)
+#avtolar = [avto1, avto2]
+#print('Onlayn bozordagi mavjud avtomashinalar:')
+#for avto in avtolar:
+#    if avto['narh']:
+#        narh = avto['narh']
+#    else:
+#        narh = "Noma'lum"
+#    print(f"{avto['rang']} {avto['model']}. Narhi: {narh}")
+
+
+
+
+
+
+
+
+#def oraliq(min,max):
+#    sonlar = []
+#    while min<max:
+#        sonlar.append(min)
+#        min += 1
+#    return sonlar
+
+#print(oraliq(0,10))
+#print(oraliq(10,21))
+
+# def oraliq(min,max,qadam=1):
+#     sonlar = []
+#     while min<max:
+#         sonlar.append(min)
+#         min += qadam
+#     return sonlar
+
+# print(oraliq(0,21,2))
+
+
+
+
+
+
+
+
+#def avto_info(kompaniya, model, rangi, korobka, yili, narhi=None):
+#    avto = {'kompaniya':kompaniya,
+#            'model':model,
+#            'rang':rangi,
+#            'korobka':korobka,
+#            'yil':yili,
+#           'narh':narhi}
+#    return avto
+#
+#print("Saytimizdagi avtolar ro'yxatini shakllantiramiz.")
+#avtolar=[] # salondagi avtolar uchun bo'sh ro'yxat
+#while True:
+#    print("\nQuyidagi ma'lumotlarni kiriting",end='')
+#    kompaniya=input("Ishlab chiqaruvchi: ")
+#    model=input("Modeli: ")
+#    rangi=input("Rangi: ")
+#    korobka=input("Korobka: ")
+#    yili=input("Ishlab chiqarilgan yili: ")
+#    narhi=input("Narhi: ")    
+#    #Foydalanuvchi kiritdan ma'lumotlardan avto_info yordamida 
+#    #lug'at shakllantirib, har bir lug'atni ro'yxatga qo'shamiz:
+ #   avtolar.append(avto_info(kompaniya, model, rangi, korobka, yili, narhi))    
+    # Yana avto qo'shish-qo'shmaslikni so'raymiz
+#    javob = input("Yana avto qo'shasizmi? (yes/no): ")
+#    if javob=='no':
+#        break
+
+#print("\nSalonimizdagi avtolar:")
+#for avto in avtolar:
+#    if avto['narh']:
+#        narh = avto['narh']
+#    else:
+#        narh = "Noma'lum"
+#    print(f"{avto['rang'].title()} {avto['model'].title()}, {korobka} korobka. Narhi: {narh}")
+
+
+
+#  **********  AMALIYOT    *****************
+
+
+#1. Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, 
+#email manzili va telefon raqamini qabul qilib, lug'at ko'rinishida 
+#qaytaruvchi funksiya yozing. Lug'atda foydalanuvchu yoshi ham bo'lsin. 
+#Ba'zi argumentlarni kiritishni ixtiyoriy qiling (masalan, tel.raqam, el.manzil)
+
+
+#def mijoz_info(ism, familiya, tyil, tjoy, email='',tel=None):
+#    """Mijoz haqidagi ma'lumotlarni lug'at ko'rinishida qaytaruvchi funksiya"""
+#    mijoz = {'ism':ism,
+#            'familiya':familiya,
+#            'tyil':tyil,
+#             'yoshi':2020-tyil,
+#             'tjoy':tjoy,
+#             'email':email,
+#             'telefon':tel}
+#    return mijoz
+#
+#print("Mijoz haqida ma'lumotlarni kiriting.")
+#mijozlar =[]
+#while True:
+#    ism = input("Ismi: ")
+#    familiya = input("Familiyasi: ")
+#    tyil = int(input("Tug'ilgan yili: "))
+#    tjoy = input("Tug'ilgan joyi: ")
+#    email = input("Email: ")
+#    telefon = input("Telefon raqami: ")
+#    mijozlar.append(mijoz_info(ism, familiya, tyil, tjoy, email, telefon))
+#   javob = input("Davom etasizmi? (ha/yo'q)")
+#    if javob!='ha':
+#        break
+
+#print("Mijozlar:")
+#for mijoz in mijozlar:
+#    print(f"{mijoz['ism'].title()} {mijoz['familiya'].title()}," 
+#          f"{mijoz['yoshi']} yoshda, telefoni: {mijoz['telefon']}")
+
+
+#3. Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing.
+
+#def kattasi(x,y,z):
+#    max = x
+#    if y>=max:
+#        max = y
+#   if z>=max:
+#       max = z
+#   return max
+
+
+#4.Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
+#diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya yozing
+
+#def aylana_info(radius,pi=3.14159):
+#    aylana = {"radius":radius,
+#              "diametr":2*radius,
+#             "perimetr":2*radius*pi,
+#              "yuza":pi*radius**2}
+#    return aylana
+
+
+
+#3. Berilgan oraliqdagi tub sonlar ro'yxatini qaytaruvchi
+#funksiya yozing (tub sonlar —faqat birga va o'ziga qoldiqsiz bo'linuvchi, 
+#1 dan katta musbat sonlar
+
+
+#def tub_sonlar_top(min,max):    
+#    tub_sonlar = []    
+#    for n in range(min,max+1):
+#        tub = True
+#        if (n==1):
+#           tub = False
+#       elif(n==2):
+#            tub = True
+#        else:
+#            for x in range(2,n):
+#               if(n%x==0):
+#                   tub = False
+#       if tub:
+#           tub_sonlar.append(n)
+#               
+#   return tub_sonlar
+
+
+
+
+
+
+
+
+#Foydalanuvchidan son qabul qilib, shu son miqdoricha Fibonachchi 
+#ketma-ketligidagi sonlar royxatni qaytaruvchi funksiya yozing.  
+#Ta’rif: Har bir hadi o’zidan oldingi ikkita hadning yig’indisiga 
+#teng bo’lgan ketma-ketlik Fibonachchi ketma-ketligi deyiladi. 
+#unda boshlang’ish had ko’pincha 1 deb olinadi.  
+#1, 1, 2, 3, 5, 8, 13, 21, 34, 55,...
+
+#def fibonacci(n):
+#    sonlar = []
+#    for x in range(n):
+#       if x==0 or x==1:
+#           sonlar.append(1)        
+#       else:
+#           sonlar.append(sonlar[x-1]+sonlar[x-2])
+#    return sonlar
+
+#print(fibonacci(10))
+
+
+
+
+
+
+#21.DARS   ************ 18.08.2022   *******************
+
+#def bahola(ismlar):
+#    baholar = {}
+#    while ismlar:
+#        ism = ismlar.pop()
+#        baho = input(f"Talaba {ism.title()}ning bahosini kiriting: ")
+#       baholar[ism]=int(baho)
+#   return baholar
+#
+#talabalar = ['ali', 'vali', 'hasan', 'husan']        
+#aholar = bahola(talabalar[:]) #[:] belgisi talabalar royxatini saqlab qolish uchun
+#rint(baholar)
+#rint(talabalar)
+            
+
+
+#talabalar = ['ali', 'vali', 'hasan', 'husan']
+
+#def bahola(ismlar):
+#    baholar = {}
+#    while ismlar:
+#        ism = ismlar.pop()
+#        baho = input(f"Talaba {ism.title()}ning bahosini kiriting: ")
+#        baholar[ism]=baho
+#    return baholar
+        
+#baholar = bahola(talabalar[:])
+#print(baholar)
+#print(talabalar)
+ 
+
+
+#1. Matnlardan iborat ro'yxat qabul qilib, ro'yxatdagi har bir matnning 
+#birinchi harfini katta harfga o'zgatiruvchi funksiya yozing.        
+
+#def katta_harf(matnlar):
+#    for i in range(len(matnlar)):
+#        matnlar[i]=matnlar[i].title()   
+
+#ismlar = ['ali', 'vali', 'hasan', 'husan']
+#katta_harf(ismlar)
+#print(ismlar)
+
+#2. Yuoqirdagi funksiyani asl ro'yxatni o'zgartirmaydigan va 
+#yangi ro'yxat qaytaradigan qilib o'zgartiring.
+
+#def katta_harf(matnlar):
+#    matnlar = matnlar[:]
+#    for i in range(len(matnlar)):
+#        matnlar[i]=matnlar[i].title()
+#    return matnlar
+
+#ismlar = ['ali', 'vali', 'hasan', 'husan']
+#yangi_ismlar = katta_harf(ismlar)
+#print(ismlar)
+#print(yangi_ismlar)
+
+
+#def maximum(num1, num2, num3):
+#   if(num1 > num2 and num1 >num3):
+#        return num1
+#   elif(num2 > num2 and num2 > num3):
+#       return num2
+#   elif(num3 >num1 and num3 >num2):
+#       return num3
+    
+
+#m = maximum(213334,1222442,2123334)
+#print(m)
+
+
+#22DARS      ********* 19.08.2022   ***************
+
+#def summa(*sonlar):  #   *ARGS ISTALGANCHA ARGUMENT QABUL QILADI
+#    """Kiritilgan sonlar yig'indisini hisoblaydigan funksiya"""
+#    yigindi = 0
+#    for son in sonlar:  
+#        yigindi += son
+#    return yigindi
+
+#print(summa(1,2))
+#print(summa(1,2,3,4,5))
+#print(summa(4,5,6,7))
+
+
+
+#def summa(*sonlar):
+#    """Kiritilgan sonlar yig'indisini hisoblaydigan funksiya"""
+#    return sum(sonlar)
+
+#print(summa(2))
+#print(summa(1,2,3,4,5))
+#print(summa(4,5,6,7))
+
+
+#def summa(x,y,*sonlar):  #KAMIDA 2 TA QIYMAT
+#    """Kiritilgan sonlar yig'indisini hisoblaydigan funksiya"""
+#    return x+y+sum(sonlar)
+
+#print(summa(1,2))
+#print(summa(1,2,3,4,5))
+#print(summa(4,5,6,7))
+#print(summa(2,1))
+
+
+
+
+#  **keywords   istalganga kalit soz : qiymat korinishidagi qiymatlar
+
+
+#def avto_info(kompaniya,model,**malumotlar):
+#    """Avto haqidagi ma'lumotlarni lug'at ko'rinishdia qaytaruvchi funksiya"""
+#    malumotlar['kompaniya']=kompaniya
+#    malumotlar['model']=model
+#    return malumotlar
+
+#avto1 = avto_info("GM", "malibu", rang='qora', yil=2018)
+#avto2 = avto_info("Kia", "K5", rang='qizil', narh=35000, yil=2020, korobka='avtomat')
+
+
+
+
+
+
+#AMALIYOT****************************************************************
+
+#1.Istalgancha sonlarni qabul qilib, ularning kopaytmasini qaytaruvchi 
+#funksiya yozing.
+
+#def kopaytma(*sonlar):
+#    """kiritilgan sonlarni kopaytmasini chiqarish"""
+#    kopaytma = 1
+#    for son in sonlar:
+#        kopaytma *= son
+#    return kopaytma
+    
+#print(kopaytma(2,3))    
+        
+
+
+#def multiply(*sonlar):
+#    kopaytma = 1
+#    for son in sonlar:
+#        kopaytma *= son
+#    return kopaytma
+
+#print(multiply(4,5,6))
+
+
+
+
+
+#2. Talabalar haqidagi ma'lumotlarini lug'at ko'rinishida 
+#qaytaruvchi funksiya yozing. Talabaning ismi va familiyasi 
+#majburiy argument, qolgan ma'lumotlar esa ixtiyoriy ko'rinishda 
+#istalgancha berilishi mumkin bo'lsin.
+
+#def talabalar(ism, familiya, **malumotlar):
+#    """ TALABA MA'LUMOTLARINI TUZUVCHI FUNKSIYA"""
+#    malumotlar['ism'] = ism
+#    malumotlar['familiya']= familiya
+#    return malumotlar
+
+#talaba1 = talabalar('elbek', 'razzoqov', kurs = 3 ,)
+#print(talaba1)
+
+
+#def talaba_info(ism, familiya, **kwargs):
+#    kwargs['ism']=ism
+#    kwargs['familiya']=familiya
+#    return kwargs
+
+#talaba = talaba_info('olim','olimov',tyil=1995,fakultet='IT',yonalish='AT')
 
 
