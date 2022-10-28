@@ -22,7 +22,7 @@
 #************************* DARS 2  **************************
 
 
-print("telegram messenger")
+#print("telegram messenger")
 
 
 
@@ -31,120 +31,208 @@ print("telegram messenger")
 
 
 
-print("men \"DELL\" markasidagi laptop sotib oldim")
-print("I am going to be a \"DEVELOPER\" in the upcoming future")
-print(""" Python is dynamically-typed and garbage-collected. 
-      It supports multiple programming paradigms, 
-      including structured (particularly procedural), 
-      object-oriented and functional programming. 
-      It is often described as a "batteries included" 
-      language due to its comprehensive standard library""")
-
-
-print("""Python is a high-level, \ngeneral-purpose programming language. 
-      Its design philosophy emphasizes \ncode readability with the use of 
-      significant indentation.""")
+#print("men \"DELL\" markasidagi laptop sotib oldim")
+#print("I am going to be a \"DEVELOPER\" in the upcoming future")
+#print(""" Python is dynamically-typed and garbage-collected. 
+#      It supports multiple programming paradigms, 
+#      including structured (particularly procedural), 
+#      object-oriented and functional programming. 
+#      It is often described as a "batteries included" 
+#      language due to its comprehensive standard library""")
+#
+#
+#print("""Python is a high-level, \ngeneral-purpose programming language. 
+#     Its design philosophy emphasizes \ncode readability with the use of 
+#     significant indentation.""")
       
 #  \n qatorga bo'lish uchun ishlatiladi   
 
-print("g\'ani")   
-print("g\'olib")
-print(55+66+77+88+99)      
-print(50/5)
-print(50//5)
-print(55/10)
-print(55//10) #natijada kasr qismi tashlab yuboriladi
-print(2**5) # 2ning 5-darajasi 
-print(5**2) # 5 ning 2 - darajasi 
-print("5 ning kvadrati", 5**2, "ga teng")
-print('3x3 =',3**2) 
+#print("g\'ani")   
+#print("g\'olib")
+#print(55+66+77+88+99)      
+#print(50/5)
+#print(50//5)
+#print(55/10)
+#print(55//10) #natijada kasr qismi tashlab yuboriladi
+#print(2**5) # 2ning 5-darajasi 
+#print(5**2) # 5 ning 2 - darajasi 
+#print("5 ning kvadrati", 5**2, "ga teng")
+#print('3x3 =',3**2) 
+
+
+
+
+#print('"Nexia", "Tico", \'Damas\' ko\'rganlar qilar havas')
+#print(5**4)
+#print(22/4)
+#print(22//4)
+#Diametri 12 ga teng bo'lgan doiraning yuzini toping  (deb oling)
+#print(6*(3.14**2))
+#Katetlari 6 va 7 bo'lgan to'g'ri burchakli uchburchakning
+# \ngipotenuzasini toping
+#print((6**2+7**2)**0.5)
+#print("5ning 4-darajasi", 5**4)
+
+
+
+#****************************** DARS 4   **********************
+#VARIABLES
+
 
 #ism = "aleksandr"
 #yosh = 33
 #print(ism)
 #print(yosh)
-#ism = "muhammad"
+
+#ism = "Abdulloh"
+#ism = "Muhammad" #o'zgaruvchining qiymati o'zgardi
 #print(ism)
+
+
 #a = 5
 #b = 6
 #c = (a+b)**2
-#print(c)
-#
+#print(c+2**2)
+
+
 #a = "hello world" 
 #print(a)
 
-#xabar = "are u stupid, man"
+#xabar = "wise man once said nothing"
 #print(xabar)
+
+
 #radius = 5
 #pi = 3.14159
 #aylana_yuzi = (pi * radius)**2
 #print(aylana_yuzi)
 #print("Radiusi" , radius, "ga teng aylananing yuzi=", aylana_yuzi)
- 
+
+
+
+
+#************************* DARS 5 ****************************
+#STRING (MATN USTIDA ISHLASH)
+
+
+
+
 #ism = "otabek"
 #shahar = "navoiy"
 #tuman = "karmana"
 #smayl = "😘"
-#ism = "abdusattorjohn"
+#ism = "Abdusattorjohn"
 #print("mening ismim"  +' ' + ism)
-#ism = "otabek"
-#familiya = "razzoqov"
-#print(ism + ' ' + familiya)
-#ism_sharif = "{ism} {familiya}"
 
-#ism = "jim"
-#familiya = "carrey"
+
+
+#ism = "Otabek"
+#familiya = "Razzoqov"
+#print(ism + ' ' + familiya)
+#ism_sharif = f"{ism} {familiya}"
+#print(ism_sharif)
+
+
+
+
+
+#ism = "Jim"
+#familiya = "cCarrey"
 #print(f"salom, mening ismim {familiya}. {ism} {familiya} ")
+
+
+
+
 #print("hello world")
 #print("hello \tworld")
 #print("hello \nworld")
-#
+
+
+
+
+
+
+
 #ism = "kehlani"
 #sharif = "open"
 #ism_sharif = f"{ism} {sharif}"
 #ism_sharif = ism_sharif.upper()
 #print(ism_sharif.upper())
-#print(ism_sharif.lower())
-#print(ism_sharif.title())
+#rint(ism_sharif.lower())
+#rint(ism_sharif.title())
 #print(ism_sharif.capitalize())
+
+
+
 
 #meva = "   olma    "
 #print(meva)
 #print(" men " + meva.lstrip()+ " yaxshi ko'raman")
 #print(" men " + meva.rstrip() +" yaxshi ko'raman" )
-#print(" men " + meva.strip() + " yaxshi ko'raman")
+#rint(" men " + meva.strip() + " yaxshi ko'raman")
+
+
+
 
 #ism = input("ismingiz nima?\n__")
-#print(" assalom alaykum , " + ism.capitalize())
+#print(" Assalomu alaykum , " + ism.capitalize())
+#familiyangiz = input("familiyangiz nima?\n>>>>")
+#print("ASSALOMU ALAYKUM," + familiyangiz.title())
 
 
 
+#kocha = "Langar"
+#mahalla = "Narpay"
+#tuman = "Karmana"
+#iloyat = "Navoiy"
 
-#kocha = "Bog'bon"
-#mahalla = "Sog'bon"
-#tuman = "Bodomzor"
-#viloyat = "Samarqand"
+
 
 # Yuqoridagi o'zgaruvchilarni jamlab, quyidagi ko'rinishda konsolga chiqaring:
 # Diqqat uzun kodlarni \ belgisi yordamida keyingi qatorga
 # ko'chirish mumkin
-#print(kocha + " ko'changiz, " + mahalla + " mahallangiz, " + \
-    #  tuman + " tumaningiz " + viloyat + " viloyatingiz")
+
+
+
+
+#print(kocha + " ko'chasi, " + mahalla + " mahallasi, " + \
+#      tuman + " tumani, " + viloyat + " viloyati.")
+    
+    
 
 #Yuqoridagi o'zgaruvchilarning qiymatini foydalanuvchidan so'rang.
+
+
+
 #print("Iltimos, quyidagi ma'lumotlarni kiriting:")
 #kocha = input("Ko'changiz: ")
 #mahalla = input("Mahallangiz: ")
 #tuman = input("Tumaningiz: ")
 #viloyat = input("Viloyatingiz: ")
 #print(kocha + " ko'chasi, " + mahalla + " mahallasi, " + \
-      #tuman + " tumani, " + viloyat + " viloyati")   
+#      tuman + " tumani, " + viloyat + " viloyati")   
+    
+    
+    
+    
+    
+    
 
-# Yuqoridagi matnni konsolga chiqarishda har bir verguldan keyin yangi qatorga yozing
+# Yuqoridagi matnni konsolga chiqarishda har bir verguldan keyin yangi
+# qatorga yozing. 
+
+
 #print(kocha + " ko'chasi,\n" + mahalla + " mahallasi,\n" + \
-   #   tuman + " tumani,\n" + viloyat + " viloyati")
+#      tuman + " tumani,\n" + viloyat + " viloyati") 
 
-# Yuqoridagi o'zgaruvchilarni f-string yordamida, yangi manzil deb nomlangan o'zgaruvchiga yuklang
+
+
+
+# Yuqoridagi o'zgaruvchilarni f-string yordamida, yangi manzil deb 
+#nomlangan o'zgaruvchiga yuklang
+
+#**************************** DARS 6 ****************************
+
 #manzil = f"{kocha} ko'chasi, {mahalla} mahallasi, {tuman} tumani, {viloyat} viloyati"
 #print(manzil)
 
@@ -153,6 +241,18 @@ print('3x3 =',3**2)
 #print(manzil.lower())
 #print(manzil.title())
 #print(manzil.capitalize())
+
+
+
+
+
+
+
+
+
+
+
+
 
 #a = 20
 #b = 5.5
