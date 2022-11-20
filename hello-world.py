@@ -353,51 +353,61 @@
 
 #********************** DARS 7 **************** 
 
-fruits = ["apple", 'banana' , 'peach' , 'melon', 'grapes'] #words can be written
-prices = [5000 , 6000 , 7000 , 8000 , 9000] #numbers can be written 
-numbers = ["one" , "two" , "three" , 4 , 5] #numbers and words can be written
-names = [] #blank list
+#fruits = ["apple", 'banana' , 'peach' , 'melon', 'grapes'] #words can be written
+#prices = [5000 , 6000 , 7000 , 8000 , 9000] #numbers can be written 
+#numbers = ["one" , "two" , "three" , 4 , 5] #numbers and words can be written
+#names = [] #blank list
 
-print(fruits[4])
-print(prices[4], 'so\'m')
-print(numbers[4])
-print(prices[-1])
+#print(fruits[4])
+#print(prices[4], 'so\'m')
+#print(numbers[4])
+#print(prices[-1])
 
-print(fruits[1].capitalize()) #matnlar ustida amallar
-print(prices[1]+prices[2]) #sonlar ustida amallar
+#print(fruits[1].capitalize()) #matnlar ustida amallar
+#print(prices[1]+prices[2]) #sonlar ustida amallar
 
-fruits[0] = 'pineapple' #the elements can be changed
-fruits[-1] = 'apricot' # the elements can be changed
-print(fruits)
+#fruits[0] = 'pineapple' #the elements can be changed
+#fruits[-1] = 'apricot' # the elements can be changed
+#print(fruits)
 
              
              
-fruits.append('watermelon') #the new element is added at the end of the list
-fruits.insert(0, 'cherry')  #the new element is added in order with index
+#fruits.append('watermelon') #the new element is added at the end of the list
+#fruits.insert(0, 'cherry')  #the new element is added in order with index
 
-gmuzbekistan = []
-gmuzbekistan.append('tahoe')
-gmuzbekistan.append('trailblazer')
-gmuzbekistan.append('equinox')
-gmuzbekistan.append('traverse')
+#gmuzbekistan = []
+#gmuzbekistan.append('tahoe')
+#gmuzbekistan.append('trailblazer')
+#gmuzbekistan.append('equinox')
+#gmuzbekistan.append('traverse')
 
-print(gmuzbekistan)
-
-
-del gmuzbekistan[0]  #remove an element from the list
-print(gmuzbekistan)
-
-gmuzbekistan.insert(0, 'matiz') # adding an element to the list
-print(gmuzbekistan)
-
-gmuzbekistan.remove('equinox') #removing an element by using its name
-print(gmuzbekistan)
+#print(gmuzbekistan)
 
 
-product = fruits.pop(0)
-print(product)
-print("Men "  + product + " sotib oldim")
-print("sotib olinmagan mahslulotlar", fruits)
+#del gmuzbekistan[0]  #remove an element from the list
+#print(gmuzbekistan)
+
+#gmuzbekistan.insert(0, 'matiz') # adding an element to the list
+#print(gmuzbekistan)
+
+#gmuzbekistan.remove('equinox') #removing an element by using its name
+#print(gmuzbekistan)
+
+
+#product = fruits.pop(0) #uprooting an element from the list
+#print(product)
+#print("Men "  + product + " sotib oldim")
+#print("sotib olinmagan mahslulotlar", fruits)
+
+
+
+
+
+
+
+
+
+
 
 #23.05.2022
 
