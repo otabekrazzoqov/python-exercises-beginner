@@ -249,7 +249,8 @@
 
 
 
-
+#**************************** DARS 6 ***************************
+#SONLAR
 
 
 
@@ -266,57 +267,137 @@
 #c= x*y
 
 #radius = 20
-#PI = 3.14159
+#PI = 3.14159#KATTA HARFDA YOZILGAN O'ZGARUVCHILAR O'ZGARMAS DEB QABUL QILINADI
 #diametr = 2*radius
 #print("Aylana uzunligi = ", PI*diametr)
 
+
+#str() FUNKSIYASI O'ZGARUVCHINI MATN KO'RINISHIGA O'TKAZADI
 #ism = "Sobir"
 #yosh = 44
 #xabar = ism + ' ' + str(yosh) + '  '+ 'yoshda '
 #print(xabar)
 
-#t_yil = int(input("date:"))
-#yosh = 2022 - t_yil
-#print("siz", yosh)
 
-#a =  int("10")
-#b = float("10")
-#emp = str(36.6)
+#int() FUNKSIYASI O'ZGARUVCHINI BUTUN SON KO'RINISHIGA O'TKAZADI
+
+#t_yil = int(input("enter your birthdate:"))
+#yosh = 2022 - t_yil
+#print("siz", yosh , "yoshdasiz")
+
+
+
+
+#a =  int("10") #BUTUN SON
+#b = float("10") #O'NLI SON
+#emp = str(36.6) #MATN
+
+
+
+
 
 
 #Foydalanuvchi kiritgan sonning kvadrati va kubini konsolga chiqaruvchi dastur
+
+
 #x = int(input("Istalgan son kiriting:\n>>>"))
 #print(x, " ning kvadrati ", x**2, " ga teng")
 #print(x, " ning kubi ", x**3, " ga teng")
 
+
+#ISTALGAN IKKI SONNING KVADRATLARI YIG'INDISI
+#a = int(input("birinchi sonni kiriting: \n>>>"))
+#b = int(input("ikkinchi sonni kiriting: \n>>>"))
+
+#print(a, "va", b, "sonlarining kvadratlari yig'indisi", a**2+b**2)
+
+
+
+
 # Foydalanuvchining yoshini so'rang, 
 # va uning tug'ilgan yilini hisoblab, konsolga chiqaring.
+
+
 #yosh = int(input("Yoshingiz nechida? \n>>>"))
-#t_yil = 2020-yosh
+#t_yil = 2022-yosh
 #print("Siz ", t_yil, " da tug'ilgansiz")
 
 # Foydalanuvchidan ikki son kiritshni so'rab, 
 # kiritilgan sonlarning yig'indisi, ayirmasi, 
 # ko'paytmasi va bo'linmasini chiqaruvchi dastur
+
+
+
+
 #a = float(input("Birinchi sonni kiriting: "))
 #b = float(input("Ikkinchi sonni kiriting: "))
+
+
 #print(f"{a}+{b}=", a+b)
 #print(f"{a}-{b}=", a-b)
 #print(f"{a}x{b}=", a*b)
 #print(f"{a}/{b}=", a/b)
 
-#20.05.2022 
+#print(f"{a}+{b}*{a}/{b}=", a+b*a/b)
 
-#fruits = ["apple", 'banana' , 'peach' , 'melon', 'grapes'] #words can be written
-#prices = [5000 , 6000 , 7000 , 8000 , 9000] #numbers can be written 
-#numbers = ["one" , "two" , "three" , 4 , 5] #numbers and words can be written
-#names = [] #blank list
 
-#fruits.append('qovun')
-#fruits.insert(0, 'tarvuz')
-#del fruits(0)
-#fruits.remove('banana')
-#thing = fruits.pop(0)
+
+
+
+
+
+
+
+
+
+
+#********************** DARS 7 **************** 
+
+fruits = ["apple", 'banana' , 'peach' , 'melon', 'grapes'] #words can be written
+prices = [5000 , 6000 , 7000 , 8000 , 9000] #numbers can be written 
+numbers = ["one" , "two" , "three" , 4 , 5] #numbers and words can be written
+names = [] #blank list
+
+print(fruits[4])
+print(prices[4], 'so\'m')
+print(numbers[4])
+print(prices[-1])
+
+print(fruits[1].capitalize()) #matnlar ustida amallar
+print(prices[1]+prices[2]) #sonlar ustida amallar
+
+fruits[0] = 'pineapple' #the elements can be changed
+fruits[-1] = 'apricot' # the elements can be changed
+print(fruits)
+
+             
+             
+fruits.append('watermelon') #the new element is added at the end of the list
+fruits.insert(0, 'cherry')  #the new element is added in order with index
+
+gmuzbekistan = []
+gmuzbekistan.append('tahoe')
+gmuzbekistan.append('trailblazer')
+gmuzbekistan.append('equinox')
+gmuzbekistan.append('traverse')
+
+print(gmuzbekistan)
+
+
+del gmuzbekistan[0]  #remove an element from the list
+print(gmuzbekistan)
+
+gmuzbekistan.insert(0, 'matiz') # adding an element to the list
+print(gmuzbekistan)
+
+gmuzbekistan.remove('equinox') #removing an element by using its name
+print(gmuzbekistan)
+
+
+product = fruits.pop(0)
+print(product)
+print("Men "  + product + " sotib oldim")
+print("sotib olinmagan mahslulotlar", fruits)
 
 #23.05.2022
 
