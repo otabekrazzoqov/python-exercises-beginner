@@ -409,57 +409,102 @@
 
 
 
-#23.05.2022
+#18.01.2023
+#*********************** DARS 8 *******************
 
-#putting things in order.
+#LISTS
 
 cars = ['lacetti', 'bugatti', 'bmw', 'mercedes-benz', 'tesla', 'tiko' , 'audi']
+# .sort() metodi ro'yxatdagi so'zlarni alifbo tartibida joylashtiradi.
+#cars[0].capitalize()
+#cars.sort(reverse=True)
+#sort(reverse=True) teskari tartiblash 
+#print(sorted(cars)) #asl ro'yxatga tegmagan holda tartiblash
+#print(sorted(cars, reverse=True))
+#print(cars)
+#cars.reverse() #teskari aylantirish
+#print(cars)
+#len(cars) #ro'yxat elementlari soni
+
+
+
+
+
 #sonlar = [1, 2, 22, 23, 31, 33, 34, 77, -11, -12, -13]
+
 #sonlar.sort(reverse=True)
 #print(sonlar)
 #sorted(sonlar)
 #print(sorted(sonlar))
-#print(sonlar.sort(reverse=True))
-#cars.reverse()
-#print(cars)
-#len(cars)
+#print(sonlar)
 #uzunlik = len(sonlar)
 
-#range(0,10)
-#list(range(0,10))
-#sonlar = list(range(0,10))
+
+
+
+#range(0,33) #ma'lum bir oraliqdagi sonlarni qaytaradi
+#list(range(0,33))
+#sonlar = list(range(0,33))
 #print(sonlar)
-#juft_sonlar = list(range(2,41,2))
+
+
+#juft_sonlar = list(range(2,41,2)) # 2 dan 40 gacha 2 qadam bilan
 #print(juft_sonlar)
-#oq_sonlar = list(range(1,41,2))
+#toq_sonlar = list(range(1,41,2)) # 1 dan 40 gacha 2 qadam bilan
 #print(toq_sonlar)
-#sanash = list(range(0,101,10))
+
+
+#sanash = list(range(0,1001,100)) # 0 dan 1000 gacha 100 qadam bilan
 #print(sanash)
+
+
 #maximum_qiymat = max(toq_sonlar)
 #print(maximum_qiymat)
 
+
+
 #narxlar = [5600, 11000, 19000, 33000, 44000, 115000]
-#arzon = min(narxlar)
-#qimmat = max(narxlar)
-#jami = sum(narxlar)
+#arzon = min(narxlar) # min ro'yxatdagi eng kichik qiymat
+#qimmat = max(narxlar) # max ro'yxatdagi eng katta qiymat 
+#jami = sum(narxlar) # sum ro'yxatdagi qiymatlar yig'indisi
+
 #print("eng arzon narx", arzon, "eng qimmat narx" , qimmat, "jami:", jami)
 
-#print(cars[0:3])
-#print(cars[2:5])
-#print(cars[:4])
-#print(cars[1:])
 
-#my_cars = cars[:]
+
+
+#print(cars[0:3]) # ro'yxatdan birinchi elementdan 2 elementgacha chiqarish
+#print(cars[2:5]) # ikkinchi elementdan 4-elementgacha chiqarish
+#print(cars[:4])  # 1-elementdan 3-elementgacha chiqarish 
+#rint(cars[1:])  # 1-elementdan oxirgi elementgacha chiqarish 
+
+
+
+#my_cars = cars[:]   #[:] ro'yxatdan nusxa olish
+
 #print(my_cars)
 #my_cars.remove('tesla')
-#print(my_cars)
+#my_cars.remove('bmw')
+#rint(my_cars)
+#print(cars)
 
-#toys = ("car", "lizard", "bear", "cat", "doggo")
-#toys = list(toys)
-#toys.append("chumoli")
-#print(toys)
-#toys = tuple(toys)
-#print(toys)
+
+
+toys = ("car", "lizard", "bear", "cat", "doggo") #() tuple o'zgarmas ro'yxat
+# tuple o'zgarmas ro'yxatga element qo'shib bo'lmaydi. tuple ni list ga 
+#almashtirish yo'li bilan ro'yxatga element qo'shish mumkin.
+
+toys = list(toys)
+toys.append("chumoli") # .append - ro'yxatga element qo'shish
+toys.append('tuya')
+
+print(toys)
+toys = tuple(toys)
+print(toys)
+
+
+
+
 
 
 #JUNE 20. 2022****************************************************************
