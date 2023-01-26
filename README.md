@@ -1,3 +1,4 @@
-# python-exercises-beginner
-initial insights into pyhthon (in uzbek)
+PYTHON [ROADMAP IN UZBEK]
+
+
 ushbu repositoryda python darslariga oid mashqlar jamlangan.
