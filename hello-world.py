@@ -1416,8 +1416,8 @@
 
 
 #IndexError
-mevalar = ['olma','anor','uzum']  #indexda sanoq 0 dan boshlanadi
-print(mevalar[2])
+#mevalar = ['olma','anor','uzum']  #indexda sanoq 0 dan boshlanadi
+#print(mevalar[2])
 #print(mevalar[3])  #IndexError: list index out of range
 
 
@@ -1563,41 +1563,63 @@ print(mevalar[2])
 
 
 
-
-
-#13 DARS                            01.08.2022
+#***************************** DARS 13 ********************
 #GITHUB
+#https://github.com/otabekrazzoqov
 
 
 
-#14DARS                             02.08.2022
+#***************************** DARS 14 ********************
+#DICTIONARY
 
-#car_0 = {'model' : 'ferrari','rang' : 'qizil'}  #lug'at   kalit:qiymat 
+
+#car_0 = {'model' : 'ferrari','rang' : 'qizil', 'date':'2011'}  #lug'at   kalit:qiymat 
 #print(car_0['model'])
 #print(car_0['rang'])
+#print(car_0['date'])
 
 
-#eng_uz = {'apple' : 'olma', 'apricot': 'orik', 'banana' : 'banan'}
+
+#eng_uz = {'apple' : 'olma', 'apricot': "o'rik", 'banana' : 'banan', 'peach':'shaftoli'}
 #print(eng_uz)
 #print(eng_uz['apple'])
 #print(eng_uz['apricot'])
 #print(eng_uz['banana'])
+#print(eng_uz['peach'])
 
-#mevalar = {'olma': 10000, 'tarvuz': 8000, 'qovun': 10000}
+
+#mevalar = {'olma': 10000, 'tarvuz': 18000, 'qovun': 19000}
 #print(f"olmaning narxi {mevalar['olma']} uzs")
+#print(f"tarvuzning narxi {mevalar['tarvuz']} uzs")
+#print(f"qovunning narxi {mevalar['qovun']} uzs")
 
-# lug'atlarda qiymat turli shaklda bo'lishi mumkin.(matn,son)
-#talaba_0 = {'ism' : 'razzoqov otabek', 'yoshi' : 26, 'tugilgan yili': 1996}
+
+
+#lug'atlarda qiymat turli shaklda bo'lishi mumkin.(matn,son)
+#talaba_0 = {'ism' : 'razzoqov otabek', 'yoshi' : 27, 'tugilgan yili': 1996}
 #print(f"{talaba_0['ism'].title()},\
 #      {talaba_0['tugilgan yili']}-yilda tugilgan\
-#          {talaba_0['yoshi']} yoshda")
+#         {talaba_0['yoshi']} yoshda")
 
-#YANGI KALIT SO'Z VA QIYMAT QO'SHISH
-#talaba_0['kurs'] = 4
-#talaba_0['fakultet'] = 'informatika'
+#yangi kalit so'z va qiymat qo'shish
+
+#talaba_0['kurs'] = 1
+#talaba_0['fakultet'] = 'computer muhandisligi'
 #print(talaba_0)
-#talaba_0['ism'] = 'elbek'
+#talaba_0['ism'] = 'otabekk'
 #print(talaba_0)
+
+
+#student = {'full name':'razzoqov elbek', 'birthdate':'2002', 'occupation':'student'}
+#print(student['full name'].upper())
+#print(student['occupation'].upper())
+
+#student['favourite colour'] = 'black'
+#student['weight'] = '75kg'
+#student['height'] = '1.88cm'
+
+#print(student)
+
 
 #bo'sh lug'at yaratish
 
@@ -1605,71 +1627,227 @@ print(mevalar[2])
 #talaba_1['ism'] = 'elbek razzoqov'
 #talaba_1['kurs'] = 3
 #talaba_1['yosh'] = 20
+#alaba_1['weight (in kg)'] = 75
+#alaba_1['height (in cm)'] = 1.88
+
 #print(talaba_1)
+
 #print(f" Talaba {talaba_1['ism'].title()}\
 #     {talaba_1['yosh']}-yoshda")
+
+
       
-#QIYMATNI YANGILASH
+#qiymatni yangilash
 
 #talaba_1['yosh'] = 21
+
+#print(talaba_1) #lug'atdagi qiymat o'zgardi
 #print(f" Talaba {talaba_1['ism'].title()}\
 #      {talaba_1['yosh']}-yoshda")
-      
-#KALIT SO'Z QIYMATNI O'CHIRIB TASHLASH
+   
+    
+   
+#kalit so'z qiymatini o'chirish
 #talaba_0 = {'ism' : 'razzoqov otabek', 'yoshi' : 26, 'tugilgan yili': 1996}
 #print(talaba_0)
 #del talaba_0['yoshi']  #istalgan elementni kalit so'zi yordamida o'chirish
-#print(talaba_0)
+#rint(talaba_0)
+
 
 #eng_uz = {'apple' : 'olma', 'apricot': 'orik', 'banana' : 'banan'}
 #print(eng_uz)
-#del eng_uz['apple']
-#print(eng_uz)
+#del eng_uz['apple'] #apple kalit so'zi va qiymati o'chirildi 
+#rint(eng_uz)
 
-#LUG'ATNI BIR NECHTA QATORDA YOZISH
+
+#lug'atni bir nechta qatorda yozish
 #telefonlar = {
-#     'ali':'iphone x',
-#     'vali':'galaxy s9',
-#     'olim':'mi 10 pro',
-#    'orif':'nokia 3310'
-#   }
+#     'ali':'Iphone X',
+#     'vali':'samsung galaxy s9',
+#    'olim':'mi 10 pro',
+#    'sardor':'nokia 3336',
+#   'elbek':'samsung galaxy A31',
+#    'muhammad':'iphone 14 pro max',
+#   'jonybek':'samsung galaxy S22' }
+
+#print(telefonlar)
 #print(telefonlar['ali'])
+#rint(telefonlar['jonybek'])
+#print(telefonlar['sardor'])
 
 
 
 #get() metodi
-
-
+#telefonlar = {
+#     'ali':'Iphone X',
+#     'vali':'samsung galaxy s9',
+#     'olim':'mi 10 pro',
+#   'sardor':'nokia 3336',
+#   'elbek':'samsung galaxy A31',
+#    'muhammad':'iphone 14 pro max',
+#    'jonybek':'samsung galaxy S22' }
 #phone = telefonlar['ali']
 #print(f"Alining telefoni {phone}")
 
-#phone = telefonlar['hasan']
-#print(f"Hasanning telefoni {phone}")
-#phone = telefonlar.get('hasan','Bunday ism mavjud emas')
+#phone = telefonlar.get('hasan', 'bunday ism mavjud emas')
 #print(phone)
 
-#phone = telefonlar.get('hasan')
-#print(phone)
+#.get metodi lug'atda yo'q bo'lgan kalit uchun maxsus javob yoki NONE javobini 
+#chiqarish uchun ishlatidagi
+#eng_uz = {'apple' : 'olma', 'apricot': "o'rik", 'banana' : 'banan', 'peach':'shaftoli'}
+#new_word = eng_uz.get('grapes',)
+#print(new_word)
 
 
-#15DARS                    03.08.2022
 
-#LUG'ATLAR BILAN ISHLASH
 
-# .items()
+
+
+#otam (onam, akam, ukam, va hokazo) degan lug'at yarating va lug'atga shu inson 
+#haqida kamida 3 ta m'alumot kiriting (ismi, tu'gilgan yili, shahri, manzili va hokazo). 
+#Lug'atdagi ma'lumotni matn shaklida konsolga chiqaring :Otamning ismi Mavlutdin, 
+#1954-yilda, Samarqand viloyatida tug'ilgan.
+
+
+#brother = {'full name':'Razzoqov Elbek',
+#           'birthdate': 2002,
+#           'occupation':'student',
+#          'address':'tashkent',
+#          'phone number': 998939552002
+#           }
+
+#print(brother)
+#print(f"my brother's name is {brother['full name']}\
+#      He was born in {brother['birthdate']}\
+#         Now, he lives in {brother['address']}\
+#             He is a {brother['occupation']}\
+#                  His phone number is {brother['phone number']}")
+                  
+
+#Oila a'zolaringizning sevimli taomlari lug'atini tuzing. 
+#Lug'atda kamida 5 ta ism-taom jufltigi bo'lsin. 
+#Kamida uch kishining sevimli taomini konsolga chiqaring: 
+    #Alining sevimli taomi osh     
+
+#favourite_dish = {'father': 'manti',
+#                  'mother': 'mastava',
+#                  'sister': 'somsa',
+#                  'littlebro': 'shashlik',
+#                  'uncle': 'norin'}             
+               
+#print(favourite_dish) 
+#print(f"My little brother\'s favourite dish is {favourite_dish['littlebro']}.\
+#      My father\'s favourite dish is {favourite_dish['father']}.\
+#          My mother\'s favourite dish is {favourite_dish['mother']}.\
+#             My sister\'s favourite dish  is {favourite_dish['sister']}.\
+#                 My uncle\'s favourite dish is {favourite_dish['uncle']}") 
+#                 
+#                  
+                  
+#Python izohli lu'gati tuzing: Lug'atga shu kunga qadar o'rgangan 
+#10 ta so'z (atamani) kiriting (masalan integer, float, string, if, 
+#else va hokazo) va har birining qisqacha tarjimasini yozing.                  
+                  
+#python = {'print': 'chop etish',
+#          'float': 'o\'nli son',
+#          'integer': 'butun son',
+#          'string':'matn',
+#          'if': 'agar',
+#          'else': 'aks holda',
+#          'elif': 'aksincha',
+#          'lists':'ro\'yxat',
+#          'error':'xatolik',
+#         'variable': 'o\'zgaruvchi',
+#          'tuples': 'o\'zgarmas ro\'yxat'}
+
+#print(python)
+#print(f"print funksiyasi {python['print']} vazifasini bajaradi.\
+#      tuples bu o\'zgartirib bo\'lmaydigan {python['tuples']}.\
+#          Error bu {python['error']} bo\'lganini bildiruvchi so\'z.")
+          
+
+#Foydalanuvchidan biror so'z kiritishni so'rang va so'zning tarjimasini 
+#yuqoridagi lug'atdan chiqarib bering. Agar so'z lu'gatda mavjud bo'lmasa, 
+#"Bunda so'z mavjud emas" degan xabarni chiqaring.          
+          
+
+
+#kalit = input("Kalit so'z kiriting:").lower()
+#print(python.get(kalit,"Bunday so'z mavjud emas"))
+
+
+
+
+#Yuqoridagi vazifani if-else yordamida qiling va natijani 
+#ham foydalanuvchiga tushunarli ko'rinishda chiqaring.
+
+
+#python = {'print': 'chop etish',
+#          'float': 'o\'nli son',
+#          'integer': 'butun son',
+#         'string':'matn',
+#         'if': 'agar',
+#         'else': 'aks holda',
+#         'elif': 'aksincha',
+#          'lists':'ro\'yxat',
+#         'error':'xatolik',
+#         'variable': 'o\'zgaruvchi',
+#          'tuples': 'o\'zgarmas ro\'yxat'}
+
+
+#kalit = input("Kalit so'z kiriting:").lower()
+#tarjima = python.get(kalit)
+#if tarjima==None:
+#    print("Bunday so'z mavjud emas")
+#else:
+#   print(f"{kalit.title()} so'zi {tarjima} deb tarjima qilinadi")
+    
+
+#german = {'tee':'tea',
+#          'bitte':'please',
+#          'brot':'bread',
+#          'kaffee':'coffe',
+#          'wein':'wine',
+#          'wasser':'water',
+#          'danke':'thank you',
+#          'hallo':'hello',
+#          'bier':'beer',
+#          'ja':'yes',
+#         'nein':'no',
+#          'oder': 'or'}
+
+#key = input('enter a keyword:  ').lower()
+#translate = german.get(key)
+#if translate == None:
+#    print('there is no this word')
+#else:
+#    print(f"{key.title()} means {translate}")
+
+#print(german)
+
+
+
+
+
+
+#***************************** DARS 15 ********************
+#lug'atlar bilan ishlash
+
+
+#.items() lug'atdagi elementlarni ko'rish
 #talaba_0 = {
 #     'ism':'alijon',
 #     'familiya':'shamshiyev',
 #     'yosh':22,
 #     'fakultet':'matematika',
 #     'kurs':4
-#     }
-#
+#    }
+
 #print(talaba_0.items())
 
-#for kalit, qiymat in talaba_0.items():
-#     print(f"Kalit: {kalit}")
-#     print(f"Qiymat: {qiymat} \n")
+#for k, q in talaba_0.items():
+#     print(f"Key: {k}")
+#     print(f"Value: {q} \n")
 
 
 
@@ -1691,29 +1869,43 @@ print(mevalar[2])
 
 
 
-# # .keys()
+#.keys() bu metod lug'atning ichidagi har bir kalitni qaytaradi
+
+
 #mahsulotlar = {
 #     'olma':10000,
 #     'anor':20000,
 #     'uzum':40000,
 #     'anjir':25000,
-#     'shaftoli':30000
+#     'shaftoli':30000,
+#     'kiwi': 55000,
+#    'limon': 15000
 #     }
 
 #print(mahsulotlar.keys())
-#
+
 #print('Do\'kondagi mahsulotlar:')
 #for mahsulot in mahsulotlar.keys():
 #     print(mahsulot.title())
-#
+
+
+
+
 #print('Do\'kondagi mahsulotlar:')
-#for mahsulot in mahsulotlar:
+#for mahsulot in mahsulotlar:  # .keys metodidan foydalanmasak ham same result
 #     print(mahsulot.title())
-#
-#bozorlik = ['anor','uzum','non','baliq']
+
+
+
+
+
+
+#bozorlik = ['anor','uzum','non','baliq','limon']
 #for mahsulot in mahsulotlar:
 #     if mahsulot in bozorlik:
 #         print(f"{mahsulot.title()} {mahsulotlar[mahsulot]} so'm")
+
+
 
 #for buyum in bozorlik:
 #     if buyum not in mahsulotlar:
@@ -1721,32 +1913,37 @@ print(mevalar[2])
          
          
          
-         
-         
-         
-        
-# # LUG'AT ELEMENTLARINI TARTIB BILAN CHIQARISH
-# print("Do'konimizdagi mahsulotlar:")    
-# for mahsulot in sorted(mahsulotlar): #LUG'AT ICHIDAGI ELEMENTLARNI TAXLASH ALIFBO TARTIBIDA
-#     print(mahsulot.title())
+    
+#lug'at elementlarini tartib bilan chiqarish
+
+#print("Do'konimizdagi mahsulotlar:")    
+#for mahsulot in sorted(mahsulotlar): #elementlarni alifbo tartibida taxlash
+#    print(mahsulot.title())
+    
+    
     
 
 
 
+#.values()  #LUG'ATLARDAN FAQAT QIYMATLAR OLINADI
 
+#telefonlar = {
+#     'ali':'Iphone X',
+#    'vali':'Galaxy S9',
+#     'olim':'MI 10 pro',
+#    'elbek' : 'Samsung Galaxy A31' ,
+#    'orif':'Nokia 3330'
+#     }
 
-
-
-
-# # .values()  #LUG'ATLARDAN FAQAT QIYMATLAR OLINADI
-#print(telefonlar.values())
+#print(telefonlar.values())  #.values metodi qiymatlarni chiqaradi
 
 #print('Foydalanuvchilar quyidagi telefonlarni ishlatishadi:')
 #for tel in telefonlar.values():
 #     print(tel)
 
 
-# # set  #ELEMENTLARNI TAKRORLAMAGAN HOLDA
+
+#set  #lug'atdagi qiymat elementlari bir xil bo'lganda faqatgina bittasini olish uchun
 
 #telefonlar = {
 #     'ali':'iphone x',
@@ -1755,7 +1952,7 @@ print(mevalar[2])
 #     'orif':'nokia 3310',
 #     'hamida':'galaxy s9',
 #     'maryam':'huawei p30',
-#     'tohir':'iphone x',
+#    'tohir':'iphone x',
 #     'umar':'iphone x'    
 #     }
 
@@ -1763,86 +1960,198 @@ print(mevalar[2])
 #for tel in telefonlar.values():
 #     print(tel)
     
-# # set
+#set funksiyasidan foydalanamiz
 #print('Foydalanuvchilar quyidagi telefonlarni ishlatishadi:')
 #for tel in set(telefonlar.values()):
 #     print(tel)
 
-#toys = {"ball","car","lamp","ball"}
 
 
-#python_words = {
-#    'integer':'Butun son',
-#    'float': "O'nlik son",
-#    'boolean':"Mantiqiy qiymat",
-#    'for':"Biror amalni qayta-qayta bajarish tsikli",
-#    'if':'Shartlarni tekshirish operatori'}
-#
-#for key, value in sorted(python_words.items()):
+#toys = {"ball","car","lamp","ball","doll","car"} #toys degan set yaratildi {} yordamida
+#set ichida elementlar takrorlangan bo'lsa faqatgina bittasi olinadi
+#print(toys)
+
+
+#studentss = {'ali', 'vali', 'ali', 'ilhom'}
+#print(studentss)
+
+
+
+#Python izohli lug'atini yarating va lug'atga kamida 10 ta so'z qo'shing. 
+#Lug'atdagi har bir kalit va qiymatni for tsikli yordamida, alifbo 
+#ketma-ketligida chiroyli qilib konsolga chiqaring.
+
+
+#python = {'print': 'chop etish',
+#          'float': 'o\'nli son',
+#          'integer': 'butun son',
+#         'string':'matn',
+#         'if': 'agar',
+#         'else': 'aks holda',
+#         'elif': 'aksincha',
+#          'lists':'ro\'yxat',
+#         'error':'xatolik',
+#        'variable': 'o\'zgaruvchi',
+#         'tuples': 'o\'zgarmas ro\'yxat'}
+
+
+
+#for key, value in sorted(python.items()):
 #    print(f"{key.title()} - {value}")
     
     
-    
-    
-    
-#davlatlar = {
-#    "o'zbekiston":'toshkent',
-#    'aqsh':'washington d.c.',
-#    'rossiya':'moskva',
-#    'tojikiston':'dushanbe',
-#    "qirg'iziston":'bishkek',
-#    'qozog\'iston':'nursulton',
-#    'malayziya':'kuala-lumpur',
-#    'singapur':'sungapur',
-#    'italiya':'rim'}
+#my_family = {'father':1974,
+#             'mother':1975,
+#             'me':1996,
+#             'sister':1999,
+#             'brother':2002}
 
-#print('Dunyo davlatlari:')
+#print(my_family)
+#for member, bd in my_family.items():
+#    print(f"My {member} was born in {bd}") 
+    
+ 
+    
+ 
+    
+ #Davlatlar va ularning poytaxtlari lug'atini tuzing. 
+ #Avval lug'atdagi davlatlarni, keyin poytaxtlarni alohida-alohida, 
+ #alifbo ketma-ketligida konsolga chiqaring. 
+ 
+ 
+ 
+#davlatlar = {
+#    "Uzbekiston":'Tashkent',
+#    'USA':'Washington',
+#    'Rossiya':'Moscow',
+#    'Tajikistan':'Dushanbe',
+#    "Kyrgyzstan":'Bishkek',
+#    'Kazakhstan':'Almaty',
+#   'Malaysia':'Kuala-lumpur',
+#   'Singapur':'Singapur',
+#   'Italy':'Rome'
+#    }
+
+#print(davlatlar)
+
+#print('random list of countries:')
+#for d in sorted(davlatlar.keys()):  #.keys metodidan foydalanmasak ham same result
+#     print(d.upper())
+     
+#print('random list of cities:')
+#for p in sorted(davlatlar.values()):
+#    print(p.upper())
+
+#for d, p in sorted(davlatlar.items()):
+#    print(f"{p} is the capital of {d}")
+
+
+
+#Foydalanuvchidan istalgan davlatni kiritishni so'rang va shu davlatning 
+#poytaxtini konsolga chiqaring. Agar foydalanuvchi lug'atda yo'q davlatni 
+#kiritsa, "Bizda bunday ma'lumot yo'q" degan xabarni chiqaring.
+
+#davlatlar = {
+#    "uzbekistan":'Tashkent',
+#    'usa':'Washington',
+#    'rossiya':'Moscow',
+#   'tajikistan':'Dushanbe',
+#   "kyrgyzstan":'Bishkek',
+#   'kazakhstan':'Almaty',
+#   'malaysia':'Kuala-lumpur',
+#   'singapur':'Singapur',
+#   'italy':'Rome'
+#    }
+
+#print("Dunyo davlatlari:")
 #for davlat in sorted(davlatlar):
 #    print(davlat.upper())
 
-#print('\nDavlatlarning poytaxtlari')
+#print("\nDavlatlarning poytaxtlari")
 #for poytaxt in sorted(davlatlar.values()):
 #    print(poytaxt.title())
 
-#country = input('Qaysi davlatning poytaxtini bilishni istaysiz?:').lower()
+#country = input("Qaysi davlatning poytaxtini bilishni istaysiz?:").lower()
 #capital = davlatlar.get(country)
-#if capital==None:
-#    print('Kechirasiz, bizda bu haqida ma\'lumot yo\'q')    
+#if capital == None:
+#    print("Kechirasiz, bizda bu haqida ma'lumot yo'q")
 #else:
 #    print(f"{country.upper()}ning poytaxti {capital.title()} shahri")
 
 
 
 
+#Restoran menusi lug'atini tuzing (kamida 10 ta taom-narh juftligini kiriting). 
+#Foydalanuvchidan 3 ta ovqat buyurtma berishni so'rang. 
+#Foydalanuvchi kiritgan taomlarni menu bilan solishtiring, 
+#agar taom menuda bo'lsa narhini ko'rsating, aks holda "bizda bunday 
+#taom yo'q" degan xabarni chiqaring.
+
+
 #menu = {
 #        'osh':20000,
 #        "lag'mon":22000,
 #        'non':4000,
-#        'choy':5000,
-#        'shashlik':12000,
-#        'somsa':6000,
-#        'tabaka':15000
+#       'choy':5000,
+#       'shashlik':12000,
+#       'somsa':6000,
+#        'tabaka':15000,
+#       'mastava':22000,
+#       'manti':5000,
+#       'chuchvara':15000
 #        }
 
 #print('3 ta taom buyurtma bering.')
 #buyurtmalar = []
 #for n in range(3):
 #    buyurtmalar.append(input(f"{n+1}-taom:").lower())
-#
+
 #for buyurtma in buyurtmalar:
 #    if buyurtma in menu:
 #        print(f"{buyurtma.title()} {menu[buyurtma]} so'm")
+#   else:
+#       print(f"Kechirasiz, bizda {buyurtma} yo'q.")
+
+
+#cars = {'kia k5': 55000000,
+#        'kia k7': 65000000,
+#        'kia k8': 72000000,
+#       'kia stinger': 88000000,
+#       'kia carnival':95000000,
+#       'kia seltos': 75000000,
+#       'kia optima':10000000
+#        }
+
+#print(cars)
+
+#print("KIA")
+#for k in sorted(cars):
+#    print(k.upper())
+
+#print("************")    
+#print("PRICELIST")
+#for p in cars.values():
+#    print(p)    
+
+#print("ENTER THE CAR NAME:")
+#wishlist = []
+#for n in range(3):
+#    wishlist.append(input(f"{n+1}-car:").lower())
+
+#for wish in wishlist:
+#    if wish in cars:
+#        print(f"{wish.title()} {cars[wish]} won")
 #    else:
-#        print(f"Kechirasiz, bizda {buyurtma} yo'q.")
+#       print(f"Kechirasiz, bizda {wish} yo'q.")
 
 
 
 
 
 
+#***************************** DARS 16 ********************
+#lug'atlar ro'yxati #nesting
 
-#16DARS               05.08.2022
-#LUG'ATLAR RO'YXATI
 
 
 
@@ -1851,10 +2160,12 @@ print(mevalar[2])
 #        'model':'lacetti',
 #        'rang':'oq',
 #        'yil':1999,
-#        'narx':13000,
-#        'km':50000,
+#       'narx':13000,
+#       'km':50000,
 #        'korobka':'avtomat'
-#        }
+#       }
+
+
 
 #car1 = {
 #        'model':'nexia 3',
@@ -1865,6 +2176,8 @@ print(mevalar[2])
 #        'korobka':'mexanika'
 #        }
 
+
+
 #car2 = {
 #        'model':'gentra',
 #        'rang':'qizil',
@@ -1873,6 +2186,7 @@ print(mevalar[2])
 #        'km':20000,
 #        'korobka':'mexanika'
 #        }
+
 
 
 #car = car0
@@ -1889,21 +2203,28 @@ print(mevalar[2])
 #print(f"{car['model'].title()}, "
 #       f"{car['rang']} rang, "
 #       f"{car['yil']}-yil, {car['narx']}$")
-#  
+#
+
+
+
+  
 #cars = [car0, car1, car2]
 #for car in cars:
 #     print(f"{car['model'].title()}, "
 #           f"{car['rang']} rang, "
 #           f"{car['yil']}-yil, {car['narx']}$")
 
+
+
 #print(cars[0]['model'])
-#
+
 #print(f"{cars[2]['rang'].title()} "
 #       f"{cars[2]['model']}")
-#
+
 #print(f"{cars[0]['rang'].capitalize()}")
 #print(f"{cars[2]['km']*22}")
-
+#print(f"{cars[0]['rang'].upper()}"
+#      )
 
 
 
@@ -1922,25 +2243,34 @@ print(mevalar[2])
 #       'korobka':'avto'
 #        }
 #    malibus.append(new_car)
-#
+
 #for malibu in malibus:
 #     print(malibu)
+
+
 
 #for malibu in malibus[:3]:
 #    malibu['rang']='qizil'
 
 #for malibu in malibus:
 #   print(malibu)
-
+#
 #for malibu in malibus[3:6]:
 #    malibu['rang']='qora'
+#
+#for malibu in malibus:
+#     print(malibu)
+
+#for malibu in malibus:
+#   malibu['rang']='qora'
+#   malibu['korobka']='mexanika'
 
 #for malibu in malibus:
 #     print(malibu)
 
-#   malibu['rang']='qora'
-#   malibu['korobka']='mexanika'
-
+#for malibu in malibus[:5]:
+#    malibu['korobka']='avto'
+    
 #for malibu in malibus:
 #     print(malibu)
      
@@ -1957,9 +2287,14 @@ print(mevalar[2])
 #        malibu['narh']=40000
 #    else:
 #        malibu['narh']=35000
-#    
+    
 #for malibu in malibus:
 #    print(malibu)
+
+
+
+
+
 
 
 
@@ -1968,10 +2303,12 @@ print(mevalar[2])
 #    'vali':['html','css','js'],
 #    'hasan':['php','sql'],
 #    'husan':['python','php'],
-#    'maryam':['c++','c#']
+#   'maryam':['c++','c#']
 #    }
 
-#for ism, tillar in dasturchilar.items():
+
+
+#for ism,  tillar in dasturchilar.items():
 #    print(f"\n{ism.title()} quyidagi dasturlash tillarini biladi:")
 #    for til in tillar:
 #        print(til.upper())
@@ -1980,38 +2317,63 @@ print(mevalar[2])
 #    print(f"\n{ism.title()} quyidagi dasturlash tillarini biladi:", end='')
 #    for til in tillar:
 #        print(f'{til.upper()} ', end='')
+   
     
+   
     
+   
     
+#coursemates = {
+#    'qutbiddin':['english','russian'],
+#    'shoxrux':['russian', 'french'],
+#   'abbos':['uzbek', 'kazak'],
+#   'shaxzod':['german','uzbek'],
+#   'farxod':['english','spanish']
+#    }
+
+#print(coursemates)
+
+#for ism, tillar in coursemates.items():
+#    print(f"\n{ism.title()} knows")
+#    for til in tillar:
+#        print(f"{til.upper()}")
+    
+  
+
+  
 #hamkasblar = {
 #    'ali':{'familiya':'valiyev',
 #           'tyil':1995,
-#           'malumot':'oliy',
-#           'tillar':['python','c++']
-#           },
-#    'vali':{'familiya':'aliyev',
+#          'malumot':'oliy',
+#          'tillar':['python','c++']
+#          },
+#   'vali':{'familiya':'aliyev',
 #            'tyil':2001,
 #            'malumot':"o'rta-maxsus",
 #            'tillar':['html', 'css', 'js']},
-#    'hasan':{'familiya':'husanov',
-#             'tyil':1999,
-#             'malumot':'maxsus',
-#             'tillar':['python','php']}
-#    }
-#
+#   'hasan':{'familiya':'husanov',
+#            'tyil':1999,
+#            'malumot':'maxsus',
+#            'tillar':['python','php']}
+#   }
+
+
+
 #for ism, info in hamkasblar.items():
 #    print(f"\n{ism.title()} {info['familiya'].title()}, "
 #          f"{info['tyil']}-yilda tug'ilgan. "
 #          f"Ma'lumoti: {info['malumot']}. \n"
-#          "Quyidagi dasturlash tillarini biladi:")
-#    for til in info['tillar']:
-#        print(til.upper())    
+#         "Quyidagi dasturlash tillarini biladi:")
+#   for til in info['tillar']:
+#       print(til.upper())    
 
 
 
 
 
-
+#Adabiyot (ilm-fan, san'at, internet) olamidagi 4 ta mashxur shaxlar haqidagi 
+#ma'lumotlarni lug'at ko'rinishida saqlang. Lug'atlarni bitta ro'yxatga joylang, 
+#va har bir shaxs haqidagi ma'lumotni konsolga chiqaring.
 
 
 #buxoriy = {'ism':'Abu Abdulloh Muhammad ibn Ismoil',
@@ -2024,21 +2386,26 @@ print(mevalar[2])
 #           'tyil':1894,
 #           'vyil':1938,
 #           'tjoy':'Toshkent'
-#           }
-#
+#          }
+
 #vohidov = {'ism':'Erkin Vohidov',
 #           'tyil':1936,
 #           'vyil':2016,
-#           'tjoy':"Farg'ona"
+#          'tjoy':"Farg'ona"
 #           }
 
 #navoiy = {'ism':'Alisher Navoiy',
 #           'tyil':1441,
-#           'vyil':1501,
-#           'tjoy':"Xirot"
-#           }
-
-#shaxslar = [buxoriy, qodiriy, vohidov, navoiy]
+#          'vyil':1501,
+#          'tjoy':"Xirot"
+#          }
+#
+#oripov = {'ism':'Abdulla Oripov',
+#          'tyil':1941,
+#          'vyil':2016,
+#         'tjoy': 'qashqadaryo'}
+#
+#shaxslar = [buxoriy, qodiriy, vohidov, navoiy, oripov]
 
 #for shaxs in shaxslar:
 #    ism = shaxs['ism']
@@ -2047,87 +2414,187 @@ print(mevalar[2])
 #    tjoy = shaxs['tjoy']
 #    print(f"{ism} {tyil}-yilda {tjoy}da tavallud topgan. "
 #          f"{vyil-tyil} yil umr ko'rgan.")
+
+
+
+
+#Yuqoridagi lug'atlarga har bir shaxsning mashxur asarlari ro'yxatini ham qo'shing. 
+#For tsikli yordamida muallifning ismi va uning asarlarini konsolga chiqaring.
+
+
+#buxoriy = {'ism':'Abu Abdulloh Muhammad ibn Ismoil',
+#           'tyil':810,
+#           'vyil':870,
+#           'tjoy':'Buxoro',
+#          'asarlar':['qqqqq','wwwww','eeeee']}
+
+#qodiriy = {'ism':'Abdulla Qodiriy',
+#           'tyil':1894,
+#           'vyil':1938,
+#          'tjoy':'Toshkent',
+#          'asarlar':['rrrrr','ttttt','yyyyy']}
+
+#vohidov = {'ism':'Erkin Vohidov',
+#           'tyil':1936,
+#           'vyil':2016,
+#         'tjoy':"Farg'ona",
+#          'asarlar':['uuuuuu','iiiii','ooooo']}
+
+#navoiy = {'ism':'Alisher Navoiy',
+#           'tyil':1441,
+#          'vyil':1501,
+#          'tjoy':"Xirot",
+#          'asarlar':['pppp','aaaaa','ssssss']}
+
+#oripov = {'ism':'Abdulla Oripov',
+#          'tyil':1941,
+#          'vyil':2016,
+#         'tjoy': 'qashqadaryo',
+#         'asarlar':['dddd','ffff','ggggg']}
+
+
+#mualliflar = [buxoriy, qodiriy, vohidov, navoiy, oripov]
+#for muallif in mualliflar:
+#    ism = muallif['ism']
+#    asarlar = muallif['asarlar']
+#    print(f"{ism}")
+#    for asar in asarlar:
+#        print(f'{asarlar} ni yozgan')
+        
+        
+          
+#buxoriy = {
+#    "ism": "Abu Abdulloh Muhammad ibn Ismoil",
+#    "tyil": 810,
+#    "vyil": 870,
+#   "tjoy": "Buxoro",
+#   "asarlar": [
+#       "Al-jome’ as-sahih",
+#       "Al-adab al-mufrad",
+#       "At-tarix al-kabir",
+#        "At-tarix as-sag‘ir",
+#    ],
+#}
+
+#qodiriy = {
+#    "ism": "Abdulla Qodiriy",
+#    "tyil": 1894,
+#    "vyil": 1938,
+#    "tjoy": "Toshkent",
+#    "asarlar": ["O'tkan kunlar", "Mehrobdan Chayon", "Obid ketmon"],
+#}
+
+#vohidov = {
+#    "ism": "Erkin Vohidov",
+#    "tyil": 1936,
+#    "vyil": 2016,
+#    "tjoy": "Farg'ona",
+#    "asarlar": ["Tong nafasi", "Qo'shiqlarim sizga", "O'zbegim", "Qiziquvchan Matmusa"],
+#}
+
+#navoiy = {
+#    "ism": "Alisher Navoiy",
+#    "tyil": 1441,
+#    "vyil": 1501,
+#    "tjoy": "Xirot",
+#    "asarlar": ["Xamsa", "Lison ut-Tayr", "Mahbub Al-Qulub", "Munojot"],
+#}
+
+#shaxslar = [buxoriy, qodiriy, vohidov, navoiy]
+
+#for shaxs in shaxslar:
+#    ism = shaxs['ism']
+#    asarlar = shaxs['asarlar']
+#    ism = shaxs["ism"]
+#    asarlar = shaxs["asarlar"]
+#    print(f"\n{ism} ning mashxur asarlari: ")
+#    for asar in asarlar:
+#        print(asar)
+
+
+
+
+#for shaxs in shaxslar:
+#    ism = shaxs['ism']
+#    tyil = shaxs['tyil']
+#    vyil = shaxs['vyil']
+#    tjoy = shaxs['tjoy']
+#    print(f"{ism} {tyil}-yilda {tjoy}da tavallud topgan. "
+#          f"{vyil-tyil} yil umr ko'rgan.")
+
+
+
+
+#Oila a'zolaringiz (do'stlaringiz) dan 3 ta sevimli kino-seriali haqida so'rang. 
+#Do'stingiz ismi kalit, uning sevimli kinolarini esa ro'yxat ko'rinishida 
+#lug'artga saqlang.  Natijani konsolga chiqaring.
+
+
     
-    
-    
-#talaba1 = {'ism' : 'Qutbiddin Boboniyozov',
+#friend1 = {'ism' : 'Qutbiddin Boboniyozov',
 #           'tyil' : 1998,
 #           'malumoti' : 'oliy',
-#           'manzili': 'navoiy',
+#           'manzili': 'Navoiy shahri',
 #           'kasbi': 'muhandis elektrik',
-#           'kinolar':["interstellar","tenet", "yes man"]
-#           }
+#          'kinolar':["interstellar","tenet", "yes man"]
+#          }
 
-#talaba2 = {'ism' : 'Abbos Abduganiyev',
+
+#friend2 = {'ism' : 'Abbos Abduganiyev',
 #           'tyil': 1999,
 #           'malumoti': 'oliy',
-#           'manzili' : 'samarqand',
-#           'kasbi': 'director',
+#          'manzili' : 'Samarqand viloyati',
+#          'kasbi': 'director',
 #           'kinolar':["cable guy","spiderman","avengers"]
 #           }
 
-#talaba3 = {'ism': 'Ashurov Shoxrux',
+
+#friend3 = {'ism': 'Ashurov Shoxrux',
 #           'tyil':1998,
-#           'malumoti': 'oliy',
-#           'manzili' : 'navoiy shahri',
+#          'malumoti': 'oliy',
+#          'manzili' : 'Navoiy shahri',
 #           'kasbi' : 'harbiy leytenant',
 #           'kinolar':["fast and furious", "john wick","ferdinant"]
-#           }
-#
-#talabalar = [talaba1, talaba2, talaba3]
-#
-#for talaba in talabalar:
-#   ism = talaba['ism']
-#   kinolar = talaba['kinolar']
+#          }
+
+
+#friends = [friend1, friend2, friend3]
+
+#for friend in friends:
+#   ism = friend['ism']
+#   kinolar = friend['kinolar']
 #   print(f"\n{ism} ning tomosha qilgan kinolari:")
 #   for kino in kinolar:
-#      print(kino)
+#     print(kino)
    
    
    
-#    tyil = talaba['tyil']
-#    malumoti = talaba['malumoti']
-#    manzili = talaba['manzili']
-#    kasbi = talaba['kasbi']
-#    print(f"{'ism'} {'tyil'}da {'manzili'}da tavallud topgan."
-#          f"{'kasbi'} lavozimida ishlaydi.")
-    
-
-
-#kinolar = {
-#    'ali':['Terminator','Rambo','Titanic'],
-#    'vali':['Tenet','Inception','Interstellar'],
-#    'hasan':['Abdullajon','Bomba','Shaytanat'],
-#    'husan':['Mahallada duv-duv gap','John Wick'],
-#    'sherzod':['inception','minions','avengers']
-#    }
-
-#for ism, kinolar in kinolar.items():
-#    print(f"\n{ism.title()}ning sevimli kinolari:")
-#    for kino in kinolar:
-#        print(kino)
-        
-        
+#Davlatlar degan lug'at yarating, lug'at ichida bir nechta davlatlar haqida 
+#ma'lumotlarni lug'at ko'rinishida saqlang. Har bir davlat haqida ma'lumotni 
+#konsolga chiqaring. 
+  
+           
 #davlatlar = {
 #    "o'zbekiston":{'poytaxt':"toshkent",
 #                   'maydon':448978,
 #                   'aholi':33_000_000,
-#                   'pul birligi':"so'm"
-#                   },
-#    "rossiya":{'poytaxt':"moskva",
+#                   'pul birligi':"so'm"},
+    
+#    'Rossiya' : {'poytaxt':"moskva",
 #                   'maydon':17_098_246,
 #                   'aholi':144_000_000,
-#                   'pul birligi':"rubl"
-#                   },
+#                   'pul birligi':"rubl"},
+    
 #    "aqsh":{'poytaxt':"vashington",
 #                   'maydon':9_631_418,
 #                   'aholi':327_000_000,
 #                  'pul birligi':"dollar"},
+#    
 #    "malayziya":{'poytaxt':"kuala-lumpur",
 #                   'maydon':329750,
 #                   'aholi':25_000_000,
-#                   'pul birligi':"rinngit"}
-#    }
+#                   'pul birligi':"rinngit"}}
+
 
 #for davlat, info in davlatlar.items():
 #    if davlat.lower()=='aqsh':
@@ -2141,7 +2608,10 @@ print(mevalar[2])
 
 
 
-
+#Yuqoridagi dasturga o'zgartirish kiriting: konsolga barcha davlatlarni emas, 
+#foydalanuvchi so'ragan davlat haqida ma'lumot bering. Agar davlat sizning 
+#lug'atingizda mavjud bo'lmasa, "Bizda bu davlat haqida ma'lumot yo'q" 
+#degan xabarni chiqaring.
 
 
 
@@ -2149,22 +2619,24 @@ print(mevalar[2])
 #    "o'zbekiston":{'poytaxt':"toshkent",
 #                   'maydon':448978,
 #                   'aholi':33_000_000,
-#                   'pul birligi':"so'm"
-#                   },
+#                   'pul birligi':"so'm"},
+#    
 #    "rossiya":{'poytaxt':"moskva",
 #                   'maydon':17_098_246,
 #                   'aholi':144_000_000,
-#                   'pul birligi':"rubl"
-#                   },
+#                  'pul birligi':"rubl"},
+#    
 #    "aqsh":{'poytaxt':"vashington",
 #                   'maydon':9_631_418,
 #                   'aholi':327_000_000,
 #                   'pul birligi':"dollar"},
+#    
 #   "malayziya":{'poytaxt':"kuala-lumpur",
 #                   'maydon':329750,
 #                   'aholi':25_000_000,
-#                   'pul birligi':"rinngit"}
-#    }
+#                   'pul birligi':"rinngit"}}
+
+
 
 #davlat = input('Davlat nomini kiriting: ').lower()
 #if davlat in davlatlar:
@@ -2179,43 +2651,58 @@ print(mevalar[2])
 
 
 
-#17DARS               11.08.2022   ************************************
+
+
+#***************************** DARS 17 ********************
 
 
 #input()
+
 #ism = input("Ismingiz nima? ")
 #savol = f"Salom, {ism.title()}. Yoshingiz nechida? "
 #yosh = input(savol)
 #yosh = int(yosh)
 #height = input("Bo'yingiz necha metr? ") #butun son
-#height = float(height)                    # o'nli son
+#eight = float(height)                    # o'nli son
+#eight = input('vazningiz necha kilogram: ')
+#eight = float(weight)
+
+
+#if height>1.50 and yosh<15 and weight<50:
+#    print("you are normal")
+    
 
 
 
-
- #while()
+#while()
  
 #son = 1 # son ga 1 qiymatini beramiz
-#while son<=9: # toki son 5 dan kichik yoki teng ekan...
+#while son<=100: # toki son 9 dan kichik yoki teng ekan...
 #    print(son, end=' ') # son ni konsolga chiqaramiz
 #    son = son + 1
 #    #son += 1 # songa 1 qo'shamiz
 #print("dastur tugadi")
 
 
-   #while and input
+
+
+#while and input
+   
 #print("Kiritilgan sonning kvadratini qaytaruvchi dastur.")
 #savol = "Istalgan son kiriting "
 #savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
-#qiymat = ''
+#qiymat = '' #qiymat degan o'zgaruvchiga bo'sh matnni yuklab olamiz.
 #while qiymat != 'exit': # qiymat 'exit' ga teng bo'lmaganga qadar 
 #     qiymat = input(savol)
 #     if qiymat != 'exit': 
-#         print(float(qiymat)**2)
+#        print(float(qiymat)**2)
 #print('Dastur tugadi')
 
+
+
     
-# # ishora
+#ishora
+
 #print("Kiritilgan sonning kvadratini qaytaruvchi dastur.")
 #savol = "Istalgan son kiriting "
 #savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
@@ -2230,9 +2717,9 @@ print(mevalar[2])
 
 
 
-     #break while
-     
-     
+
+#break while   #codni break operatori bilan to'xtatish
+          
 #print("Kiritilgan sonning kvadratini qaytaruvchi dastur.")
 #savol = "Istalgan son kiriting "
 #savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
@@ -2247,41 +2734,52 @@ print(mevalar[2])
 
 
 
-## break for
+
+#break for
 
 #sonlar = list(range(1,11))
 #for son in sonlar:
 #     if son == 5:
 #         break
-#     print(f"{son} ning kvadrati {son**2} ga teng")
+#    print(f"{son} ning kvadrati {son**2} ga teng")
 
 
 
 
-# CONTINUE
+#continue
 
-#sonlar = list(range(1,11))
+#sonlar = list(range(1,111))
 #for son in sonlar:
-#     if son == 5:
+#     if son == 11: #11 ga to'xtamasdan o'tish
 #         continue
 #     print(f"{son} ning kvadrati {son**2} ga teng")
 
 
 
 
-# # # Continue while
+#continue while
 
 #son = 0
 #while son<10:
 #     son += 1
-#     if son%2==0:
+#     if son%2==0: # sonni juft yoki toqligini aniqlash
 #         continue
-#     else:
+#    else:
 #         print(son)
 
 
+#son = 0
+#while son<10:
+#     son += 1
+#     if son%2!=0: # sonni juft yoki toqligini aniqlash
+#         continue
+#    else:
+#        print(son)     #DASTURNI TO'XTATISH     CTRL C
 
-# infinite loop
+
+
+
+#infinite loop
 
 
 #son = 0
@@ -2293,6 +2791,8 @@ print(mevalar[2])
 #         print(son)
 
 
+
+
 # son = 0
 # while son<10:    
 #     if son%2!=0:
@@ -2300,6 +2800,8 @@ print(mevalar[2])
 #     else:
 #         print(son)
 #     son += 1
+
+
 
 # son = 1
 # while son>0: 
@@ -2310,18 +2812,20 @@ print(mevalar[2])
 #         print(son)
     
         
-#**************************AMALIYOT
 
 
-#1.Foydalanuvchidan yaxshi ko'rgan kitoblarini kiritishni so'rang.
+
+
+#Foydalanuvchidan yaxshi ko'rgan kitoblarini kiritishni so'rang.
 #Foydalanuvchi stop so'zini yozishi bilan dasturni to'xtating.
 
 #while and input
 
+
 #print("YAXSHI KO\'RGAN KITOBLARNI KO\'RSATUVCHI DASRTUR.")
 #savol = "WRITE YOUR FAVOURITE BOOKS:>>> "
 #savol += "(dasturni to'xtatish uchun 'stop' deb yozing): "
-#qiymat = ''
+#qiymat = '' #Qiymatga bo'sh matn berish
 #while qiymat != 'stop':   # qiymat 'stop' ga teng bo'lmaganga qadar 
 #     qiymat = input(savol)
 #     if qiymat != 'stop': 
@@ -2339,20 +2843,22 @@ print(mevalar[2])
 
  
  
-#2. Muzeyga chipta narhi foydalanuvchining yoshiga bog'liq:
-#7 dan yoshlarga - 2000 so'm, 7-18 gacha 3000 so'm, 
-#18-65 gacha 10000 so'm, 65 dan kattalarga bepul. 
+ 
+ 
+ 
+#Muzeyga chipta narxi foydalanuvchining yoshiga bog'liq:
+#7 dan yoshlarga - 2000 so'm,
+# 7-18 gacha 3000 so'm, 
+#18-65 gacha 10000 so'm, 
+#65 dan kattalarga bepul. 
+
 #Shunday while tsikl yozingki,
-#dastur foydalanuvchi yoshini so'rasin va chipta narhini chiqarsin.
+#dastur foydalanuvchi yoshini so'rasin va chipta narxini chiqarsin.
 #Foydalanuvchi exit yoki quit deb yozganda dastur to'xtasin 
 #(ikkita shartni ham tekshiring).
 
 #Yuqoridagi dasturni turli usullarda yozib ko'ring
 #(break, ishora, yoki shart tekshirish)
-
-
-
-
 
 
 
@@ -2363,43 +2869,81 @@ print(mevalar[2])
 #    if qiymat == 'exit' or qiymat == 'quit':
 #        break
 #    yosh = int(qiymat)
-#   
-#   if yosh<7:
-#       narh = 2000
-#   elif 7<=yosh<18:
-#       narh = 3000
-#   elif 18<=yosh<65:
-#       narh = 10000
-#    else: narh = 0
+   
+#    if yosh<7:
+#       narx = 2000
+#    elif 7<=yosh<18:
+#       narx = 3000
+#    elif 18<=yosh<65:
+#      narx = 10000
+#    else: narx = 0
 #    
-#   if narh==0:
+#    if narx==0:
 #       print("Sizga chipta bepul")
-#   else:
-#       print(f"Chipta {narh} so'm")
+#    else:
+#       print(f"Chipta {narx} so'm")
+
+#10 gacha sanash dasturi
+#count = 1
+#while True: #abadiy tsikl
+#    print(count)
+#    count += 1
+#    if count > 10:
+#        break
+
+#count = 1 
+#while True: #abadiy tsikl
+#    print(count)
+#    count += 1 
+#    if count > 25:
+#        break
+
+
+#Infinite loop to take user input until they enter "stop":
+#while True:
+#    user_input = input("Enter something: ")
+#    if user_input == "stop":
+#        break
+#    else:
+#        print("You entered:", user_input)
+#print('the end')
+
+
+#Running a timer for a given number of seconds:
+
+#import time
+
+#seconds = int(input("Enter number of seconds: "))
+#start_time = time.time()
+#while True:
+#    current_time = time.time()
+#    if current_time - start_time > seconds:
+#        print("Time's up!")
+#        break
+#    else:
+#        print("Time elapsed:", current_time - start_time)
+#        time.sleep(1)
 
 
 
-#3. Quyidagi dasturda bir nechta mantiqiy xatolar bor. 
+# program to continuously ask for a number until a positive number is entered
+
+#while True:
+#    num = int(input("Enter a positive number: "))
+#    if num > 0:
+#        print("Positive number entered:", num)
+#        break
+#    else:
+#        print("Please enter a positive number.")
+
+
+    
+
+
+#Quyidagi dasturda bir nechta mantiqiy xatolar bor. 
 #Jumladan, xusisiy holatlarda tsikl abadiy qaytarilib qolmoqda. 
 #Xatolarni to'g'rilay olasizmi?
-
-
-#avol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
-#savol += "Musbat son kiriting "
-#savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
-
-#hile True:
-#    qiymat = input(savol)
-#    qiymat = float(savol)
-#    if qiymat>0:
-#       continue
-#   elif qiymat=='Exit':
-#       break
-#   else:
-#        ildiz = float(qiymat)**(0.5)
-#        
-#        print(f"{qiymat} ning ildizi {ildiz} ga teng") 
-        
+       
         
 #savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
 #savol += "Musbat son kiriting "
@@ -2414,27 +2958,52 @@ print(mevalar[2])
 #   else:
 #       ildiz = float(qiymat)**(0.5)
 #       print(f"{qiymat} ning ildizi {ildiz} ga teng")
+
+
+
   
+#savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+#savol += "Musbat son kiriting "
+#savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+#while True:
+#    qiymat = input(savol)
+#    if qiymat == 'exit':
+#        break
+#    else:
+#        qiymat = float(qiymat)
+#        if qiymat > 0:
+#            ildiz = float(qiymat)**(0.5)
+#            print(f"{qiymat} ning ildizi {ildiz} ga teng")
+#        else:
+#            print("Musbat son kiriting")
 
 
-#18DARS        12.08.2022*****************************************************
 
 
+
+
+
+
+
+
+
+#***************************** DARS 18 ********************
 
 
 #print("Yaqin do'stlaringiz ro'yxatini tuzamiz.")
-#ismlar = [] #bo'sh ro'yxat
-#n=1 # ismlarni sanash uchun o'zgaruvchi
+#ismlar = []        #bo'sh ro'yxat
+#n=1                # ismlarni sanash uchun o'zgaruvchi
 #while True:
 #    savol = f"{n}-do'stingiz ismini kiriting:"
 #    ism = input(savol)
 #    ismlar.append(ism)
 #    takrorlash = input("Yana ism qo'shasizmi? (ha/yo'q)")
 #    n+=1
-#   if takrorlash != 'ha': #agar takrorlash 'ha' ga teng bolmasa
+#    if takrorlash != 'ha': #agar takrorlash 'ha' ga teng bolmasa
 #        break
 
-    
+   
 #print("Do'stlaringiz ro'yxati:")
 #for ism in ismlar:
 #    print(ism.title())
@@ -2443,31 +3012,33 @@ print(mevalar[2])
 
 
 
+#WHILE TSIKLI YORDAMIDA LUG'AT YARATISH 
 
 #print("Do'stlaringiz yoshini saqlaymiz.")
-#dostlar = {} #  BO'SH LUG'AT YARATIB OLAMIZ 
+#dostlar = {}        #  BO'SH LUG'AT YARATIB OLAMIZ 
 #ishora = True 
 #while ishora:
 #    ism = input("Do'stingiz ismini kiriting: ")
 #    yosh = input(f"{ism.title()}ning yoshini kiriting: ")
 #    dostlar[ism] = int(yosh)    
-#   
+#  
 #    javob = input("Yana ma'lumot qo'shasizmi? (ha/yo'q)")
-#   if javob == "yo'q":
+#    if javob == "yo'q":
 #        ishora = False
-#
+
 #for ism, yosh in dostlar.items():
 #    print(f"{ism.title()} {yosh} yoshda")
 
 
 
 
+# WHILE tsikli yordamida .remove dan foydalanish
 
 #cars = ['lacetti','nexia','toyota','nexia','audi','malibu','nexia','lacetti']
-#car = 'lacetti'
+#car = 'nexia'
 #while car in cars:
 #    cars.remove(car)
-#
+
 #print(cars)
 
 
@@ -2478,7 +3049,7 @@ print(mevalar[2])
 #car = 'bugatti' 
 #while car in cars: #toki 'car' 'cars' royxatida ekan quyidagi amal bajarilsin
 #    cars.remove(car) 
-#    
+    
 #print(cars)
 
 
@@ -2494,24 +3065,22 @@ print(mevalar[2])
 
 
 
-#                             AMALIYOT
 
-
-
-#1.Foydalanuvchidan buyurtma qabul qiluvchi dastur yozing. 
+#.Foydalanuvchidan buyurtma qabul qiluvchi dastur yozing. 
 #Mahsulotlar nomini birma-bir qabul qilib, yangi ro'yxatga joylang.
 
 
+
 #print("BUYURTMA QABUL QILUVCHI DASTUR.")
-#mahsulotlar = [] #bo'sh ro'yxat
-#n=1 # mahsulot sanash uchun o'zgaruvchi
+#mahsulotlar = []    #bo'sh ro'yxat
+#n=1                 #mahsulot sanash uchun o'zgaruvchi
 #while True:
 #    savol = f"{n}-mahsulot nomini kiriting:"
 #    mahsulot = input(savol)
 #    mahsulotlar.append(mahsulotlar)
-#    takrorlash = input("Yana mahsulot qo'shasizmi? (ha/yo'q)")
+#   takrorlash = input("Yana mahsulot qo'shasizmi? (ha/yo'q)")
 #   n+=1
-#    if takrorlash != 'ha': #agar takrorlash 'ha' ga teng bolmasa
+#   if takrorlash != 'ha': #agar takrorlash 'ha' ga teng bolmasa
 #        break
 
     
@@ -2519,7 +3088,7 @@ print(mevalar[2])
 #for mahsulot in mahsulotlar:
 #    print(mahsulot)
     
-    
+   
 #savat =[]
 #while True:
 #    mahsulot = input("Savatga mahsulot qo'shing:")
@@ -2533,31 +3102,56 @@ print(mevalar[2])
 
 
 
-#2.e-bozor uchun mahsulotlar va ularning narhlari 
+
+#print("BUYURTMA QABUL QILUVCHI DASTUR.")
+#mahsulotlar = []    #empty list
+#n = 1                #variable to count products
+#while True:
+#   savol = f"{n}-mahsulot nomini kiriting:"
+#   mahsulot = input(savol)
+#   mahsulotlar.append(mahsulot)
+#   takrorlash = input("Yana mahsulot qo'shasizmi? (ha/yo'q)")
+#   n += 1
+#   if takrorlash != 'ha':  #if takrorlash is not 'ha'
+#       break
+
+    
+#print("mahsulotlar ro'yxati:")
+#for mahsulot in mahsulotlar:
+#    print(mahsulot)
+
+
+
+
+
+
+# e-bozor uchun mahsulotlar va ularning narhlari 
 #lug'atini shakllantiruvchi dastur yozing. 
 #Foydalanuvchidan lug'atga bir nechta elementlar (mahsulot va uning narhi)
 #kiritishni so'rang.
 
+
+
 #print("mahsulotlar va ularning narxlari.")
-#mahsulotlar = {} #  BO'SH LUG'AT YARATIB OLAMIZ 
+
+#mahsulotlar = {}         #bo'sh lug'at yaratib olamiz 
 #ishora = True 
 #while ishora:
 #    mahsulot = input("mahsulotni kiriting: ")
 #    narx = input(f"{mahsulot.title()}ning narxini kiriting: ")
-#   mahsulotlar[mahsulot] = int(narx)    
-#  
+#    mahsulotlar[mahsulot] = int(narx)    
+  
 #    javob = input("Yana ma'lumot qo'shasizmi? (ha/yo'q)")
 #    if javob == "yo'q":
 #        ishora = False
-#
+
 #for mahsulot, narx in mahsulotlar.items():
 #    print(f"{mahsulot.title()} {narx} uzs turadi")
 
 
 
-#+mahsulotlar = {}
+#mahsulotlar = {}
 #while True:
-#    mahsulot = input("Mahsulot nomini kiriting: ")
 #    narh = input(f"{mahsulot.title()}ning narhini kiriting: ")
 #    mahsulotlar[mahsulot] = narh
 #    javob = input("Yana mahsulot qo'shasizmi?(ha/yo'q)")
@@ -2570,7 +3164,7 @@ print(mevalar[2])
 
 
 
-#3.Yuqoridagi ikki dasturni jamlaymiz. 
+#Yuqoridagi ikki dasturni jamlaymiz. 
 #Foydalanuvchi buyurtmasi ro'yxatidagi har bir mahsulotni e-bozordagi 
 #mahsulotlar bilan solishitiring (tayyor ro'yxat ishlatishingiz mumkin). 
 #Agar mahsuot e-bozorda mavjud bo'lsa mahuslot narhini chiqaring, 
@@ -2583,7 +3177,7 @@ print(mevalar[2])
 #               'shaftoli':25000,
 #               'tarvuz':18000,
 #               'uzum':22000}
-#
+
 #while buyurtmalar:
 #    buyurtma = buyurtmalar.pop()
 #    if buyurtma in mahsulotlar.keys():
@@ -2594,32 +3188,54 @@ print(mevalar[2])
 
 
 
+#Summing numbers entered by the user
+
+#sum = 0
+#number = 1
+#while number != 0:
+#    number = int(input("Enter a number (0 to quit): "))
+#    sum += number
+#print("The sum is", sum)
 
 
-#19dars        ****** 13.08.2022 ***************
+#Implementing a guessing game
+
+#import random
+
+#number = random.randint(1, 100)
+#guess = -1
+#while guess != number:
+#    guess = int(input("Enter your guess: "))
+#    if guess > number:
+#        print("Too high.")
+#    elif guess < number:
+#      print("Too low.")
+#rint("You got it!")
 
 
 
 
+#***************************** DARS 19 ********************
 
-#def salom_ber():  #def funksiya yaratishni anglatadi
+
+
+#def salom_ber():  #def funksiya yaratishni anglatadi (def - operatori)
 #    """Salom beruvchi funksiya"""  #funksiya haqida ma'lumot
 #    print("Assalomu alaykum!")
-#
+
 #salom_ber()
 
 
 
-#def salom_ber(ism): #ism bu foydalanuvchi kiritadigan qiymat PARAMETR
-#    """Fodyalanuvchi ismini qabul qilib, 
-#    unga salom beruvchi funksiya"""  #DOCSTRING 
+
+
+#def salom_ber(ism):    #ism bu foydalanuvchi kiritadigan qiymat - parametr
+#    """Foydalanuvchi ismini qabul qilib, 
+#    unga salom beruvchi funksiya"""          #docstring - funksiya haqida batafsil ma'lumot
 #    print(f"Assalomu alaykum, hurmatli {ism.title()}!")
 
-#salom_ber('hasan')
-#salom_ber('olim')
-
-
-
+#salom_ber('hasan')  #dasturchi sifatida parametr 
+#salom_ber('olim')   #foydalanuvchi sifatida argument 
 
 
 #def toliq_ism(ism, familiya):
@@ -2627,9 +3243,10 @@ print(mevalar[2])
 #    print(f"Foydalanuvchi ismi: {ism.title()}\n"
 #          f"Foydalanuvchi familiyasi: {familiya.title()}")
 
-# toliq_ism('olim','hakimov')
-# toliq_ism('hakimov','olim')
+#toliq_ism('olim','hakimov')
+#toliq_ism('hakimov','olim')
 
+#print(print.__doc__)
 
 
 
@@ -2638,46 +3255,45 @@ print(mevalar[2])
 #    print(f"{ism.title()} {2020-tugilgan_yil} yoshda")
 
 
-# yosh_hisobla('olim',1997)
-# yosh_hisobla(1997,'olim')
-
-# yosh_hisobla(ism='olim', t_yil=1997)
-#toliq_ism(familiya='hakimov',ism='olim')  #KALIT SO'Z USLUBI
+#yosh_hisobla('olim',1997)
 
 
 
+#yosh_hisobla(ism='olim', tugilgan_yil=1997)
+#toliq_ism(familiya='hakimov',ism='olim')  #kalit so'z uslubi
 
 
 
 
 
-#def yosh_hisobla(tugilgan_yil, joriy_yil=2022): #PARAMETRGA STANDART QIYMAT YUKLASH MUMKIN
+
+
+
+#def yosh_hisobla(tugilgan_yil, joriy_yil=2023): #parametrga standart qiymat berish mumkin
 
 
 #    """Foydalanuvchi tug'ilgan yilidan uning yoshini hisoblaydi"""
 #    print(f"Siz {joriy_yil-tugilgan_yil} yoshdasiz")
 
-#yosh_hisobla(1995,2020)
+#yosh_hisobla(1996)
 #yosh_hisobla(1993)
 
-#tyil = input("Tug'ilgan yilingizni kiriting: ")
+#tyil = int(input("Tug'ilgan yilingizni kiriting: "))
 #yosh_hisobla(tyil)
 
 
 
 
-                          #AMALIYOT
-#1Foydalanuvchi ismi va yoshini so'rab,
+
+
+#Foydalanuvchi ismi va yoshini so'rab,
 #uning tug'ilgan yilini hisoblaydigan funksiya yozing.
 
-
-
-
 #def tugilgan_yilni_hisoblash(ism, yosh):
-#    """ tug'ilgan yilni hisoblovchi dastur"""
-#    print(f"{ism.title()} {2020-yosh} yilda tug'ilgansiz")
-#
-#tugilgan_yilni_hisoblash('elbek',20)
+#    """ tug'ilgan yilni hisoblovchi dastur""" #docstring  
+#    print(f"{ism.title()}, siz {2023-yosh} yilda tug'ilgansiz.")
+
+#tugilgan_yilni_hisoblash('elbek',21)
 
 
 #def tyil_hisobla(ism, yosh):
@@ -2687,13 +3303,12 @@ print(mevalar[2])
 #tyil_hisobla('olim',32)
 
 
-#2Foydalanuvchidan son olib, uning kvadrati va kubini konsolga chiqaruvchi 
+#Foydalanuvchidan son olib, uning kvadrati va kubini konsolga chiqaruvchi 
 #funksiya yozing.
-
 
 #def sonning_ikkinchi_va_uchinchi_darajasi(son):
 #    """sonning ikkinchi va uchinchi darajasini chiqaruvchi funksiya"""
-#    print(f"{son} sonining kvadrati {son**2} ga, kubi {son***3} ga teng")
+#    print(f"{son} sonining kvadrati {son**2} ga, kubi {son**3} ga teng")
     
 #sonning_ikkinchi_va_uchinchi_darajasi(2)
 
@@ -2706,21 +3321,24 @@ print(mevalar[2])
 
 
 
-#3Foydalanuvchidan son olib, son juft yoki toqligini 
+#Foydalanuvchidan son olib, son juft yoki toqligini 
 #konsolga chiqaruvchi funksiya yozing.
 
 
 #def juft_toq(son):
-#    """ SONNING JUFT YOKI TOQLIGINI ANIQLOVCHI FUNKSIYA"""
-#    if son%2:
+#    """ sonning juft yoki toqligini tekshiruvchi funksiya"""
+#    if son%2: # agar son 2 ga qoldiqsiz bo'linsa
 #        print(f" {son} toq son")
 #    else:
 #        print(f"{son} juft son")
           
-#juft_toq(34)
+#juft_toq(44)
 #juft_toq(45)
 
-          
+#son = int(input('enter a number:>>>  '))
+#juft_toq(son)      
+
+
           
 #def juftmi(son):
 #    """Kiritilgan son juft yoki toqligini konsolga chiqaruvchi funksiya"""
@@ -2736,7 +3354,7 @@ print(mevalar[2])
           
           
           
-#4Foydalanuvchidan ikkita son olib, ulardan 
+#Foydalanuvchidan ikkita son olib, ulardan 
 #kattasini konsolga chiqaruvchi funksiya yozing. 
 #Agar sonlar teng bo'lsa "Sonlar teng" degan xabarni chiqaring.
 
@@ -2753,6 +3371,12 @@ print(mevalar[2])
 #katta_sonni_toping(223, 332)  
 #katta_sonni_toping(55*45, 56*23)          
 
+#s1 = int(input("birinchi sonni kiriting:>>> "))
+#s2 = int(input("ikkinchi sonni kiriting:>>> "))
+#katta_sonni_toping(s1, s2)
+
+
+
 
 #def solishtir(x,y):
 #    """Ikki sonni solishtiruvchi funksiya"""
@@ -2767,59 +3391,114 @@ print(mevalar[2])
 #solishtir(-9,12)
 #solishtir(1223*5,5**4)
 
+#number_one = int(input("number one:  "))
+#number_two = int(input("number two:  "))
+#solishtir(number_one, number_two)
 
 
 
 
-#5Foydalanuvchidan x va y sonlarini olib, x*yni konsolga 
+
+#Foydalanuvchidan x va y sonlarini olib, x*y (x ning y darajasi)ni konsolga 
 #chiqaruvchi funksiya yozing.
 
 #def x_y(x,y=2):
 #    """ x ning y darajasini topuvchi funksiya"""
 #    print(f" {x} ning {y}-darajasi {x**y} ga teng")
-#    
+#    # bunda x**y x ning y-darajasini bildiradi
 #x_y(2,7)    
-    
-    
-    
+   
+#xx = int(input("x ni kiriting:  "))
+#yy = int(input("y ni kiriting:  ")) 
+#x_y(xx,yy)   
+
+
+#quyidagi funksiyada y uchun 2 standart qiymatini bering.
 #def daraja(x,y=2):
 #    print(f"{x} ning {y}-darajasi {x**y} ga teng")
-#
+
 #daraja(5,2)
 #daraja(3,7)
 #daraja(94,4)
 #daraja(6)
 
-#6Yuqoridagi funksiyada y uchun 2 standart qiymatini bering.
 
 
-
-#7. Foydalanuvchidan son qabul qilib, sonni 2 dan 10 gacha bo'lgan 
+#Foydalanuvchidan son qabul qilib, sonni 2 dan 10 gacha bo'lgan 
 #sonlarga qoldiqsiz bo'linishini tekshiruvchi funksiya yozing. 
 #Natijalarni konsolga chiqaring.
+
+
 
 #def bolinish_alomatlari(son):
 #    for n in range(2,11):
 #        if not son%n:
 #            print(f"{son} {n} ga qoldiqsiz bo'linadi")
-#
+
 #bolinish_alomatlari(20)
 
+#x = int(input("sonni kiriting:   "))
+#bolinish_alomatlari(x)
+
+
+#Defining a function that returns the square of a number
+
+#def square(x):
+#    return x * x
+
+#print(square(7)) # 25
+
+
+
+#Defining a function that prints a message n number of times:
+#def print_message(message, n):
+#    for i in range(n):
+#        print(message)
+
+#print_message("Hello, world!", 55)
 
 
 
 
 
+#def printmessage(m,t):
+#    for i in range(t):
+#        print(m)
+                                #사랑해요 - to love
+#printmessage("사랑해요", 4)     #싫어요- to hate   
+
+#x = int(input("how many times: "))
+#y = input("what are you saying: ")
+
+#printmessage(y,x)
+        
+
+
+#Defining a function that calculates the factorial of a number
+
+#def factorial(n):
+#    result = 1
+#    for i in range(1, n + 1):
+#        result *= i
+#    return result
+
+#print(factorial(5)) # 120
+
+#factoryal = int(input("Sonni kiriting:>>>"))
+#print(factorial(factoryal))
 
 
 
 
-#20DARS *****************15.08.2022***************************
+#***************************** DARS 20 ********************
 
 #def toliq_ism_yasa(ism, familiya):
 #    """Toliq ism qaytaruvchi funksiya"""
 #    toliq_ism = f"{ism} {familiya}"
-#    return toliq_ism
+#    return toliq_ism  #funksiya qiymatini qaytarish   #local variable
+
+
+
 
 #talaba1 = toliq_ism_yasa('olim','hakimov')
 #talaba2 = toliq_ism_yasa('hakim','olimov')
@@ -2829,11 +3508,8 @@ print(mevalar[2])
 
 
 
-
-
-
-#def toliq_ism_yasa(ism, familiya, otasining_ismi=''):
-#    """Toliq isma qaytaruvchi funksiya"""
+#def toliq_ism_yasa(ism, familiya, otasining_ismi=''): #otasining ismi ixtiyoriy
+#    """Toliq ism qaytaruvchi funksiya"""
 #    if otasining_ismi:
 #        toliq_ism = f"{ism} {otasining_ismi} {familiya}"
 #    else:
@@ -2849,15 +3525,13 @@ print(mevalar[2])
 
 
 
-
-
-#def avto_info(kompaniya, model, rangi, korobka, yili, narhi=None):
+#def avto_info(kompaniya, model, rangi, korobka, yili, narx=None):
 #    avto = {'kompaniya':kompaniya,
 #            'model':model,
 #            'rang':rangi,
 #            'korobka':korobka,
 #            'yil':yili,
-#            'narh':narhi}
+#            'narx':narx}
 #    return avto
 
 #avto1 = avto_info('GM','Malibu','Qora','Avtomat',2018)
@@ -2865,39 +3539,76 @@ print(mevalar[2])
 #avtolar = [avto1, avto2]
 #print('Onlayn bozordagi mavjud avtomashinalar:')
 #for avto in avtolar:
-#    if avto['narh']:
-#        narh = avto['narh']
+#    if avto['narx']:
+#        narx = avto['narx']
 #    else:
-#        narh = "Noma'lum"
-#    print(f"{avto['rang']} {avto['model']}. Narhi: {narh}")
+#        narx = "Noma'lum"
+#   print(f"{avto['rang']} {avto['model']}. Narxi: {narx}")
 
 
 
 
 
 
+#def students_info(name,surname,idnumber,gender,age):
+#    student = {'name' : name,
+#               'surname' : surname,
+#               'idnumber': idnumber,
+#              'gender': gender,
+#              'age' : age}
+#   return student
+
+#student1 = students_info('qutbiddin', 'boboniyozov', 1998, 'male', 25)
+#student2 = students_info('abbos','abduganiyev', 1999, 'male', 24)
+#student3 = students_info('shoxrux', 'ashurov', 1997, 'male', 25)
+#students =[student1,student2,student3] 
+#for student in students:
+#    if student['idnumber']:
+#        idnumber = student['idnumber']
+#    else:
+#        idnumber = 'unknown'
+#    print(f"{student['idnumber']} is belong to {student['name']}")
 
 
-#def oraliq(min,max):
-#    sonlar = []
-#    while min<max:
-#        sonlar.append(min)
-#        min += 1
+
+
+
+#quyidagi funksiyaga qadamni qo'shib yangi kod yozilsin
+
+#def oraliq(min,max):  #range funksiyasini o'zimiz yozamiz
+#    sonlar = []       #sonlar degan bo'sh ro'yxat yaratamiz
+#    while min<max:    #qachonki minimum maximumdan kichik bo'lsa
+#        sonlar.append(min) #sonlarga minimum elementi qo'shiladi
+#        min += 1      #va minimumga 1 soni qo'shiladi va tsikl qaytariladi
 #    return sonlar
 
 #print(oraliq(0,10))
 #print(oraliq(10,21))
+ 
+#beginrange = int(input("kichik sonni kiriting: "))    #foydalanuvchidan kichik va 
+                                                      #katta sonlarni qabul qilib 
+#endrange = int(input("katta sonni kiriting:  "))      # oraliqdagi sonlar ro'yxatini
+#print(oraliq(beginrange, endrange))                   #chiqarish
 
-# def oraliq(min,max,qadam=1):
-#     sonlar = []
-#     while min<max:
+
+
+
+
+
+#def oraliq(min,max,qadam=1): # foydalanuvchidan minimum(mini), maksimum(maxi) va qadamni(qaddi)
+#     sonlar = []             # qabul qilib oraliq sonlar ro'yxatini chiqaruvchi 
+#     while min<max:          # dastur
 #         sonlar.append(min)
 #         min += qadam
 #     return sonlar
 
-# print(oraliq(0,21,2))
+#print(oraliq(0,21,2))
 
+#mini = int(input('minimum sonni kiriting:  '))
+#maxi = int(input('maximum sonni kiriting:  '))
+#qaddi = int(input('qadamni kiriting:  '))
 
+#print(oraliq(mini, maxi,qaddi))
 
 
 
@@ -2908,43 +3619,46 @@ print(mevalar[2])
 #    avto = {'kompaniya':kompaniya,
 #            'model':model,
 #            'rang':rangi,
-#            'korobka':korobka,
+#           'korobka':korobka,
 #            'yil':yili,
 #           'narh':narhi}
 #    return avto
-#
+
 #print("Saytimizdagi avtolar ro'yxatini shakllantiramiz.")
-#avtolar=[] # salondagi avtolar uchun bo'sh ro'yxat
+#avtolar=[]             # salondagi avtolar uchun bo'sh ro'yxat
 #while True:
-#    print("\nQuyidagi ma'lumotlarni kiriting",end='')
+#    print("\nQuyidagi ma'lumotlarni kiriting", end='')
 #    kompaniya=input("Ishlab chiqaruvchi: ")
-#    model=input("Modeli: ")
-#    rangi=input("Rangi: ")
-#    korobka=input("Korobka: ")
-#    yili=input("Ishlab chiqarilgan yili: ")
-#    narhi=input("Narhi: ")    
-#    #Foydalanuvchi kiritdan ma'lumotlardan avto_info yordamida 
-#    #lug'at shakllantirib, har bir lug'atni ro'yxatga qo'shamiz:
- #   avtolar.append(avto_info(kompaniya, model, rangi, korobka, yili, narhi))    
-    # Yana avto qo'shish-qo'shmaslikni so'raymiz
+#   model=input("Modeli: ")
+#   rangi=input("Rangi: ")
+#   korobka=input("Korobka: ")
+#   yili=input("Ishlab chiqarilgan yili: ")
+#   narhi=input("Narhi: ")    
+
+#Foydalanuvchi kiritdan ma'lumotlardan avto_info yordamida 
+#lug'at shakllantirib, har bir lug'atni ro'yxatga qo'shamiz:
+
+#    avtolar.append(avto_info(kompaniya, model, rangi, korobka, yili, narhi))    
+
+#Yana avto qo'shish-qo'shmaslikni so'raymiz
+
 #    javob = input("Yana avto qo'shasizmi? (yes/no): ")
 #    if javob=='no':
 #        break
 
 #print("\nSalonimizdagi avtolar:")
 #for avto in avtolar:
-#    if avto['narh']:
-#        narh = avto['narh']
-#    else:
-#        narh = "Noma'lum"
-#    print(f"{avto['rang'].title()} {avto['model'].title()}, {korobka} korobka. Narhi: {narh}")
+#   if avto['narh']:
+#       narh = avto['narh']
+#   else:
+#       narh = "Noma'lum"
+#   print(f"{avto['rang'].title()} {avto['model'].title()}, {korobka} korobka. Narhi: {narh}")
 
 
 
-#  **********  AMALIYOT    *****************
 
 
-#1. Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, 
+# Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, 
 #email manzili va telefon raqamini qabul qilib, lug'at ko'rinishida 
 #qaytaruvchi funksiya yozing. Lug'atda foydalanuvchu yoshi ham bo'lsin. 
 #Ba'zi argumentlarni kiritishni ixtiyoriy qiling (masalan, tel.raqam, el.manzil)
@@ -2960,7 +3674,7 @@ print(mevalar[2])
 #             'email':email,
 #             'telefon':tel}
 #    return mijoz
-#
+
 #print("Mijoz haqida ma'lumotlarni kiriting.")
 #mijozlar =[]
 #while True:
@@ -2971,7 +3685,7 @@ print(mevalar[2])
 #    email = input("Email: ")
 #    telefon = input("Telefon raqami: ")
 #    mijozlar.append(mijoz_info(ism, familiya, tyil, tjoy, email, telefon))
-#   javob = input("Davom etasizmi? (ha/yo'q)")
+#    javob = input("Davom etasizmi? (ha/yo'q)")
 #    if javob!='ha':
 #        break
 
@@ -2981,18 +3695,31 @@ print(mevalar[2])
 #          f"{mijoz['yoshi']} yoshda, telefoni: {mijoz['telefon']}")
 
 
-#3. Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing.
+# Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing.
 
 #def kattasi(x,y,z):
-#    max = x
+#    max = x      # x ni max deb belgilab olamiz
 #    if y>=max:
 #        max = y
-#   if z>=max:
+#    if z>=max:
 #       max = z
-#   return max
+#    return max
+
+#print(kattasi(45, 44, 88))
+
+#birinchi_son = int(input('birinchi sonni kiriting:   '))
+#ikkinchi_son = int(input('ikkinchi sonni kiriting:   '))
+#uchinchi_son = int(input('uchinchi sonni kiriting;   '))
 
 
-#4.Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
+#print('sonlarning kattasi:', end='')
+#print(kattasi(birinchi_son, ikkinchi_son, uchinchi_son))
+
+
+
+
+
+# Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
 #diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya yozing
 
 #def aylana_info(radius,pi=3.14159):
@@ -3001,6 +3728,9 @@ print(mevalar[2])
 #             "perimetr":2*radius*pi,
 #              "yuza":pi*radius**2}
 #    return aylana
+#print(aylana_info(45))
+
+
 
 
 
@@ -3016,18 +3746,23 @@ print(mevalar[2])
 #        if (n==1):
 #           tub = False
 #       elif(n==2):
-#            tub = True
-#        else:
-#            for x in range(2,n):
-#               if(n%x==0):
-#                   tub = False
+#           tub = True
+#       else:
+#           for x in range(2,n):
+#              if(n%x==0):
+#                  tub = False
 #       if tub:
-#           tub_sonlar.append(n)
-#               
-#   return tub_sonlar
+#          tub_sonlar.append(n)
+#              
+#    return tub_sonlar
+#print(tub_sonlar_top(34, 123))
 
 
-
+#In mathematics, numbers that are only divisible by 1 and themselves 
+#are called prime numbers. These numbers have only two positive divisors, 
+#1 and the number itself, and cannot be divided by any other number to 
+#give a whole number result.
+#For example, the first few prime numbers are 2, 3, 5, 7, 11, and so on.
 
 
 
@@ -3050,6 +3785,22 @@ print(mevalar[2])
 #    return sonlar
 
 #print(fibonacci(10))
+
+
+
+
+#def prime_numbers(minimum, maximum):
+#    primes = []
+#    for num in range(minimum, maximum + 1):
+#        prime = True
+#       for i in range(2, num):
+#           if (num % i == 0):
+#                prime = False
+#                break
+#        if prime:
+#           primes.append(num)
+#    return primes
+
 
 
 
