@@ -3807,40 +3807,29 @@
 
 
 
-#21.DARS   ************ 18.08.2022   *******************
+
+
+#***************************** DARS 21 ********************
+#funksiyaga ro'yxat uzatish
+
 
 #def bahola(ismlar):
 #    baholar = {}
-#    while ismlar:
+#    while ismlar: #ismlar degan ro'yxatni ichida element bor yo'qligini tekshirish
 #        ism = ismlar.pop()
 #        baho = input(f"Talaba {ism.title()}ning bahosini kiriting: ")
-#       baholar[ism]=int(baho)
-#   return baholar
-#
+#        baholar[ism]=int(baho)
+#    return baholar
+
 #talabalar = ['ali', 'vali', 'hasan', 'husan']        
-#aholar = bahola(talabalar[:]) #[:] belgisi talabalar royxatini saqlab qolish uchun
-#rint(baholar)
-#rint(talabalar)
+#baholar = bahola(talabalar[:]) #[:] belgisi talabalar royxatini saqlab qolish uchun
+#print(baholar)
+#print(talabalar)
             
 
 
-#talabalar = ['ali', 'vali', 'hasan', 'husan']
-
-#def bahola(ismlar):
-#    baholar = {}
-#    while ismlar:
-#        ism = ismlar.pop()
-#        baho = input(f"Talaba {ism.title()}ning bahosini kiriting: ")
-#        baholar[ism]=baho
-#    return baholar
-        
-#baholar = bahola(talabalar[:])
-#print(baholar)
-#print(talabalar)
  
-
-
-#1. Matnlardan iborat ro'yxat qabul qilib, ro'yxatdagi har bir matnning 
+# Matnlardan iborat ro'yxat qabul qilib, ro'yxatdagi har bir matnning 
 #birinchi harfini katta harfga o'zgatiruvchi funksiya yozing.        
 
 #def katta_harf(matnlar):
@@ -3851,8 +3840,53 @@
 #katta_harf(ismlar)
 #print(ismlar)
 
-#2. Yuoqirdagi funksiyani asl ro'yxatni o'zgartirmaydigan va 
+
+
+
+
+
+
+
+# for tsikli uchun
+#numbers = [1, 2, 3, 4, 5]
+#for num in numbers:
+#    print(num)
+
+
+#Summing the elements of a list
+#numbers = [1, 2, 3, 4, 5]
+#sum = 0
+#for num in numbers:
+#    sum += num
+#print("The sum is", sum)
+
+
+#Iterating over a string
+#word = "Hello"
+#for char in word:
+#    print(char)
+
+
+#Looping over a dictionary
+#person = {"name": "John", "age": 32, "city": "New York"}
+#for key in person:
+#   print(key, ":", person[key])
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Yuoqirdagi funksiyani asl ro'yxatni o'zgartirmaydigan va 
 #yangi ro'yxat qaytaradigan qilib o'zgartiring.
+
 
 #def katta_harf(matnlar):
 #    matnlar = matnlar[:]
@@ -3860,10 +3894,13 @@
 #        matnlar[i]=matnlar[i].title()
 #    return matnlar
 
+
 #ismlar = ['ali', 'vali', 'hasan', 'husan']
 #yangi_ismlar = katta_harf(ismlar)
 #print(ismlar)
 #print(yangi_ismlar)
+
+
 
 
 #def maximum(num1, num2, num3):
@@ -3877,6 +3914,32 @@
 
 #m = maximum(213334,1222442,2123334)
 #print(m)
+
+
+#Darsimiz davomida yozgan bahola funksiyasini .pop() metodidan 
+#foydalanmasdan va asl ro'yxatga o'zgartirish kiritmasdan faqat 
+#lug'at qaytaradigan qilib yozing.
+
+
+#talabalar = ["ali", "vali", "hasan", "husan"]
+
+
+#def bahola(ismlar):
+#    baholar = {}
+#    for ism in ismlar:
+#        baho = input(f"Talaba {ism.title()}ning bahosini kiriting: ")
+#        baholar[ism] = baho
+#    return baholar
+        
+
+#baholar = bahola(talabalar)
+#print(baholar)
+#print(talabalar)    
+
+
+
+
+
 
 
 #22DARS      ********* 19.08.2022   ***************
