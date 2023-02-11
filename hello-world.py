@@ -3942,9 +3942,23 @@
 
 
 
-#22DARS      ********* 19.08.2022   ***************
+#***************************** DARS 22 ********************
+#o'zgaruvchan funksiyalar
+# args bunda funksiya istalgancha argument qabul qiladi 
+# * belgisi bilan hosil qilinadi
+#Agar funksiya qabul qiladigan parametrlar soni noaniq bo'lsa, 
+#va parametrlar yagona qiymatlar ko'rinishida uzatilsa, funksiya 
+#yaratishda argumentdan avval yulduzcha qo'yiladi (*arguments).
 
-#def summa(*sonlar):  #   *ARGS ISTALGANCHA ARGUMENT QABUL QILADI
+
+
+
+# foydalanuvchidan bir nechta sonlarni qabul qilib ularni yi'gindisini 
+# qaytaruvchi dastur.
+
+
+
+#def summa(*sonlar):  #   *args istalgancha argument istalgancha sonlar 
 #    """Kiritilgan sonlar yig'indisini hisoblaydigan funksiya"""
 #    yigindi = 0
 #    for son in sonlar:  
@@ -3956,17 +3970,23 @@
 #print(summa(4,5,6,7))
 
 
+#yuqoridagi funksiyaning optimal ko'rinishi
 
 #def summa(*sonlar):
 #    """Kiritilgan sonlar yig'indisini hisoblaydigan funksiya"""
-#    return sum(sonlar)
-
+#    return sum(sonlar)  #sum funksiyasi berilgan ro'yxat elementlarini
+                        # yig'indisini hisoblab beradi.
 #print(summa(2))
 #print(summa(1,2,3,4,5))
 #print(summa(4,5,6,7))
 
 
-#def summa(x,y,*sonlar):  #KAMIDA 2 TA QIYMAT
+
+
+#def summa(x,y,*sonlar): # bu funksiya 2 ta majburiy va istalgancha
+                        # ixtiyoriy argumentlar qabul qiladi.
+
+
 #    """Kiritilgan sonlar yig'indisini hisoblaydigan funksiya"""
 #    return x+y+sum(sonlar)
 
@@ -3974,56 +3994,68 @@
 #print(summa(1,2,3,4,5))
 #print(summa(4,5,6,7))
 #print(summa(2,1))
+#print(summa(1,2,3,4,5,6,7,8,9))
 
 
 
 
-#  **keywords   istalganga kalit soz : qiymat korinishidagi qiymatlar
+#  **keywords arguments KWARGS kalit so'z : qiymat korinishidagi qiymatlar
+#Agar funksiyaga kalit so'z - qiymat ko'rinishidagi argumentlarni uzatish 
+#talab qilinsa, va bunday parametrlar soni noma'lum bo'lsa, argument oldidan 
+#ikkita yulduzcha qo'yiladi (**kwargs).
 
 
-#def avto_info(kompaniya,model,**malumotlar):
+
+#def avto_info(kompaniya,model,**malumotlar): #bu funksiyaga 2 ta majburiy va 
+                                             # istalgancha ixtiyoriy argumentlarni
+                                             # kalit so'z = qiymat shaklida beramiz
+                                             
 #    """Avto haqidagi ma'lumotlarni lug'at ko'rinishdia qaytaruvchi funksiya"""
 #    malumotlar['kompaniya']=kompaniya
 #    malumotlar['model']=model
-#    return malumotlar
+#   return malumotlar
 
 #avto1 = avto_info("GM", "malibu", rang='qora', yil=2018)
 #avto2 = avto_info("Kia", "K5", rang='qizil', narh=35000, yil=2020, korobka='avtomat')
 
+#print(avto1)
+#print(avto2)
 
 
 
 
-
-#AMALIYOT****************************************************************
-
-#1.Istalgancha sonlarni qabul qilib, ularning kopaytmasini qaytaruvchi 
+#Istalgancha sonlarni qabul qilib, ularning kopaytmasini qaytaruvchi 
 #funksiya yozing.
+
 
 #def kopaytma(*sonlar):
 #    """kiritilgan sonlarni kopaytmasini chiqarish"""
 #    kopaytma = 1
 #    for son in sonlar:
-#        kopaytma *= son
+#        kopaytma *= son    #ro'yxatdagi sonlar ko'paytmasi
 #    return kopaytma
     
-#print(kopaytma(2,3))    
+#print(kopaytma(2,3,4))    
         
 
 
 #def multiply(*sonlar):
 #    kopaytma = 1
 #    for son in sonlar:
-#        kopaytma *= son
+#        kopaytma *= son    #ro'yxatdagi sonlar ko'paytmasi
 #    return kopaytma
 
 #print(multiply(4,5,6))
 
+#son1 = int(input('birinchi sonni kiriting:  '))
+#son2 = int(input('ikkinchi sonni kiriting:  '))
+#print(multiply(son1,son2))
 
 
 
 
-#2. Talabalar haqidagi ma'lumotlarini lug'at ko'rinishida 
+
+# Talabalar haqidagi ma'lumotlarini lug'at ko'rinishida 
 #qaytaruvchi funksiya yozing. Talabaning ismi va familiyasi 
 #majburiy argument, qolgan ma'lumotlar esa ixtiyoriy ko'rinishda 
 #istalgancha berilishi mumkin bo'lsin.
@@ -4032,7 +4064,7 @@
 #    """ TALABA MA'LUMOTLARINI TUZUVCHI FUNKSIYA"""
 #    malumotlar['ism'] = ism
 #    malumotlar['familiya']= familiya
-#    return malumotlar
+#   return malumotlar
 
 #talaba1 = talabalar('elbek', 'razzoqov', kurs = 3 ,)
 #print(talaba1)
@@ -4044,5 +4076,30 @@
 #    return kwargs
 
 #talaba = talaba_info('olim','olimov',tyil=1995,fakultet='IT',yonalish='AT')
+#print(talaba)
+
+
+
+#def func(arg1, arg2, *args, kwarg1=None, kwarg2=None, **kwargs):
+#    print("arg1: ", arg1)
+#    print("arg2: ", arg2)
+#    print("args: ", args)
+#    print("kwarg1: ", kwarg1)
+#    print("kwarg2: ", kwarg2)
+#    print("kwargs: ", kwargs)
+
+#func("arg1 value", "arg2 value", "arg3 value", "arg4 value", kwarg1="kwarg1 value", kwarg2="kwarg2 value", kwarg3="kwarg3 value", kwarg4="kwarg4 value")
+
+
+#As you can see, *args collects all the positional arguments passed to the 
+#function that aren't explicitly specified as arg1 and arg2, 
+#and **kwargs collects all the keyword arguments passed to the 
+#function that aren't explicitly specified as kwarg1 and kwarg2.
+
+
+
+
+
+
 
 
