@@ -3944,6 +3944,7 @@
 
 #***************************** DARS 22 ********************
 #o'zgaruvchan funksiyalar
+
 # args bunda funksiya istalgancha argument qabul qiladi 
 # * belgisi bilan hosil qilinadi
 #Agar funksiya qabul qiladigan parametrlar soni noaniq bo'lsa, 
@@ -4095,6 +4096,390 @@
 #function that aren't explicitly specified as arg1 and arg2, 
 #and **kwargs collects all the keyword arguments passed to the 
 #function that aren't explicitly specified as kwarg1 and kwarg2.
+
+
+
+
+
+
+
+
+
+#***************************** DARS 23 ********************
+# modullar
+
+#****************MODULNI CHAQIRIB OLISH********************
+
+# Modul ichidagi istalgan funksiyaga murojat qilish uchun 
+#import modul_nomi komandasidan foydalanamiz. 
+#Bunda modul ichidagi istalgan funksiyaga modul_nomi.funksiya_nomi() 
+#ko'rinishida murojat qilishimiz mumkin. Ya'ni avval modul nomi undan 
+#keyin esa nuqta qo'yilib, modul ichidagi funksiya nomi yoziladi.
+
+#import modul_nomi komandasi bir martta, dastur boshida yoziladi.
+
+
+#****************MODULGA QISQA NOM BERISH*******************
+
+#Yuqoridagi usul bilan modulni chaqirib olishda fayl nomi uzun 
+#bo'lsa bu o'ziga yarasha noqulayliklar tug'dirishi mumkin. 
+#Buning oldini olish uchun esa, modulni chaqirganda unga as operatori 
+#yordamida qisqa nom berishimiz, va modulga qisqa nom orqali murojat qilish mumkin. 
+#Quyidagi misolda avto_info_mod ni qisqa qilib aim deb nomlab oldik, 
+#va 3-4-qatorlarda modulga murojat qilishda qisqa nomidan foydalandik.
+
+
+#******MODUL ICIHDAN MA'LUM FUNKSIYALARNI KO'CHIRIB OLISH****
+
+#Agar katta modullardan faqatgina ba'zi funksiyalarga murojat qilish 
+#talab qilinisa, kerakli funksiyalarni from modul_nomi import funksiya1, 
+#funksiya2 komandasi yordamida o'zimizning dasturimizga ko'chirib olishimiz mumkin. 
+#Bu usulning qulayligi, endi funksiyalarga to'g'ridan-to'g'ri murojat qilish 
+#mumkin (modul ismini yozmagan holda).
+#Misol uchun avvalgi kodimizda biz faqatgina avto_info va info_print 
+#funksiyalaridan foydalandik. Shu funksiyalarni asosiy kodimizga ko'chirib olaylik:
+
+    
+#****************FUNKSIYALARGA QISQA NOM BERISH**************
+
+#Huddi avvalgidek, ko'chrib olgan funksiyamizga 
+#ham qisqa nom berishimiz mumkin. 
+
+#****MODUL ICHIDAGI BARCHA FUNKSIYALARNI KO'CHIRIB OLISH*****
+#Modul ichidagi barcha funksiyalarni asosiy dasturga ko'chirib 
+#olish uchun from modul_nomi import * komandasidan foydalanamiz.
+
+#PYTHON MODULE INDEX >>>>
+#https://docs.python.org/3/py-modindex.html 
+
+#https://docs.python.org/3/library/math.html#module-math
+
+
+#modullar
+
+#modullarni import qilishning usullari quyidagilar:
+
+#import avto_info_mod           #avto_info_mod faylini (modulini) chaqiramiz
+
+#avto1 = avto_info_mod.avto_info("GM", "Malibu", "Qora", "avtomat", 2020,40000)
+#avto_info_mod.info_print(avto1)
+
+
+
+#import avto_info_mod as aim    #avto_info_mod ni qisqa nom aim bilan chaqiramiz
+
+#avto1 = aim.avto_info("GM", "Malibu", "Qora", "avtomat", 2020,40000)
+#aim.info_print(avto1)
+
+
+
+#from avto_info_mod import avto_info, info_print
+
+#avto1 = avto_info("GM", "Malibu", "Qora", "avtomat", 2020,40000)
+#info_print(avto1)
+
+
+
+#from avto_info_mod import avto_info as ainfo, info_print as iprint
+
+#avto1 = ainfo("GM", "Malibu", "Qora", "avtomat", 2020,40000)
+#iprint(avto1)
+
+
+#import math  # math modulini import qilish 
+
+#x=400
+#print(math.sqrt(x))  # sqrt() qavs ichidagi sonning ildizini chiqarish funksiyasi
+#print(math.sqrt(9))
+
+
+#x = 2
+#y = 3
+#print(pow(x,y)) # pow funksiyasi x ning y - darajasini qaytaradi.
+                # bunda math modulini bir marta import qilish yetarli
+                
+#from math import pi # bunda math modulidagi pi o'zgaruvchisi import qilinadi
+#print(pi)                
+
+#https://docs.python.org/3/library/math.html#module-math
+
+
+#import random as r  #random modulini r sifatida import qilish
+
+#randint()
+#son = r.randint(1,100) #random integer
+#print(son)
+
+
+
+
+# choice()
+# ismlar = ['olim','anvar','hasan','husan']
+# ism = r.choice(ismlar)
+# print(ism)
+# print(r.choice(ism))
+# x = list(range(0,51,5))
+# print(x)
+# print(r.choice(x))
+
+# shuffle()
+#x = list(range(11))
+#print(x)
+#r.shuffle(x)
+#print(x)
+
+
+# Import the square root function from the math module
+#from math import sqrt
+
+# Use the square root function
+#number = float(input("Enter a number: "))
+#square_root = sqrt(number)
+
+# Print the result
+#print("The square root of", number, "is", square_root)
+
+
+
+
+
+#***************************** DARS 24 ********************
+#lambda _ nomsiz funksiya
+
+
+
+#import math # math modulini import qilib oldik
+
+#def nom(argument):  # odatiy ko'rinishdagi funksiya
+    #return ifoda
+
+#uzunlik = lambda pi, r : 2*pi*r  # lambda nomsiz funksiya
+#print(uzunlik(math.pi,10))
+
+
+#kvadrat = lambda x, y : x ** y   # lambda nomsiz funksiyasi uchun return shart emas
+#print(kvadrat(3, 2))
+
+
+                               
+#def daraja(n):                    # bu funksiyada lambda funksiya yasovchi funksiya
+#    return lambda x : x**n        # daraja deb nomlangan funksiya lambda orqali
+                                   # boshqa bir funksiya yasalishiga asosdir
+#kvadrat = daraja(2)               # kvadratga daraja funksiyasi yuklanyapti
+#kub = daraja(3)        
+           # kubga daraja funksiyasi yuklanyapti
+#print(f"3-ning kvadrati {kvadrat(3)} ga, "
+#      f"kubi {kub(3)} ga teng")
+    
+
+
+#istalgan sonning 5-darajasini ko'rsatuvchi dastur
+
+#def fifth_base(n):
+#    return lambda x:x**5  # argument va qiymat shaklda qabul qiladi
+#x = int(input('enter a number: '))
+#fifth = fifth_base(5)
+#print(fifth(x))
+
+
+
+#from math import sqrt                #sqrt-kvadrat ildiz
+
+#sonlar = list(range(11))             #0 dan 10gacha sonlar ro'yxati
+#ildizlar = list(map(sqrt,sonlar))    # map funksiyasi argument sifatida funksiyalarni 
+#print(ildizlar)                      # va ro'yxatlarni qabul qilishi mumkin.
+
+
+
+
+#sonlar = list(range(11))           #0 dan 10gacha sonlar ro'yxati
+#def daraja2(x):
+#     """Berilgan sonning kvadratini qaytaruvchi funksiya"""
+#     return x*x
+#print(list(map(daraja2,sonlar)))
+
+
+#sonlar = list(range(11))                     #0 dan 10gacha sonlar ro'yxati
+#kvadratlar = list(map(lambda x:x*x,sonlar))  # yuqoridagi funksiyaning optimal 
+#rint(kvadratlar)                             # ko'rinishi
+
+
+
+#a = [4, 5, 6]                                # map funksiyasi argument sifatida
+#b = [7, 8, 9]                                # funksiya va ro'yxatlar qabul 
+#a_plus_b = list(map(lambda x,y:x+y,a,b))     # qilishi mumkin 
+#print(a_plus_b)
+
+
+
+#ismlar = ['hasan','husan','olim','umid']
+#print(list(map(lambda matn:matn.upper(),ismlar)))
+
+
+
+
+
+#import random as r   #random modulini import qilamiz
+
+#sonlar = r.sample(range(100),10)        # 0-99 oralig'ida 10 ta tasodifiy sonlar
+#print(sonlar)                           # sample funksiyasi yordamida
+#def juftmi(x):
+#    """x juft bo'lsa True, aks holda False qaytaruvchu funksiya"""
+#    return x%2==0
+
+#juft_sonlar = list(filter(juftmi,sonlar))   # sonlar ro'yxatidan elementlarni olib
+#print(juft_sonlar)                          # juftmi funksiyasi bilan tekshirish
+                                             # filter funksiyasi yordamida
+
+
+#juft_sonlar = list(filter(lambda x: x%2==0,sonlar))
+#print(juft_sonlar)
+
+
+
+
+
+
+#mevalar = ['olma','anor','anjir','shaftoli',"o'rik","tarvuz","qovun","banan"]
+#harf='o'
+#mevalar_b = list(filter(lambda meva:meva.startswith(harf),mevalar))
+#print(mevalar_b)                         
+                                            # startswith() - string funksiyasi           
+                                            # ma'lum bir argument sifatida 
+                                            # kiritilgan harf bilan boshlanadigan
+                                            # so'zlarni  filter funksiyasi yordamida
+                                            # chiqarib beradi
+                                            
+
+#mevalar2 = list(filter(lambda meva:len(meva)<=5, mevalar))
+#print(mevalar2)                             # len funksiyasi yordamida uzunligi
+                                            # 5 ta va undan ko'p bo'lmagan harfdan 
+                                            # tashkil topgan elementlarni qaytaradi
+                                            
+
+
+#mevalar3 = list(filter(lambda meva:(meva.startswith('a') and meva.endswith('r')), mevalar))
+#print(mevalar3)                             # startwith 
+                                            # endwith metodlari yordamida 
+                                            # a harfi bilan boshlanib r harfi bilan
+                                            # tugaydigan mevalarni qaytarish
+                                            
+
+#sonlar = r.sample(range(100),10)
+#juft = [son for son in sonlar if son%2==0]
+#print(juft)  
+
+
+
+
+
+
+
+
+
+
+
+
+#***************************** DARS 25 ********************
+
+
+# quyida son topish o'yini kodi berilgan 
+# bunda random modulidagi randint funksiyasidan foydalanilgan
+
+
+
+
+
+#import random
+
+#def sontop(x=10):
+#    tasodifiy_son = random.randint(1,x)  # 1 va x sonlari orasidan istalgan
+#                                           sonni olish
+#    print(f"Men 1 dan {x} gacha son o'yladim. Topa olasizmi?", end="")
+#    taxminlar = 0                        # taxminlar sonini sanash uchun 
+#    while True:
+#        taxminlar += 1                   # tsiklga taxmin o'zgaruvchisini 
+#        taxmin = int(input(">>>"))       # kiritib olamiz
+#       if taxmin<tasodifiy_son:
+#           print("Xato. Men o'ylagan son bundan kattaroq. Yana harakat qiling:", end="")
+#        elif taxmin>tasodifiy_son:
+#           print("Xato. Men o'ylagan son bundan kichikroq. Yana harakat qiling:", end="")
+#       else:
+#           break
+        
+#    print(f"Tabriklayman. {taxminlar} ta taxmin bilan topdingiz!")
+#    return taxminlar               # taxminlar o'zgaruvchisini funksiyadan qaytaramiz
+  
+
+
+
+
+  
+
+#def sontop_pc(x=10):
+#    input(f"1 dan {x} gacha son o'ylang va istalgan tugmani bosing. Men topaman.")
+#    quyi = 1
+#    yuqori = x
+#    taxminlar = 0
+#    while True:
+#        taxminlar += 1
+#        if quyi != yuqori:
+#            taxmin = random.randint(quyi,yuqori)
+#        else:
+#            taxmin = quyi
+#        javob = input(f"Siz {taxmin} sonini o'yladingiz: to'g'ri (t),"
+#                      f"men o'ylagan son bundan kattaroq (+), yoki kichikroq (-)".lower())
+#        if javob == "-":
+#            yuqori = taxmin - 1
+#        elif javob == "+":
+#            quyi = taxmin + 1
+#        else:
+#            break
+#    print(f"Men {taxminlar} ta taxmin bilan topdim!")
+#    return taxminlar
+
+
+
+
+
+
+#def play(x=10):
+#    yana = True
+#   while yana:
+#       taxminlar_user = sontop(x)
+#        taxminlar_pc = sontop_pc(x)
+#        
+#        if taxminlar_user>taxminlar_pc:
+#           print(f"Men {taxminlar_pc} taxmin bilan topdim va  yutdim!")
+#        elif taxminlar_user<taxminlar_pc:
+#            print(f"Siz {taxminlar_user} taxmin bilan topdingiz va yutdingiz!")
+#       else:
+#            print("Durrang!")
+#        yana = int(input("Yana o'ynaymizmi? Ha(1)/Yo'q(0):"))
+        
+        
+        
+# son_top()        
+
+#yuqoridagi va quyidagi funksiyalar alohida modullarga joylashtirilib ishga tushurilishi kerak
+
+
+
+
+#import sontop_funksiyalar as f
+
+#print("Keling o'ylagan sonni topish o'ynaymiz!")
+#f.play(10)
+
+
+
+
+
+#***************************** DARS 26 ********************
+# so'z topish o'yini
+
+
+
 
 
 
