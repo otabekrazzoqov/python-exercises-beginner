@@ -4573,3 +4573,84 @@
 
 
 
+#***************************** DARS 28 ********************
+# klasslar
+
+
+
+#class Talaba:
+#    def __init__(self,ism, familiya, tyil):
+#        self.ism = ism
+#       self.familiya = familiya
+#        self.tyil = tyil
+#       
+        
+#    def get_name(self):
+#        return self.ism
+#    
+    
+#    def get_age(self, yil):
+#        return yil - self.tyil
+    
+    
+#    def get_lastname(self):
+#        return self.familiya
+    
+    
+    
+#    def tanishtir(self):
+#        print(f"Ismim {self.ism} {self.familiya}, tug'ilgan yilim {self.tyil}")
+#        return(f"Ismim {self.ism} {self.familiya}, tug'ilgan yilim {self.tyil}")
+
+        
+   
+#talaba1 = Talaba('Olim', 'Islomov',1997)
+#talaba2 = Talaba('Hasan', 'Jumanazarov',1996)
+#talaba3 = Talaba('Islom', 'Hamdamov',1996)      
+
+
+
+#Web sahifangiz uchun foydalanuvchi (user) klassini tuzing. Klassning 
+#xususiyatlari sifatida odatda ijtimoiy tarmoqlar talab qiladigan 
+#ma'lumotlarni kiriting (ism, foydalanuvchi ismi, email, va hokazo)
+
+
+
+#Klassga bir nechta metodlar qo'shing, jumladan get_info() 
+#metodi foydalanuvchi haqida yig'ilgan ma'lumotlarni chiroyli 
+#qilib chiqarsin 
+#(masalan: "Foydalanuvchi: alijon1994, ismi: Alijon Valiyev, 
+#email: alijon1994@gmail.com).
+
+
+
+class User:
+    def __init__(self, name, username, email, phone_number):
+        self.name = name
+        self.username = username
+        self.email = email
+        self.phone_number = phone_number
+        
+    def get_info(self):        #def orqali klass metodini yaratish
+        return f"Foydalanuvchi: {self.username}, foydalanuvchi ismi {self.name}, email: {self.email}, phone number: {self.phone_number} "
+                                    
+talaba1 = User('Olim', 'Islomov', 'olim1997@gmail.com', 665544)
+talaba2 = User('Hasan', 'Jumanazarov','hassan1996@gmail.com', 332211)
+talaba3 = User('Islom', 'Hamdamov','hamdamov 1996@gmail.com', 998877)      
+
+
+
+
+
+
+#Klassdan bir nechta obyektlar yarating va 
+#uning xususiyatlari va metodlariga murojat qiling.
+
+
+
+
+
+
+
+
+
