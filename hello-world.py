@@ -4627,21 +4627,21 @@
 
 
 
-class User:
-    def __init__(self, name, username, email, phone_number):
-        self.name = name
-        self.username = username
-        self.email = email
-        self.phone_number = phone_number
+#class User:
+#    def __init__(self, name, username, email, phone_number):
+#        self.name = name
+#        self.username = username
+#       self.email = email
+#       self.phone_number = phone_number
         
-    def get_info(self):        #def orqali klass metodini yaratish
-        return f"Foydalanuvchi: {self.username}, foydalanuvchi ismi {self.name}, email: {self.email}, phone number: {self.phone_number} "
+#    def get_info(self):        #def orqali klass metodini yaratish
+#        return f"Foydalanuvchi: {self.username}, foydalanuvchi ismi {self.name}, email: {self.email}, phone number: {self.phone_number} "
  
 
                                    
-talaba1 = User('Olim', 'Islomov', 'olim1997@gmail.com', 665544)         #obyekt
-talaba2 = User('Hasan', 'Jumanazarov','hassan1996@gmail.com', 332211)   #obyekt
-talaba3 = User('Islom', 'Hamdamov','hamdamov 1996@gmail.com', 998877)   #obyekt  
+#talaba1 = User('Olim', 'Islomov', 'olim1997@gmail.com', 665544)         #obyekt
+#talaba2 = User('Hasan', 'Jumanazarov','hassan1996@gmail.com', 332211)   #obyekt
+#talaba3 = User('Islom', 'Hamdamov','hamdamov 1996@gmail.com', 998877)   #obyekt  
 
 
 #Klassdan bir nechta obyektlar yarating va 
@@ -4649,23 +4649,23 @@ talaba3 = User('Islom', 'Hamdamov','hamdamov 1996@gmail.com', 998877)   #obyekt
 
 
 #Define a simple class
-class Car:                                    #3 ta parametr qabul qiladigan class
-    def __init__(self, make, model, year):
-        self.make = make                      #assigning them to instance variables
-        self.model = model
-        self.year = year
+#class Car:                                    #3 ta parametr qabul qiladigan class
+#    def __init__(self, make, model, year):
+#        self.make = make                      #assigning them to instance variables
+#       self.model = model
+#        self.year = year
 
-    def info(self):                           # ma'lumotlarni qaytaruvchi info nomli metod
-        return f"{self.make} {self.model} ({self.year})"
+#    def info(self):                           # ma'lumotlarni qaytaruvchi info nomli metod
+#        return f"{self.make} {self.model} ({self.year})"
 
 
 # Create an object of the class
-my_car = Car("Toyota", "Camry", 2010)         # car classiga tegishli obyekt
-my_car1 = Car('kia', 'k5', 2019)
-my_car2 = Car('GM', 'cobalt', 2023)
+#my_car = Car("Toyota", "Camry", 2010)         # car classiga tegishli obyekt
+#my_car1 = Car('kia', 'k5', 2019)
+#my_car2 = Car('GM', 'cobalt', 2023)
 
 # Call a method on the object
-print(my_car2.info())
+#print(my_car2.info())
 
 
 #In this code, we define a class Car with a constructor that takes three 
@@ -4681,8 +4681,37 @@ print(my_car2.info())
 #The output should be: Toyota Camry (2010).
 
 
+# Define a simple class
+#class Rectangle:                            #class
+#    def __init__(self, width, height):
+#        self.width = width
+#        self.height = height
+    
+#    def area(self):                         #method
+#        return self.width * self.height
+
+# Create an object of the class
+#my_rectangle = Rectangle(5, 10)             #object  
+
+# Call a method on the object
+#print("The area of my rectangle is:", my_rectangle.area())
 
 
+
+#***************************** DARS 29 ********************
+
+class Student:
+    """ creating a class """
+    def __init__(self, name,surname, birthdate):
+        """assigning them to instance variables"""
+        self.name = name
+        self.surname = surname
+        self.birthdate = birthdate
+        self.grade = 1   #parametr sifatida kiritilmaydi. o'zgarmas qiymat beriladi
+
+
+student1 = Student('alli', 'valliyev', 1987)        
+    
 
 
 
