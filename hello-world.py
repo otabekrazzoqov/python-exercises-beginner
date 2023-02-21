@@ -4698,22 +4698,294 @@
 
 
 
+
+
+
+
+
+
 #***************************** DARS 29 ********************
-
-class Student:
-    """ creating a class """
-    def __init__(self, name,surname, birthdate):
-        """assigning them to instance variables"""
-        self.name = name
-        self.surname = surname
-        self.birthdate = birthdate
-        self.grade = 1   #parametr sifatida kiritilmaydi. o'zgarmas qiymat beriladi
+#class
 
 
-student1 = Student('alli', 'valliyev', 1987)        
+
+
+#class Student:
+#    """ creating a class """
+#    def __init__(self, name,surname, birthdate):
+#        """assigning them to instance variables"""
+#        self.name = name
+#        self.surname = surname
+#       self.birthdate = birthdate
+#       self.grade = 1   #parametr sifatida kiritilmaydi. o'zgarmas qiymat beriladi
+
+
+#student1 = Student('alli', 'valliyev', 1987)        
     
 
 
 
+#class Talaba:
+#    """Talaba nomli klass yaratamiz"""
+#    def __init__(self,ism,familiya,tyil):
+#        """Talabaning xususiyatlari"""
+#       self.ism = ism
+#       self.familiya = familiya
+#       self.tyil = tyil
+#       self.bosqich = 1
+    
+    
+#    def get_info(self):
+#        """Talaba haqida ma'lumot"""
+#        return f"{self.ism} {self.familiya}. {self.bosqich}-bosqich talabasi "
+#   
+#    def set_bosqich(self,bosqich):
+#        """Talabaning kursini yangilovchi metod"""
+#        self.bosqich = bosqich
+        
+#    def update_bosqich(self):
+#        """Talabanining bosqichini 1taga ko'paytirish"""
+#        self.bosqich += 1        
+    
+#    def get_name(self):
+#        """Talabaning ismini qaytaradi"""
+#        return self.ism
+    
+#    def get_lastname(self):
+#        """Talabaning familiyasini qaytaradi"""
+#        return self.familiya
+    
+#    def get_fullname(self):
+#        """Talabaning ism-familiyasini qaytaradi"""
+#        return f"{self.ism} {self.familiya}"
+    
+#    def get_age(self,yil):
+#        """Talabaning yoshini qaytaradi"""
+#        return yil-self.tyil
+    
+#    def tanishtir(self):
+#        print(f"Ismim {self.ism} {self.familiya}. {self.tyil} yilda tu'gilganman")
+
+#talaba1 = Talaba("Alijon","Valiyev",2000)
+#print(talaba1.get_info())
+#talaba1.update_bosqich() # 1 bosqichga oshiramiz
+#print(talaba1.get_info())
+#talaba1.update_bosqich() # 1 bosqichga oshiramiz
+#print(talaba1.get_info())
+
+#talaba1.set_bosqich(3)
+#print(talaba1.bosqich)
+
+
+
+
+
+
+
+
+
+
+
+    
+#class Fan():
+#    """Fan nomli klass"""
+#    def __init__(self,nomi):
+#        self.nomi = nomi
+#        self.talabalar_soni = 0
+#        self.talabalar = []
+    
+#    def add_student(self,talaba):
+#        """Fanga talabalar qo'shish"""
+#        self.talabalar.append(talaba)
+#        self.talabalar_soni += 1
+    
+#    def get_name(self):
+#        """Fan nomi"""
+#        return self.nomi
+    
+#    def get_students(self):
+#        """Fanga yozilgan talabalar haqida ma'lumot"""
+#        return [talaba.get_fullname() for talaba in self.talabalar]
+#    
+#    def get_students_num(self):
+#        """Fanga yozilgan talabalar soni"""
+#        return self.talabalar_soni
+
+#def see_methods(klass):
+#    return [method for method in dir(klass) if method.startswith('__') is False]
+    
+
+
+#matematika = Fan("Oliy Matematika")
+#talaba1 = Talaba("Alijon","Valiyev",2000)
+#talaba2 = Talaba("Hasan","Alimov",2001)
+#alaba3 = Talaba("Akrom","Boriyev",2001)
+#atematika.add_student(talaba1)
+#matematika.add_student(talaba2)
+#matematika.add_student(talaba3)
+
+# print(matematika.talabalar_soni)
+# print(matematika.talabalar)
+# mat_talabalar = matematika.get_students()
+# print(mat_talabalar)
+
+# print(see_methods(Talaba))
+# print(see_methods(talaba1))
+# # print(see_methods(str))
+# print(talaba1.__dict__)
+# print(talaba1.__dict__.keys())
+
+
+#>>> dir(Talaba)
+#['__class__',
+# '__delattr__',
+# '__dict__',
+# '__dir__',
+#'__doc__',
+#'__eq__',
+#'__format__',
+#'__ge__',
+# '__getattribute__',
+# '__gt__',
+#'__hash__',
+# '__init__',
+# '__init_subclass__',
+# '__le__',
+# '__lt__',
+# '__module__',
+# '__ne__',
+# '__new__',
+# '__reduce__',
+#'__reduce_ex__',
+#'__repr__',
+# '__setattr__',
+# '__sizeof__',
+# '__str__',
+# '__subclasshook__',
+# '__weakref__',
+# 'get_age',
+# 'get_fullname',
+# 'get_info',
+# 'get_lastname',
+# 'get_name',
+#'set_bosqich',
+# 'update_bosqich']
+
+
+
+
+
+
+
+
+#Avto degan yangi klass yarating. Unga avtomobillarga doir bo'lgan bir nechta 
+#xususiyatlar (model, rang, korobka, narh va hokazo) qo'shing. Ayrim xususiyatlarga 
+#standart qiymat bering (masalan, kilometer=0)
+
+
+#Avto ga oid obyektning xususiyatlarini qaytaradigan metodlar yozing
+#get_info() metodi avto haqida to'liq ma'lumotni matn ko'rinishida qaytarsin
+
+
+#Avto ga oid obyektning xususiyatlarini yangilaydigan metodlar yozing.
+#update_km() metodi son qabul qilib olib, avtomobilning 
+#yurgan kilometrajini yangilab borsin
+
+
+#Yangi, Avtosalon degan klass yarating va kerakli xususiyatlar bilan 
+#to'ldiring (salon nomi, manzili, sotuvdagi avtomobillar va hokazo)
+
+    
+#Avtosalonga yangi avtomobillar qo'shish uchun metod yozing
+
+#Avtosalondagi avtomobillar haqida ma'lumot qaytaruvchi metod yozing
+
+#Yuqoridagi obyektlar va ularga tegishli metodlarni tekshirib ko'ring
+
+#dir() funksyasi va __dict__ metodi yordamida o'zingiz yozgan va 
+#Pythondagi turli klass va obyektlarning xususiyatlari va metodlarini 
+#toping (dir(str), dir(int) va hokazo)
+
+
+
+
+#class Avtosalon:
+#    """ Avtosalon nomli class"""
+#    def __init__(self, salon_nomi, manzili, avtolar_soni):
+#        self.salon_nomi = salon_nomi
+#        self.manzili = manzili
+#        self.avtolar_soni = 0
+#        self.avtomobillar = []
+        
+        
+        
+#    def avtoplus(self, avtomobil):
+#        self.avtomobillar.append(avtomobil)
+#        self.avtomobillar_soni += 1 
+        
+        
+
+
+
+
+
+
+
+#class Car:
+#    def __init___(self, make, model, rang, korobka, narh):
+#        self.make = make
+#        self.model = model
+#        self.rang = rang
+#        self.korobka = korobka
+#        self.narh = narh
+#        self.km = 0
+
+#    def get_make(self):
+#        return self.make
+
+#    def get_model(self):
+#        return self.model
+
+#    def get_rang(self):
+#        return self.rang
+
+#    def get_gear(self):
+#        return self.korobka
+    
+#    def price(self):
+#        return self.narh
+    
+#car1 = Car('gm', 'tracker', 'qora', 'avtomatik',23000)    
+#print(car1.get_make)
+
+
+
+
+
+#***************************** DARS 30 ********************
+
+class Person:
+    def __init__(self,name,surname,passport,birthdate):
+        self.name = name
+        self.surname = surname
+        self.passport = passport
+        self.birthdate = birthdate
+        
+        
+        def get_info(self):
+            """ information about person"""
+            info = f"{self.name} {self.surname}."
+            info += f"passport: {self.passport}, born in:{self.birthdate}"
+            return info
+        
+        def get_age(self, current_year=2023):
+            """ returning person's age"""
+            return current_year - self.birthdate            
+            
+body1 = Person("Abbos", "Abduganiyev", "FF1666666", 1999)
+print(body1.get_age())            
+            
+            
+            
 
 
