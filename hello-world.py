@@ -4962,30 +4962,182 @@
 
 
 
+
+
+
+
 #***************************** DARS 30 ********************
 
-class Person:
-    def __init__(self,name,surname,passport,birthdate):
-        self.name = name
-        self.surname = surname
-        self.passport = passport
-        self.birthdate = birthdate
+
+
+
+
+#class Shaxs:
+#    """Shaxslar haqida ma'lumot"""
+#    def __init__(self,ism,familiya,passport,tyil):
+#        """Shaxsning xususiyatlari"""
+#        self.ism = ism
+#        self.familiya = familiya
+#       self.passport = passport
+#       self.tyil = tyil
+    
+#    def get_info(self):
+#        """Shaxs haqida ma'lumot"""
+#       info = f"{self.ism} {self.familiya}. "
+#       info += f"Passport:{self.passport}, {self.tyil}-yilda tug`ilgan"
+#        return info
+    
+#    def get_age(self,yil):
+#        """Shaxsning yoshini qaytaruvchi metod"""
+#        return yil - self.tyil 
+
+
+
+
+
+
+
+
+#class Talaba(Shaxs):       # bunda talaba voris klass 'shaxs' voris klass hisoblanadi
+#    """Talaba klassi"""
+#    def __init__(self,ism,familiya,passport,tyil,idraqam,manzil,):
+#        """Talabaning xususiyatlari"""
+#        super().__init__(ism, familiya, passport, tyil)
+#        self.idraqam = idraqam
+#        self.bosqich = 1
+#        self.manzil = manzil
+#        self.fanlar = []
+        
+ 
+ # get_info, get_age metodlari ham mavjud - vorislik 
+ 
+    
+ 
+#   def get_id(self):                     
+#        """Talabaning ID raqami"""
+#        return self.idraqam
+    
+#    def get_bosqich(self):
+#        """Talabaning o'qish bosqichi"""
+#        return self.bosqich
+    
+#    def fanga_yozil(self,subject):
+#        """metod parametr sifatida Fan klassiga tegishli obyektlarni qabul 
+#        qilib olsin va talabaning fanlar ro'yxatiga qo'shib qo'ysin."""
+#        self.subject = subject
+#        self.fanlar.append(subject)
+#        return self.fanlar
+       
         
         
-        def get_info(self):
-            """ information about person"""
-            info = f"{self.name} {self.surname}."
-            info += f"passport: {self.passport}, born in:{self.birthdate}"
-            return info
+                
+            
         
-        def get_age(self, current_year=2023):
-            """ returning person's age"""
-            return current_year - self.birthdate            
-            
-body1 = Person("Abbos", "Abduganiyev", "FF1666666", 1999)
-print(body1.get_age())            
-            
-            
+    
+    
+#get_info metodi alohida yozilayapti - polimorfizm
+
+
+    
+#    def get_info(self):
+#        """Talaba haqida ma'lumot"""
+#        info = f"{self.ism} {self.familiya}. "
+#        info += f"{self.get_bosqich()}-bosqich. ID raqami: {self.idraqam}"
+#        return info
+
+#talaba1 = Talaba('alli', 'valli', 'ps454545',1999, 45455, 'navoiy')
+#print(talaba1.get_info())
+#print(talaba1.fanga_yozil())
+
+
+
+
+#class Manzil:
+#    """Manzil saqlash uchun klass"""
+#    def __init__(self,uy,kocha,tuman,viloyat):
+#        """Manzil xususiyatlari"""
+#        self.uy = uy
+#        self.kocha = kocha
+#        self.tuman = tuman
+#        self.viloyat = viloyat
+    
+#    def get_manzil(self):
+#        """Manzilni ko'rish"""
+#        manzil = f"{self.viloyat} viloyati, {self.tuman} tumani, "
+#        manzil += f"{self.kocha} ko'chasi, {self.uy}-uy"
+#        return manzil
+
+#talaba1_manzil = Manzil(12,"Olmazor","Bog'bon","Samarqand")
+#talaba1 = Talaba("Valijon","Aliyev","FA112299",2000,"0000012",talaba1_manzil)           
+#print(talaba1.get_info())
+
+
+#body1 = Shaxs("Abbos", "Abduganiyev", "FF1666666", 1999)
+#print(body1.get_age(2023))
+#print(body1.get_info())
+
+
+
+
+
+
+
+#Talaba klassiga yana bir, fanlar degan xususiyat qo'shing. 
+#Bu xususiyat parametr sifatida uzatilmasin va obyekt yaratilganida 
+#bo'sh ro'yxatdan iborat bo'lsin (self.fanlar=[])
+
+#Fan degan yangi klass yarating va bu klassdan 
+#turli fanlar uchun alohida obyektlar yarating.
+
+
+
+
+#class Fan:
+#    """fanlar uchun klass"""
+#   def __init__(self, nomi,vaqti,davomiyligi):
+#       self.nomi = nomi
+#        self.vaqti = vaqti
+#        self.davomiyligi = davomiyligi
+        
+#    def get_info_fan(self):
+#        information = f"fan nomi:{self.nomi}, vaqti:{self.vaqti},"
+#        information += f"davomiyligi:{self.davomiyligi}"
+#        return information
+    
+    
+#subject1 = Fan("Adabiyot","dushanba","4 oy")
+#subject2 = Fan("tarix", "seshanba", "3 oy")
+#subject3 = Fan("matematika", "chorshanba", "5 oy")
+
+
+
+#Talaba klassiga fanga_yozil() degan yangi metod yozing. 
+#Bu metod parametr sifatida Fan klassiga tegishli obyektlarni qabul 
+#qilib olsin va talabaning fanlar ro'yxatiga qo'shib qo'ysin.
+
+#Talabaning fanlari ro'yxatidan biror fanni o'chirib tashlash 
+#uchun remove_fan() metodini yozing. Agar bu metodga ro'yxatda 
+#yo'q fan uzatilsa "Siz bu fanga yozilmagansiz" xabarini qaytarsin.
+
+#Yuqoridagi Shaxs klassidan boshqa turli voris klasslar 
+#yaratib ko'ring (masalan Professor, Foydalanuvchi, Sotuvchi, Mijoz va hokazo)
+
+#Har bir klassga o'ziga hoz xususiyatlar va metodlar yuklang.
+
+#Barcha yangi klasslar uchun get_info() metodini qayta yozib chiqing.
+
+#Voris klasslardan yana boshqa voris klass yaratib ko'ring. 
+
+#Misol uchun Foydalanuvchi klassidan Admin klassini yarating. 
+
+#Admin klassiga foydalanuvchida yo'q yangi metodlar yozing, 
+
+#masalan, ban_user() metodi konsolga "Foydalanuvchi bloklandi" degan matn chiqarsin.        
+       
+
+
+
+
             
 
 
