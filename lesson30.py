@@ -77,4 +77,51 @@ print(person1.get_name())   # Output: "Dave"
 
 
 
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def __str__(self):
+        return f"{self.name} ({self.age})"
+    
+    def __repr__(self):
+        return f"Person('{self.name}', {self.age})"
+    
+    def __eq__(self, other):
+        if isinstance(other, Person):
+            return self.name == other.name and self.age == other.age
+        return False
+    
+    def __lt__(self, other):
+        if isinstance(other, Person):
+            return self.age < other.age
+        return NotImplemented
+    
+    def __add__(self, other):
+        if isinstance(other, Person):
+            return Person(f"{self.name} and {other.name}", self.age + other.age)
+        return NotImplemented
+
+# create objects
+p1 = Person("Alice", 25)
+p2 = Person("Bob", 30)
+p3 = Person("Charlie", 20)
+
+# use dunder methods
+print(p1)               # prints "Alice (25)"
+print(repr(p2))         # prints "Person('Bob', 30)"
+print(p1 == p2)         # prints False
+print(p1 == Person("Alice", 25))   # prints True
+print(p1 < p2)          # prints True
+print(p2 < p3)          # prints False
+print(p1 + p2)          # prints "Alice and Bob (55)"
+
+
+
+
+
+
+
+
 

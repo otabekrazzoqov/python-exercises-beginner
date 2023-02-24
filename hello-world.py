@@ -5141,3 +5141,397 @@
             
 
 
+#***************************** DARS 31 ********************
+
+#from uuid import uuid4
+
+
+#class Avto:
+#    """Avtomobil klassi"""
+#    __num_avto = 0                     #classning xususiyati
+#    def __init__(self, make, model, rang, yil, narh, km=0):
+#        """Avtomobilning xususiyatlari"""
+#        self.make = make
+#        self.model = model
+#        self.rang = rang
+#        self.yil = yil
+#        self.narh = narh
+#        self.__km = km                #encapsulation  
+#        self.__id = uuid4()           #encapsulation
+#        Avto.__num_avto += 1
+    
+
+#    @classmethod                      # class attribute
+#    def get_num_avto(cls):
+#        return cls.__num_avto
+    
+
+#    def get_km(self):
+#        return self.__km
+    
+
+#    def get_id(self):
+#        return self.__id
+    
+
+#    def add_km(self, km):
+#        """Mashinaning km ga yana km qo'shish"""
+#        if km>=0:
+#            self.__km += km
+#        else:
+#            print("Mashina km kamaytirib bo'lmaydi")
+
+#class Bus:
+#    pass
+
+#class Train:
+#    pass
+
+# avto1 = Avto("GM","Malibu","Qora",2020,40000,100000)
+# print(f"ID: {avto1.get_id()}")
+# avto1.add_km(1500)
+# print(avto1.get_km())
+# print(avto1.get_km())
+
+
+
+
+
+#class MyClass:
+#    def __init__(self, x):
+#        self.__x = x  # x is private
+
+#    def get_x(self):
+#        return self.__x
+
+#    def set_x(self, x):
+#        self.__x = x
+
+
+
+
+
+
+
+
+#******************************************************************************
+#class Animal:
+#    def __init__(self, name, species):
+#        self.name = name
+#        self.species = species
+#
+#    def speak(self):
+#        pass
+
+#class Cat(Animal):                        # Animal - super class 
+#    def __init__(self, name):             # cat - inheritant class
+#        super().__init__(name, 'Cat')      #inheritance
+
+#    def speak(self):
+#        return 'Meow'
+
+#class Dog(Animal):                        # Animal - super class 
+#    def __init__(self, name):             # Dog - inheritant class
+#        super().__init__(name, 'Dog')
+
+#    def speak(self):
+#        return 'Woof'
+
+#class Vet:
+#    def __init__(self, name):
+#        self.name = name
+
+#    def treat(self, animal):
+#        print(f'{self.name} is treating {animal.name}, a {animal.species}')
+#        sound = animal.speak()
+#        print(f'{animal.name} says "{sound}"')
+
+#create objects
+
+#cat1 = Cat('Fluffy')
+#dog1 = Dog('Fido')
+#vet1 = Vet('Dr. Smith')
+
+#call methods
+#vet1.treat(cat1)
+#vet1.treat(dog1)
+
+#*****************************************************************************
+
+
+#Avvalgi darslarimizda yaratgan Shaxs va Talaba klasslariga 
+#yopiq xususiyatlar qo'shing va ularning qiymatini ko'rsatuvchi 
+#va o'zgartiruvchi metodlar yozing.
+
+#Yuqoridagi klasslarga talabalar_soni va odamlar_soni 
+#degan klassga oid xususiyatlar qo'shing.
+
+#Klassga oid xususiyatlar bilan 
+#ishlash uchun maxsus @classmethod lar yozing 
+
+
+
+#******************************************************************************
+#class Shaxs:
+#    __num_shaxs = 0
+#    """Shaxs haqida ma'lumotlar"""
+#    def __init__(self,ismi,familiyasi,passport,millati):
+#        """xususiyatlar"""
+#        self.ismi = ismi
+#        self.familiyasi = familiyasi
+#        self.passport = passport
+#        self.__millati = millati
+#        Shaxs.__num_shaxs += 1                                      
+
+
+#    @classmethod                                 #class attribute
+#    def get_num_shaxs(cls):
+#        return cls.__num_shaxs
+    
+    
+#    def get_nationality(self):
+#        return self.__millati
+    
+#    def get_full_information(self):
+#        return f"ismi: {self.ismi}, familiyasi: {self.familiyasi}"
+    
+#shaxs1 = Shaxs('Abbos', 'Abduganiyev', 'FA996669','uzbekistan')
+#shaxs2 = Shaxs('Qutbiddin', 'Boboniyozov', 'FB889988', 'uzbekistan')
+#shaxs3 = Shaxs('Shoxrux', 'Ashurov', 'FA552244', 'uzbekistan')
+
+
+#print(shaxs1.get_nationality())
+#print(shaxs2.get_num_shaxs())
+#print(shaxs3.get_full_information())
+    
+
+#******************************************************************************
+
+
+
+
+
+#class MyClass:
+#    class_variable = "Hello, World!"
+
+#    def __init__(self, instance_variable):
+#        self.instance_variable = instance_variable
+
+#    def instance_method(self):
+#        print("This is an instance method.")
+#        print(f"Instance variable value: {self.instance_variable}")
+#        print(f"Class variable value: {MyClass.class_variable}")
+
+#    @classmethod
+#    def class_method(cls):
+#        print("This is a class method.")
+#        print(f"Class variable value: {cls.class_variable}")
+
+# Call instance method
+#my_object = MyClass("Instance Variable")
+#my_object.instance_method()
+
+# Call class method
+#MyClass.class_method()
+       
+
+    
+
+#In this example, we have a class called MyClass with two variables: 
+#a class variable called class_variable and an instance variable called 
+#instance_variable. We also have two methods defined: an instance method 
+#called instance_method() and a class method called class_method(), 
+#which is decorated with the @classmethod decorator.
+#The instance_method() method is an instance method, 
+#which means it can only be called on an instance of the class. 
+#It prints the values of the instance variable and the class variable.
+
+#The class_method() method is a class method, which means it can be called 
+#on the class itself rather than an instance of the class. It also prints 
+#the value of the class variable.
+#To call the instance method, we create an instance of the 
+#class using the constructor and then call the method on that instance.
+#To call the class method, we simply call the method on 
+#the class itself without creating an instance.
+#Note that the cls parameter is used instead of self in the 
+#definition of the class_method() method. This parameter 
+#refers to the class itself rather than an instance of the class.
+        
+#*****************************************************************************
+
+#***************************** DARS 32 ********************
+
+
+
+class Avto:
+    __num_avto = 0
+    """Avtomobil klassi"""
+    def __init__(self,make,model,rang,yil,narh):
+        """Avtomobilning xususiyatlari"""
+        self.make = make
+        self.model = model
+        self.rang = rang
+        self.yil = yil
+        self.narh = narh
+        Avto.__num_avto += 1
+    
+    @classmethod
+    def get_num_avto(cls):
+        return cls.__num_avto
+
+    def __str__(self):
+        """Obyekt haqida ma'lumot"""
+        return f"Avto: {self.make} {self.model}. {self.narh}$"
+    
+    def __repr__(self):
+        """Obyekt haqida ma'lumot"""
+        return f"Avto: {self.make} {self.model}. {self.narh}$" 
+    
+    def __eq__(self,boshqa_avto):
+        return self.narh == boshqa_avto.narh
+    
+    def __lt__(self,boshqa_avto):
+        return self.narh<boshqa_avto.narh
+    
+    def __le__(self,boshqa_avto):
+        return self.narh<=boshqa_avto.narh
+    
+    def get_info(self):
+        return f"{self.rang} {self.make} {self.model}.{self.yil}-yil. Narhi:{self.narh}$"
+
+
+
+
+
+
+
+class AvtoSalon:
+    """Avtosalon klassi"""
+    def __init__(self,name):
+        self.name = name
+        self.avtolar = []
+
+    def __repr__(self):                        #dunder method
+        return f"{self.name} avtosaloni"
+    
+    def __len__(self):
+        return len(self.avtolar)
+    
+    def __getitem__(self,index):
+        return self.avtolar[index]
+    
+    def __setitem__(self,index,value):
+        if isinstance(value,Avto):
+            self.avtolar[index]=value
+    
+    def __add__(self,qiymat):
+        if isinstance(qiymat,AvtoSalon):
+            yangi_salon =  AvtoSalon(f"{self.name} {qiymat.name}")
+            yangi_salon.avtolar = self.avtolar + qiymat.avtolar
+            return yangi_salon
+        elif isinstance(qiymat,Avto):
+            self.add_avto(qiymat)
+        else:
+            print(f"AvtoSalon ga {type(qiymat)} qo`shib bo`lmaydi")
+    
+    def __call__(self,*param):
+        if param:
+            for avto in param:
+                self.add_avto(avto)
+        else:
+            return [avto for avto in self.avtolar]
+    
+    def add_avto(self,*qiymat):
+        for avto in qiymat: 
+            if isinstance(avto,Avto):
+                self.avtolar.append(avto)
+            else:
+                print("Avto obyketini kiriting")
+
+    def get_list(self):
+        return [avto for avto in self.avtolar]
+
+        
+
+avto1 = Avto("GM","Malibu","Qora",2020,40000)
+avto2 = Avto("GM","Lacetti","Oq",2020,20000)
+avto3 = Avto("Toyota",'Carolla',"Silver",2018, 45000)
+avto4 = Avto("Mazda", "6", 'Qizil',2015,35000)
+avto5 = Avto("Volkswagen","Polo",'Qora',2015,30000)
+avto6 = Avto("Honda","Accord","Oq",2017,42000)
+
+salon1 = AvtoSalon("MaxAvto")
+salon1(avto1,avto2,avto3)
+print(salon1())
+
+salon2 = AvtoSalon("Avto Lider")
+salon2(avto4,avto5,avto6)
+print(salon2())
+
+print(len(salon1))
+print(avto1<avto2)        
+        
+#*****************************************************************************
+#Avvalga darslarda yaratilgan obyektlarga (Shaxs, Talaba) 
+#turli dunder metodlarni qo'shishni mashq qiling. 
+
+#Obyekt haqida ma'lumot (__rerp__)
+
+#Talabalarni bosqichi bo'yicha solishtirish (__lt__,__eg__ va hokazo)
+
+
+
+
+#Fan degan yangi klass yarating. Fan obyetklari tarkibida shu 
+
+#fanga yozilgan talabalarning ro'yxati saqlansin. 
+
+#Buning uchun Fanga add_student(), __getitem__, __setitem__, __len__ 
+
+#kabi metodlarni qo'shing.
+
+#Fanga qo'shish + operatori yordamida talaba qo'shish metodini yozing
+
+#Minus (-) operatori yordamida fandan talaba olib tashlash metodini yozing 
+#(bunda talabaning passport raqami yoki ID raqami bo'yicha topib, olib tashlash mumkin)
+
+#Fan obyektlarini chaqiriladigan qiling (masalan, fizika(), yoki fizika(talaba1)). 
+#Bu metodlarni o'zingiz istagandek talqin qiling.
+#******************************************************************************        
+        
+class Student:
+    number_of_students = 0
+    """ General information about students"""
+    def __init__(self,name,surname,studentID,major,grade,group):
+        self.name = name
+        self.surname = surname
+        self.studentID = studentID
+        self.major = major
+        self.grade = grade
+        self.group = group
+        Student.number_of_students += 1 
+        
+    def inform(self):
+        return f"Name:{self.name} Surname:{self.surname}"
+    
+    def __repr__(self):
+        return f"{self.name} {self.surname} was born on October 9, 2002"
+    
+    def __eq__(self, other):
+        if isinstance(other, Student):
+            return self.grade == other.grade
+        return False
+    
+    
+        
+        
+        
+        
+   
+student1 = Student('Elbek', 'Razzokov', 221112, 'international', 3, '3A')
+student2 = Student('Abbos', 'Abduganiyev', 988977, 'power engineering', 4, '4B')
+
+
+
+print(student1.inform()) 
+print(student1 == student2)  
