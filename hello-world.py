@@ -5359,117 +5359,120 @@
         
 #*****************************************************************************
 
+
+
+
 #***************************** DARS 32 ********************
 
 
 
-class Avto:
-    __num_avto = 0
-    """Avtomobil klassi"""
-    def __init__(self,make,model,rang,yil,narh):
-        """Avtomobilning xususiyatlari"""
-        self.make = make
-        self.model = model
-        self.rang = rang
-        self.yil = yil
-        self.narh = narh
-        Avto.__num_avto += 1
+#class Avto:
+#    __num_avto = 0
+#    """Avtomobil klassi"""
+#    def __init__(self,make,model,rang,yil,narh):
+#        """Avtomobilning xususiyatlari"""
+#        self.make = make
+#        self.model = model
+#        self.rang = rang
+#        self.yil = yil
+#        self.narh = narh
+#        Avto.__num_avto += 1
     
-    @classmethod
-    def get_num_avto(cls):
-        return cls.__num_avto
+#    @classmethod
+#    def get_num_avto(cls):
+#        return cls.__num_avto
 
-    def __str__(self):
-        """Obyekt haqida ma'lumot"""
-        return f"Avto: {self.make} {self.model}. {self.narh}$"
+#    def __str__(self):
+#        """Obyekt haqida ma'lumot"""
+#        return f"Avto: {self.make} {self.model}. {self.narh}$"
     
-    def __repr__(self):
-        """Obyekt haqida ma'lumot"""
-        return f"Avto: {self.make} {self.model}. {self.narh}$" 
+#    def __repr__(self):
+#        """Obyekt haqida ma'lumot"""
+#        return f"Avto: {self.make} {self.model}. {self.narh}$" 
     
-    def __eq__(self,boshqa_avto):
-        return self.narh == boshqa_avto.narh
+#    def __eq__(self,boshqa_avto):
+#        return self.narh == boshqa_avto.narh
     
-    def __lt__(self,boshqa_avto):
-        return self.narh<boshqa_avto.narh
+#    def __lt__(self,boshqa_avto):
+#        return self.narh<boshqa_avto.narh
     
-    def __le__(self,boshqa_avto):
-        return self.narh<=boshqa_avto.narh
+#    def __le__(self,boshqa_avto):
+#        return self.narh<=boshqa_avto.narh
     
-    def get_info(self):
-        return f"{self.rang} {self.make} {self.model}.{self.yil}-yil. Narhi:{self.narh}$"
-
-
+#    def get_info(self):
+#        return f"{self.rang} {self.make} {self.model}.{self.yil}-yil. Narhi:{self.narh}$"
 
 
 
 
 
-class AvtoSalon:
-    """Avtosalon klassi"""
-    def __init__(self,name):
-        self.name = name
-        self.avtolar = []
 
-    def __repr__(self):                        #dunder method
-        return f"{self.name} avtosaloni"
-    
-    def __len__(self):
-        return len(self.avtolar)
-    
-    def __getitem__(self,index):
-        return self.avtolar[index]
-    
-    def __setitem__(self,index,value):
-        if isinstance(value,Avto):
-            self.avtolar[index]=value
-    
-    def __add__(self,qiymat):
-        if isinstance(qiymat,AvtoSalon):
-            yangi_salon =  AvtoSalon(f"{self.name} {qiymat.name}")
-            yangi_salon.avtolar = self.avtolar + qiymat.avtolar
-            return yangi_salon
-        elif isinstance(qiymat,Avto):
-            self.add_avto(qiymat)
-        else:
-            print(f"AvtoSalon ga {type(qiymat)} qo`shib bo`lmaydi")
-    
-    def __call__(self,*param):
-        if param:
-            for avto in param:
-                self.add_avto(avto)
-        else:
-            return [avto for avto in self.avtolar]
-    
-    def add_avto(self,*qiymat):
-        for avto in qiymat: 
-            if isinstance(avto,Avto):
-                self.avtolar.append(avto)
-            else:
-                print("Avto obyketini kiriting")
 
-    def get_list(self):
-        return [avto for avto in self.avtolar]
+#class AvtoSalon:
+#    """Avtosalon klassi"""
+#    def __init__(self,name):
+#        self.name = name
+#       self.avtolar = []
+
+#    def __repr__(self):                        #dunder method
+#        return f"{self.name} avtosaloni"
+    
+#    def __len__(self):
+#        return len(self.avtolar)
+    
+#    def __getitem__(self,index):
+#        return self.avtolar[index]
+    
+#    def __setitem__(self,index,value):
+#        if isinstance(value,Avto):
+#            self.avtolar[index]=value
+    
+#    def __add__(self,qiymat):
+#        if isinstance(qiymat,AvtoSalon):
+#            yangi_salon =  AvtoSalon(f"{self.name} {qiymat.name}")
+#            yangi_salon.avtolar = self.avtolar + qiymat.avtolar
+#            return yangi_salon
+#        elif isinstance(qiymat,Avto):
+#            self.add_avto(qiymat)
+#        else:
+#            print(f"AvtoSalon ga {type(qiymat)} qo`shib bo`lmaydi")
+    
+#    def __call__(self,*param):
+#        if param:
+#            for avto in param:
+#                self.add_avto(avto)
+#        else:
+#            return [avto for avto in self.avtolar]
+    
+#    def add_avto(self,*qiymat):
+#        for avto in qiymat: 
+#            if isinstance(avto,Avto):
+#                self.avtolar.append(avto)
+#            else:
+#                print("Avto obyketini kiriting")
+
+#    def get_list(self):
+#        return [avto for avto in self.avtolar]
 
         
 
-avto1 = Avto("GM","Malibu","Qora",2020,40000)
-avto2 = Avto("GM","Lacetti","Oq",2020,20000)
-avto3 = Avto("Toyota",'Carolla',"Silver",2018, 45000)
-avto4 = Avto("Mazda", "6", 'Qizil',2015,35000)
-avto5 = Avto("Volkswagen","Polo",'Qora',2015,30000)
-avto6 = Avto("Honda","Accord","Oq",2017,42000)
+#avto1 = Avto("GM","Malibu","Qora",2020,40000)
+#avto2 = Avto("GM","Lacetti","Oq",2020,20000)
+#avto3 = Avto("Toyota",'Carolla',"Silver",2018, 45000)
+#vto4 = Avto("Mazda", "6", 'Qizil',2015,35000)
+#avto5 = Avto("Volkswagen","Polo",'Qora',2015,30000)
+#vto6 = Avto("Honda","Accord","Oq",2017,42000)
 
-salon1 = AvtoSalon("MaxAvto")
-salon1(avto1,avto2,avto3)
-print(salon1())
+#salon1 = AvtoSalon("MaxAvto")
+#salon1(avto1,avto2,avto3)
+#print(salon1())
 
-salon2 = AvtoSalon("Avto Lider")
-salon2(avto4,avto5,avto6)
-print(salon2())
+#salon2 = AvtoSalon("Avto Lider")
+#salon2(avto4,avto5,avto6)
+#print(salon2())
 
-print(len(salon1))
-print(avto1<avto2)        
+#print(len(salon1))
+#print(avto1<avto2)        
         
 #*****************************************************************************
 #Avvalga darslarda yaratilgan obyektlarga (Shaxs, Talaba) 
@@ -5499,28 +5502,28 @@ print(avto1<avto2)
 #Bu metodlarni o'zingiz istagandek talqin qiling.
 #******************************************************************************        
         
-class Student:
-    number_of_students = 0
-    """ General information about students"""
-    def __init__(self,name,surname,studentID,major,grade,group):
-        self.name = name
-        self.surname = surname
-        self.studentID = studentID
-        self.major = major
-        self.grade = grade
-        self.group = group
-        Student.number_of_students += 1 
+#class Student:
+#    number_of_students = 0
+#    """ General information about students"""
+#    def __init__(self,name,surname,studentID,major,grade,group):
+#        self.name = name
+#        self.surname = surname
+#        self.studentID = studentID
+#        self.major = major
+#        self.grade = grade
+#        self.group = group
+#        Student.number_of_students += 1 
         
-    def inform(self):
-        return f"Name:{self.name} Surname:{self.surname}"
+#    def inform(self):
+#        return f"Name:{self.name} Surname:{self.surname}"
     
-    def __repr__(self):
-        return f"{self.name} {self.surname} was born on October 9, 2002"
+#    def __repr__(self):
+#        return f"{self.name} {self.surname} was born on October 9, 2002"
     
-    def __eq__(self, other):
-        if isinstance(other, Student):
-            return self.grade == other.grade
-        return False
+#    def __eq__(self, other):
+#        if isinstance(other, Student):
+#            return self.grade == other.grade
+#        return False
     
     
         
@@ -5528,10 +5531,83 @@ class Student:
         
         
    
-student1 = Student('Elbek', 'Razzokov', 221112, 'international', 3, '3A')
-student2 = Student('Abbos', 'Abduganiyev', 988977, 'power engineering', 4, '4B')
+#student1 = Student('Elbek', 'Razzokov', 221112, 'international', 3, '3A')
+#student2 = Student('Abbos', 'Abduganiyev', 988977, 'power engineering', 4, '4B')
 
 
 
-print(student1.inform()) 
-print(student1 == student2)  
+#print(student1.inform()) 
+#print(student1 == student2)  
+#******************************************************************************
+
+class Science:
+    def __init__(self):
+        self.students = []
+
+    def add_student(self, student_name):
+        self.students.append(student_name)
+    
+#    def add_student(self, student_name):   #the same as the previous method
+#        self.students += [student_name]
+
+
+    def remove_student(self, student_name):
+        if student_name in self.students:
+            self.students.remove(student_name)
+
+    def get_students(self):
+        return self.students
+    
+    def __getitem__(self, index):
+        return self.students[index]
+
+    def __setitem__(self, index, value):
+        self.students[index] = value
+
+    def __len__(self):
+        return len(self.students)
+    
+    def __call__(self, *args):
+        if len(args) == 1:
+            self.add_student(args[0])
+        elif len(args) == 2 and args[0] == "remove":
+            self.remove_student(args[1])
+        else:
+            raise ValueError("Invalid arguments")
+
+
+science_class = Science()
+
+science_class.add_student("Alice")
+science_class.add_student("Bob")
+science_class.add_student("Charlie")
+science_class.add_student("Elbek")
+science_class.add_student("Qutbiddin")
+science_class.add_student("Abbos")
+
+
+
+
+
+print(science_class.get_students())  # Output: ['Alice', 'Bob', 'Charlie']
+
+science_class.remove_student("Bob")
+
+print(science_class.get_students())  # Output: ['Alice', 'Charlie']
+
+print(science_class[0])  # Output: 'Alice'
+
+science_class[0] = "Alex"
+print(science_class[0])  # Output: 'Alex'
+
+print(len(science_class))
+#******************************************************************************
+
+
+
+
+#***************************** DARS 33 ********************
+
+
+
+
