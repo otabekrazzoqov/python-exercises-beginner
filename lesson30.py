@@ -75,7 +75,7 @@ print(person1.get_name())   # Output: "Dave"
 #methods to perform actions, as well as how to change the values of their 
 #attributes using the setter methods.
 
-
+#*****************************************************************************
 
 class Person:
     def __init__(self, name, age):
@@ -117,6 +117,37 @@ print(p1 < p2)          # prints True
 print(p2 < p3)          # prints False
 print(p1 + p2)          # prints "Alice and Bob (55)"
 
+
+
+
+#*****************************************************************************
+
+
+
+import pickle
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name} ({self.age})"
+
+# Create a list of Person objects
+people = [Person("Alice", 30), Person("Bob", 25), Person("Charlie", 40)]
+
+# Serialize the list to a file using pickle.dump()
+with open("people.pickle", "wb") as f:
+    pickle.dump(people, f)
+
+# Deserialize the list from the file using pickle.load()
+with open("people.pickle", "rb") as f:
+    loaded_people = pickle.load(f)
+
+# Print the deserialized list
+for person in loaded_people:
+    print(person)
 
 
 

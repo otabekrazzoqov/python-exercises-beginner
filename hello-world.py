@@ -5540,73 +5540,145 @@
 #print(student1 == student2)  
 #******************************************************************************
 
-class Science:
-    def __init__(self):
-        self.students = []
+#class Science:
+#    def __init__(self):
+#        self.students = []
 
-    def add_student(self, student_name):
-        self.students.append(student_name)
+#    def add_student(self, student_name):
+#        self.students.append(student_name)
     
 #    def add_student(self, student_name):   #the same as the previous method
 #        self.students += [student_name]
 
 
-    def remove_student(self, student_name):
-        if student_name in self.students:
-            self.students.remove(student_name)
+#    def remove_student(self, student_name):
+#        if student_name in self.students:
+#            self.students.remove(student_name)
 
-    def get_students(self):
-        return self.students
+#    def get_students(self):
+#        return self.students
     
-    def __getitem__(self, index):
-        return self.students[index]
+#    def __getitem__(self, index):
+#        return self.students[index]
 
-    def __setitem__(self, index, value):
-        self.students[index] = value
+#    def __setitem__(self, index, value):
+#        self.students[index] = value
 
-    def __len__(self):
-        return len(self.students)
+#    def __len__(self):
+#        return len(self.students)
     
-    def __call__(self, *args):
-        if len(args) == 1:
-            self.add_student(args[0])
-        elif len(args) == 2 and args[0] == "remove":
-            self.remove_student(args[1])
-        else:
-            raise ValueError("Invalid arguments")
+#    def __call__(self, *args):
+#        if len(args) == 1:
+#            self.add_student(args[0])
+#        elif len(args) == 2 and args[0] == "remove":
+#            self.remove_student(args[1])
+#        else:
+#            raise ValueError("Invalid arguments")
 
 
-science_class = Science()
+#science_class = Science()
 
-science_class.add_student("Alice")
-science_class.add_student("Bob")
-science_class.add_student("Charlie")
-science_class.add_student("Elbek")
-science_class.add_student("Qutbiddin")
-science_class.add_student("Abbos")
-
-
+#science_class.add_student("Alice")
+#science_class.add_student("Bob")
+#science_class.add_student("Charlie")
+#science_class.add_student("Elbek")
+#science_class.add_student("Qutbiddin")
+#science_class.add_student("Abbos")
 
 
 
-print(science_class.get_students())  # Output: ['Alice', 'Bob', 'Charlie']
 
-science_class.remove_student("Bob")
 
-print(science_class.get_students())  # Output: ['Alice', 'Charlie']
-
-print(science_class[0])  # Output: 'Alice'
-
-science_class[0] = "Alex"
-print(science_class[0])  # Output: 'Alex'
-
-print(len(science_class))
+#print(science_class.get_students())  # Output: ['Alice', 'Bob', 'Charlie']
+#science_class.remove_student("Bob")
+#print(science_class.get_students())  # Output: ['Alice', 'Charlie']
+#print(science_class[0])  # Output: 'Alice'
+#science_class[0] = "Alex"
+#print(science_class[0])  # Output: 'Alex'
+#print(len(science_class))
 #******************************************************************************
 
 
 
 
 #***************************** DARS 33 ********************
+
+#Quyidagi usul tavsiya qilinmaydi!!!
+
+#file = open('pi.txt')
+#PI = file.read()
+#print(PI)
+#file.close()
+
+#******************************************************************************
+
+#with open('pi.txt') as file:   # with yordamida file ni ochish
+#    pi = file.read()
+  
+#print(pi)
+
+#pi = pi.rstrip()
+#pi = pi.replace('\n','')
+#pi = float(pi)
+#print(pi)
+
+#******************************************************************************
+
+
+#filename = 'data/talabalar.txt'        # c disk github repos fayli 
+#with open(filename) as file:           # python-exercises-beginner fayli
+#    for line in file:
+#        print(line)
+        
+#******************************************************************************        
+        
+#with open(filename) as file:
+#    talabalar = file.readlines()       #readlines() metodi faylni o'qib
+                                       # talabalar ro'yxatiga qo'shadi
+#print(talabalar)
+
+#talabalar = [talaba.rstrip() for talaba in talabalar]
+#print(talabalar)
+
+#******************************************************************************
+
+import pickle
+
+talaba1 = {'ism':'hasan', 'familiya':'husanov', 'tyil':2003, 'kurs': 2}
+talaba2 = {'ism':'alijon', 'familiya':'valiyev', 'tyil':2004, 'kurs': 1}
+
+with open('info','wb') as file:
+    pickle.dump(talaba1,file)
+    pickle.dump(talaba2,file)
+
+
+faylnomi = 'new_file.txt'
+ism = 'Olimjon Hasanov'
+tyil = 2004
+with open(faylnomi,'w') as fayl:
+    fayl.write(ism+'\n')
+    fayl.write(str(tyil)+'\n')
+    
+with open(faylnomi,'a') as fayl:
+    fayl.write('Alijon Valiyev\n')
+    fayl.write('2000')     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
