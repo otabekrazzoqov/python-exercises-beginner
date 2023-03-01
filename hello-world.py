@@ -5601,7 +5601,15 @@
 
 
 
+
+
+
+
+
 #***************************** DARS 33 ********************
+#                     MATNLI FAYLLAR BILAN ISHLASH
+
+
 
 #Quyidagi usul tavsiya qilinmaydi!!!
 
@@ -5642,32 +5650,147 @@
 
 #******************************************************************************
 
-import pickle
-
-talaba1 = {'ism':'hasan', 'familiya':'husanov', 'tyil':2003, 'kurs': 2}
-talaba2 = {'ism':'alijon', 'familiya':'valiyev', 'tyil':2004, 'kurs': 1}
-
-with open('info','wb') as file:
-    pickle.dump(talaba1,file)
-    pickle.dump(talaba2,file)
-
-
-faylnomi = 'new_file.txt'
-ism = 'Olimjon Hasanov'
-tyil = 2004
-with open(faylnomi,'w') as fayl:
-    fayl.write(ism+'\n')
-    fayl.write(str(tyil)+'\n')
+#faylnomi = 'new_file.txt'
+#ism = 'Olimjon Hasanov'
+#tyil = 2004
+#with open(faylnomi,'w') as fayl:    # yangi fayl yaratiladi va fayl ichiga 
+#    fayl.write(ism+'\n')            # yoziladi 
+#    fayl.write(str(tyil)+'\n')
     
-with open(faylnomi,'a') as fayl:
-    fayl.write('Alijon Valiyev\n')
-    fayl.write('2000')     
+#with open(faylnomi,'a') as fayl:    # mavjud faylga yangi matn qo'shadi
+#    fayl.write('Alijon Valiyev\n')
+#    fayl.write('2000')
+    
+#print(faylnomi)    
+
+#******************************************************************************
+
+
+#import pickle   # maxsus modul
+
+#talaba1 = {'ism':'hasan', 'familiya':'husanov', 'tyil':2003, 'kurs': 2}
+#talaba2 = {'ism':'alijon', 'familiya':'valiyev', 'tyil':2004, 'kurs': 1}
+
+#with open('info','wb') as file:    # info - yangi fayl, wb -  write binary 
+#    pickle.dump(talaba1,file)      # dump - talaba1 ni faylga yuklash uchun
+#    pickle.dump(talaba2,file)      
+
+#******************************************************************************
+
+#import pickle
+
+#with open('info','rb') as file:  # info - yangi fayl, rb - read binary
+#    talaba1 = pickle.load(file)
+#    talaba2 = pickle.load(file)
+
+#print(talaba1)
+#print(talaba2)
+
+
+
+#******************************************************************************
+
+#Bugun o'rgangan narsalaringizni matnga yozing 
+#matnni Python yordamida oching.
+
+
+#filename = 'data/lesson33.txt'         # c disk github repos fayli 
+#with open(filename) as file:           # python-exercises-beginner fayli
+#    for line in file:
+#        print(line)
+
+#******************************************************************************
+
+
+#Quyidagi pi_million_digits.txt faylini yuklab oling 
+#(faylda   soni nuqtadan so'ng million xona aniqlik bilan yozilgan).
+
+#filename = 'data/pi_million_digits.txt'
+#with open(filename) as file:
+#    for line in file:
+#       print(line)
+
+        
+#******************************************************************************        
+
+#Sizning tug'ilgan kuningiz  soni tarkibida uchraydimi yoki yo'q 
+#ekanligini aniqlovchi funksiya yozing. Misol uchun, tug'ilgan 
+#sanangiz 25 Fevral, 2000-yil bo'lsa, 25022000 ketma-ketligi 
+#yuqoridagi matnda uchraydimi yo'q toping.
+
+#filename = 'data/pi_million_digits.txt'
+#with open(filename) as file:
+#    for number in file:
+#        bd = 24081996
+#       if bd in file:
+#            print(bd)
+
+#******************************************************************************
+
+#import pickle
+
+#with open('data/pi_million_digits.txt') as file:
+#    pi = file.read()
+#pi = pi.rstrip() # qator oxiridagi bo'shliqlarni olib tashlaymiz
+#pi = pi.replace('\n','') # qator tashlash belgisini almashtiramiz
+#pi = pi.replace(' ','')
+
+#Tug'ilgan kunim pi da bormi?
+#bdate = '31122000'
+#print(bdate in pi)
+
+#pi = float(pi) # matnni float (o'nlik) songa o'tkazamiz
+
+#with open('data/pi_float.dat','wb') as file:
+#    pickle.dump(pi,file)
+
+
+            
+#******************************************************************************
+
+#Fayl ichidagi matnni float ma'lumot turiga o'tkazing va 
+#pickle yordamida yangi faylga saqlang.    
+    
+#filename = 'data/pi_million_digits.txt'
+#with open(filename) as file:                    # with yordamida file ni ochish
+#    pi = file.read()
+  
+#print(pi)
+#pi = pi.rstrip()
+#pi = pi.replace('\n','')
+#pi = float(pi)
+#print(pi)
 
 
 
 
 
+#******************************************************************************
 
+
+#Foydalanuvchidan turli hil ma'lumotlarni so'rab, har bir kiritilgan 
+#ma'lumotni yangi qatordan faylga yozib boruvchi dastur tuzing. 
+#Dastur qayta chaqirilganida yangi ma'lumotlar fayl oxiridan 
+#qo'shilib borsin (yangi faylga emas). 
+
+
+#while True:
+#    book = input("Yaxshi koʻrgan kitobingizni kiriting (to'xtash uchun Enter bosing): ")
+#    if not book: break
+#    with open('data/books33.txt','a') as file:
+#        file.write(book+'\n')
+
+
+#Guruhdagi o'quvchilar ro'yxati
+#while True:
+#   student = input('Ism familiyani kiriting (to\'xtash uchun enter): ')
+#   if not student: break
+#    with open('data/talabalar.txt' , 'a') as file:  # data > talabalar.txt
+#        file.write(student+'\n')
+        
+#******************************************************************************
+
+       
 
 
 
