@@ -1,4 +1,4 @@
-PYTHON [ROADMAP IN UZBEK]
+PYTHON LEARNING
 
 
-ushbu repositoryda python darslariga oid mashqlar jamlangan.
+
