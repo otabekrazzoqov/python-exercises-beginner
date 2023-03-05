@@ -5927,6 +5927,17 @@
 #        print(f"Siz {2023-yosh} yilda tug'ilgansiz")    #infinite loop
 #    except:
 #        print('Siz butun son kiritmadingiz!') 
+
+
+
+#while True:
+#    yosh = input("Yoshingizni kiriting: ")
+#    if yosh.isdigit():
+#        yosh = int(yosh)
+#        break        
+
+#print(f"Siz {2021-yosh} yilda tug'ilgansiz")
+
         
 #******************************************************************************
 
@@ -5978,26 +5989,39 @@
 #******************************************************************************    
 #FileNotFoundError
 
-filename = "date.txt"  #bunday fayl mavjud emas
+#filename = "date.txt"  #bunday fayl mavjud emas
 
-try:
-    with open(filename) as f:
-        text = f.read()
-except FileNotFoundError:
-    print(f"{filename} mavjud emas")
+#try:
+#    with open(filename) as f:
+#        text = f.read()
+#except FileNotFoundError:
+#    print(f"{filename} mavjud emas")
     
 #******************************************************************************
 
-import json
-files = ['talaba1.json','talaba2.json','talaba3.json','talaba4.json']
-for filename in files:
-     try:
-         with open(filename) as f:
-             talaba = json.load(f)        
-     except FileNotFoundError:
-         pass
-     else:
-         print(talaba['ism'])
+#import json
+#files = ['talaba1.json','talaba2.json','talaba3.json','talaba4.json']
+#for filename in files:
+#     try:
+#        with open(filename) as f:
+#            talaba = json.load(f)        
+#     except FileNotFoundError:
+#        pass                                       #pass keyingi amalga o'tish
+#     else:
+#         print(talaba['ism'])
 
+#******************************************************************************
 
+#n = input("butun sonni kiriting: ")
 
+#try:
+#    n=int(n)
+#    x=20/n
+#except ValueError:
+#    print("butun son kiritmadingiz")
+#except ZeroDivisionError:
+#    print("0 ga bo'lish mumkin emas")
+#else:
+#    print(f"x={x}")
+
+#******************************************************************************
