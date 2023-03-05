@@ -6029,10 +6029,196 @@
 
 #***************************** DARS 36 ********************
 
-def get_full_name(ism, familiya):
-    return f"{ism} {familiya}".title()
+#def get_full_name(ism, familiya):
+#    return f"{ism} {familiya}".title()
 
-print(get_full_name("abbos", "abduganiyev"))
+#print(get_full_name("abbos", "abduganiyev"))
+
+#******************************************************************************
+
+
+
+#Quyidagi funksiyalarni yarating, va ularning har biri 
+#uchun test dasturlarini yozing:
+
+#Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya
+
+#x = int(input("birinchi sonni kiriting: "))
+#y = int(input("ikkinchi sonni kiriting: "))
+#z = int(input("uchinchi sonni kiriting: "))
+ 
+#if x>=y and x>=z:
+#    print("birinchi son katta")
+#if y>=x and y>=z:
+#   print("ikkinchi son katta")
+#f z>=x and z>=y:
+#    print("uchinchi son katta")
+
+#******************************************************************************
+
+#def find_max(a, b, c):
+#    return max(a, b, c)
+
+#num1 = float(input("Enter first number: "))
+#um2 = float(input("Enter second number: "))
+#num3 = float(input("Enter third number: "))
+
+#print(f"The largest number is {find_max(num1, num2, num3)}")
+   
+#******************************************************************************
+
+#import unittest
+
+#def find_max(a, b, c):
+#    return max(a, b, c)
+
+#class TestFindMax(unittest.TestCase):
+#    def test_positive_numbers(self):
+#       self.assertEqual(find_max(1, 2, 3), 3)
+#        self.assertEqual(find_max(10, 5, 8), 10)
+#       self.assertEqual(find_max(7, 7, 7), 7)
+
+#    def test_negative_numbers(self):
+#        self.assertEqual(find_max(-1, -2, -3), -1)
+#        self.assertEqual(find_max(-10, -5, -8), -5)
+#       self.assertEqual(find_max(-7, -7, -7), -7)
+
+#if __name__ == '__main__':
+#    unittest.main()
+
+
+   
+#******************************************************************************
+
+    
+
+#Matnlardan iborat ro'yxat qabul qilib, ro'yxatdagi har bir 
+#matnning birinchi harfini katta harfga o'zgatiruvchi funksiya
+
+#def capitalize_first_letters(texts):
+#    capitalized_texts = []
+#    for text in texts:
+#        capitalized_text = text.capitalize()
+#        capitalized_texts.append(capitalized_text)
+#    return capitalized_texts
+
+#text_list = ["hello world", "python is awesome", "how are you doing?"]
+#capitalized_text_list = capitalize_first_letters(text_list)
+
+#print(capitalized_text_list)
+
+
+
+#******************************************************************************
+
+
+
+#import unittest
+
+#def capitalize_first_letters(texts):
+#    capitalized_texts = []
+#    for text in texts:
+#        capitalized_text = text.capitalize()
+#        capitalized_texts.append(capitalized_text)
+#    return capitalized_texts
+
+#class TestCapitalizeFirstLetters(unittest.TestCase):
+#    def test_single_word(self):
+#        result = capitalize_first_letters(['hello'])
+#        self.assertEqual(result, ['Hello'])
+
+#    def test_multiple_words(self):
+#        result = capitalize_first_letters(['hello world', 'python is awesome'])
+#        self.assertEqual(result, ['Hello world', 'Python is awesome'])
+
+#    def test_empty_list(self):
+#        result = capitalize_first_letters([])
+#        self.assertEqual(result, [])
+
+#if __name__ == '__main__':
+#    unittest.main()
+
+
+
+#Berilgan sonlar ro'yxatidan juft sonlarni ajratib oluvchi funksiya.
+
+
+
+#def is_prime(num):
+#    if num < 2:
+#        return False
+#    for i in range(2, int(num ** 0.5) + 1):
+#        if num % i == 0:
+#            return False
+#    return True
+
+#def get_primes(numbers):
+#    primes = []
+#    for num in numbers:
+#        if is_prime(num):
+#            primes.append(num)
+#    return primes
+
+#number_list = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+#prime_list = get_primes(number_list)
+
+#print(prime_list)
+
+
+#******************************************************************************
+
+
+#import unittest
+
+#def is_prime(num):
+#    if num < 2:
+#        return False
+#   for i in range(2, int(num ** 0.5) + 1):
+#        if num % i == 0:
+#            return False
+#    return True
+
+#def get_primes(numbers):
+#    primes = []
+#    for num in numbers:
+#       if is_prime(num):
+#           primes.append(num)
+#   return primes
+
+#class TestGetPrimes(unittest.TestCase):
+#    def test_single_prime(self):
+#        result = get_primes([2])
+#        self.assertEqual(result, [2])
+
+#    def test_multiple_primes(self):
+#        result = get_primes([2, 3, 5, 7, 11])
+#        self.assertEqual(result, [2, 3, 5, 7, 11])
+
+#    def test_no_primes(self):
+#        result = get_primes([4, 6, 8, 9, 10])
+#        self.assertEqual(result, [])
+
+#if __name__ == '__main__':
+#    unittest.main()
+#******************************************************************************
+
+
+def is_fibonacci(num):
+    if num < 0:
+        return False
+    elif num == 0 or num == 1:
+        return True
+    else:
+        prev_num, next_num = 0, 1
+        while next_num < num:
+            prev_num, next_num = next_num, prev_num + next_num
+        return next_num == num
+
+# Example usage
+print(is_fibonacci(13))  # Output: True
+print(is_fibonacci(15))  # Output: False
+
+#******************************************************************************
 
 
 
