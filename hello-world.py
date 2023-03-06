@@ -6203,22 +6203,60 @@
 #******************************************************************************
 
 
-def is_fibonacci(num):
-    if num < 0:
-        return False
-    elif num == 0 or num == 1:
-        return True
-    else:
-        prev_num, next_num = 0, 1
-        while next_num < num:
-            prev_num, next_num = next_num, prev_num + next_num
-        return next_num == num
+#def is_fibonacci(num):
+#    if num < 0:
+#        return False
+#    elif num == 0 or num == 1:
+#        return True
+#    else:
+#        prev_num, next_num = 0, 1
+#       while next_num < num:
+#           prev_num, next_num = next_num, prev_num + next_num
+#       return next_num == num
 
 # Example usage
-print(is_fibonacci(13))  # Output: True
-print(is_fibonacci(15))  # Output: False
+#print(is_fibonacci(13))  # Output: True
+#print(is_fibonacci(15))  # Output: False
 
 #******************************************************************************
 
+#def add(a,b):
+#    return a+5, b+5 
+#result = add(3, 2)
+#print(result)
 
+#******************************************************************************
+
+def factorial(n):
+    if n < 0:
+        raise ValueError("Factorial is not defined for negative numbers")
+    elif n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+son = factorial(5)
+print(son)
+
+#******************************************************************************
+
+import unittest
+
+class TestFactorial(unittest.TestCase):
+    
+    def test_factorial_zero(self):
+        self.assertEqual(factorial(0), 1)
+    
+    def test_factorial_positive(self):
+        self.assertEqual(factorial(5), 120)
+        self.assertEqual(factorial(10), 3628800)
+    
+    def test_factorial_negative(self):
+        with self.assertRaises(ValueError):
+            factorial(-1)
+        with self.assertRaises(ValueError):
+            factorial(-10)
+
+if __name__ == '__main__':
+    unittest.main()
 
