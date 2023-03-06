@@ -6027,7 +6027,15 @@
 #******************************************************************************
 
 
+
+
+
+
+
+
 #***************************** DARS 36 ********************
+
+
 
 #def get_full_name(ism, familiya):
 #    return f"{ism} {familiya}".title()
@@ -6227,36 +6235,66 @@
 
 #******************************************************************************
 
-def factorial(n):
-    if n < 0:
-        raise ValueError("Factorial is not defined for negative numbers")
-    elif n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
+#def factorial(n):
+#    if n < 0:
+#        raise ValueError("Factorial is not defined for negative numbers")
+#    elif n == 0:
+#        return 1
+#    else:
+#        return n * factorial(n - 1)
 
-son = factorial(5)
-print(son)
+#son = factorial(5)
+#print(son)
 
 #******************************************************************************
 
-import unittest
+#import unittest
 
-class TestFactorial(unittest.TestCase):
+#class TestFactorial(unittest.TestCase):
     
-    def test_factorial_zero(self):
-        self.assertEqual(factorial(0), 1)
+#    def test_factorial_zero(self):
+#        self.assertEqual(factorial(0), 1)
     
-    def test_factorial_positive(self):
-        self.assertEqual(factorial(5), 120)
-        self.assertEqual(factorial(10), 3628800)
+#    def test_factorial_positive(self):
+#        self.assertEqual(factorial(5), 120)
+#        self.assertEqual(factorial(10), 3628800)
     
-    def test_factorial_negative(self):
-        with self.assertRaises(ValueError):
-            factorial(-1)
-        with self.assertRaises(ValueError):
-            factorial(-10)
+#    def test_factorial_negative(self):
+#        with self.assertRaises(ValueError):
+#            factorial(-1)
+#        with self.assertRaises(ValueError):
+#            factorial(-10)
 
-if __name__ == '__main__':
-    unittest.main()
+#if __name__ == '__main__':
+#    unittest.main()
 
+#******************************************************************************
+
+
+
+
+#***************************** DARS 37 ********************
+
+class Car:
+    """self, make, model, year, km = 0, price = None)"""
+    def __init__(self, make, model, year, km=0,price = None):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.price = price 
+        self.__km = km                                           #encapsulation
+        
+        
+    def set_price(self, price):
+        self.price = price
+        
+    def add_km(self, km):
+        """Mashinaning km ga yana km qo'shish"""
+        if km >= 0:
+            self.__km += km
+        else:
+            raise ValueError("km manfiy bo'lishi mumkin emas")
+            
+    def get_info(self):
+        
+        
