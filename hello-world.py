@@ -6275,26 +6275,93 @@
 
 #***************************** DARS 37 ********************
 
+
+
 class Car:
-    """self, make, model, year, km = 0, price = None)"""
-    def __init__(self, make, model, year, km=0,price = None):
+    """(self,make,model,year,km=0,price=None)"""
+    def __init__(self,make,model,year,km=0,price=None):
         self.make = make
         self.model = model
         self.year = year
-        self.price = price 
-        self.__km = km                                           #encapsulation
-        
-        
-    def set_price(self, price):
+        self.price = price
+        self.__km = km
+    
+    def set_price(self,price):
         self.price = price
         
-    def add_km(self, km):
+    def add_km(self,km):
         """Mashinaning km ga yana km qo'shish"""
-        if km >= 0:
-            self.__km += km
+        if km>=0:
+            self.__km = km
         else:
             raise ValueError("km manfiy bo'lishi mumkin emas")
-            
+    
     def get_info(self):
+        info = f"{self.make.upper()} {self.model.title()}, " 
+        info += f"{self.year}-yil, {self.__km}km yurgan."
+        if self.price:
+            info += f" Narhi: {self.price}"
+        return info
+       
+    def get_km(self):
+        return self.__km
         
+avto1 = Car('gm', 'malibu', '2022')   #car classiga tegishli obyekt
+print(avto1.get_km())                 #avto1 km kiritilmagan = 0
+print(avto1.get_info())
+
+
+#******************************************************************************
+
+import unittest
+from cars_lesson37 import Car
+
+class CarTest(unittest.TestCase):
+    """Car klassini tekshirish uchun test"""
+    def setUp(self):        
+        make = "GM"
+        model = "Malibu"
+        year = 2020        
+        self.price = 40000
+        self.km = 10000
+        self.avto1 = Car(make,model,year)
+        self.avto2 = Car(make,model,year,price=self.price)
         
+    def test_create(self):                
+        # Qiymatlar mavjudligini assertIsNotNone metodi bilan tekshiramiz
+        self.assertIsNotNone(self.avto1.make)
+        self.assertIsNotNone(self.avto1.model)
+        self.assertIsNotNone(self.avto1.year)
+        # Qiymat mavjud emasligini assertIsNone metodi bilan tekshiramiz
+        self.assertIsNone(self.avto1.price)
+        # Qiymat tengligini assertEquals metodi bilan tekshiramiz
+        self.assertEqual(0,self.avto1.get_km())
+        # avto2 narhini tekshiramiz
+        self.assertEqual(self.price,self.avto2.price)
+    
+    def test_set_price(self):
+        self.avto2.set_price(self.price)
+        self.assertEqual(self.price,self.avto2.price)
+    
+    def test_add_km(self):
+        # Musbat qiymat berib ko'ramiz
+        self.avto1.add_km(self.km)
+        self.assertEqual(self.km,self.avto1.get_km())
+        # Manfiy qiymat berib ko'ramiz
+        new_km = -5000        
+        try:
+            self.avto1.add_km(new_km)
+        except ValueError as error:
+            self.assertEqual(type(error), ValueError)
+    
+    def test_get_info(self):
+        avto1_info = 'GM Malibu, 2020-yil, 0km yurgan.'
+        self.assertEqual(avto1_info,self.avto1.get_info())
+        # avto1 narhi va km o'zgartiramiz
+        self.avto1.set_price(50000)
+        self.avto1.add_km(20000)
+        avto1_info = 'GM Malibu, 2020-yil, 20000km yurgan. Narhi: 50000'
+        self.assertEqual(avto1_info,self.avto1.get_info())
+
+        
+unittest.main()
