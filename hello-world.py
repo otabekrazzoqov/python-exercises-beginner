@@ -6365,3 +6365,30 @@
 
         
 #unittest.main()
+
+
+
+
+
+
+#***************************** DARS 38 ********************
+
+import datetime as dt
+now = dt.datetime.now()
+print(now)
+print(now.date())
+print(now.time())
+print(now.day)
+print(now.hour)
+print(now.minute)
+print(now.second)
+
+
+
+
+
+
+
+
+
+
