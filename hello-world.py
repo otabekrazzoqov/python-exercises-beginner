@@ -6373,7 +6373,7 @@
 
 #***************************** DARS 38 ********************
 
-import datetime as dt
+#import datetime as dt
 #now = dt.datetime.now()
 #print(now)
 #print(now.date())
@@ -6386,7 +6386,7 @@ import datetime as dt
 #******************************************************************************
 #DATE
 
-bugun = dt.date.today()
+#bugun = dt.date.today()
 print(f"bugun sana {bugun}")
 ertaga = dt.date(2023,3,12)
 print(f"ertaga sana {ertaga}")
@@ -6409,6 +6409,21 @@ ramazon = dt.date(2023,3,23)
 farq = ramazon-bugun
 print(farq)
 print(f"Ramazonga {farq.days} kun qoldi")
+
+#******************************************************************************
+#SOATLAR ORASIDAGI FARQ
+
+hozir = dt.datetime.now()
+futbol = dt.datetime(2023,3,15,12,45,00)
+farq = futbol - hozir
+print(farq)
+sekundldar = farq.seconds
+minutlar = int(sekundldar/60)
+soatlar = int(minutlar/60)
+print(f"futbol boshlanishiga {farq.days} kunu {soatlar} soat qoldi")
+
+#******************************************************************************
+
 
 
 
