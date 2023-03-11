@@ -6428,120 +6428,120 @@
 
 
 
-import math
+#import math
 
-PI = math.pi
-print(PI)
-E = math.e
-print(E)
+#PI = math.pi
+#print(PI)
+#E = math.e
+#print(E)
 
 #******************************************************************************
 #trigonometriya
-math.sin(math.pi/2)
-math.cos(0)
-math.tan(PI)
+#math.sin(math.pi/2)
+#math.cos(0)
+#math.tan(PI)
 
 
 #******************************************************************************
 #radianlar va burchaklar o'rtasida konvertasiya
-print(math.degrees(math.pi/2))
-print(math.radians(90))
+#print(math.degrees(math.pi/2))
+#print(math.radians(90))
 
 
 #******************************************************************************
 #logarifmlar
 #natural logarifm
 
-math.log(5)
+#math.log(5)
 # 10 asosli logarifm
-math.log10(100)
+#math.log10(100)
 
 
 #******************************************************************************
 #Sonlarni yaxlitlash
-x = 4.6
-print(math.ceil(x))
-print(math.floor(x))
+#x = 4.6
+#print(math.ceil(x))
+#print(math.floor(x))
 
 #******************************************************************************
 #Kvadrat ildiz
-x = 81
-math.sqrt(x)
+#x = 81
+#math.sqrt(x)
 
 #******************************************************************************
 #Darajaga oshirish
-math.pow(x,3) # x ning kubi
-math.pow(x,5) # x ning 5-darajasi
-math.pow(x,1/3) # x dan kub ildiz
+#math.pow(x,3) # x ning kubi
+#math.pow(x,5) # x ning 5-darajasi
+#math.pow(x,1/3) # x dan kub ildiz
 
 #******************************************************************************
 #******************************************************************************
 
-from pprint import pprint
-import json
+#from pprint import pprint
+#import json
 
-filename = 'students.json'
-with open(filename) as f:
-    sts = json.load(f)
+#filename = 'students.json'
+#with open(filename) as f:
+#    sts = json.load(f)
 
 # pprint(bemor)
-pprint(sts)
+#pprint(sts)
 
-import requests
-r = requests.get('https://api.github.com')
+#import requests
+#r = requests.get('https://api.github.com')
 
-pprint(r.json())
+#pprint(r.json())
 
 
 #******************************************************************************
 #******************************************************************************
 
 
-import re
-from uzwords import words
+#import re
+#from uzwords import words
 
-word1 = "темир"
-word2 = "томир"
-word3 = "тулпор"
+#word1 = "темир"
+#word2 = "томир"
+#word3 = "тулпор"
 
-andoza = "^т...р$"
+#andoza = "^т...р$"
 
-print(re.match(andoza, word1))
-print(re.match(andoza, word2))
-print(re.match(andoza, word3))
+#print(re.match(andoza, word1))
+#print(re.match(andoza, word2))
+#print(re.match(andoza, word3))
 
 
-andoza = "^а...й$"
-matches = []
-for word in words:
-    if re.match(andoza,word):
-        matches.append(word)
+#andoza = "^а...й$"
+#matches = []
+#for word in words:
+#    if re.match(andoza,word):
+#        matches.append(word)
 
-print(matches)
+#print(matches)
 
 ## Emailni ajratib olish
-matn = """Maqolalar  2020-yilning 20-martiga qadar rtmkonferensiya2021@mail.ru elektron pochtasida qabul qilinadi.
-Quyidagi yo'nalishdagi maqolalar qabul qilinadi:
-👉 Aniq va tabiiy fanlarni zamonaviy pedagogik texnologiyalar asosida o‘qitish  metodikasi.
-👉 Umumta’lim  fanlarini o‘qitishda  STEAM yondashuvning o’rni va ahamiyati. """
+#matn = """Maqolalar  2020-yilning 20-martiga qadar rtmkonferensiya2021@mail.ru elektron pochtasida qabul qilinadi.
+#Quyidagi yo'nalishdagi maqolalar qabul qilinadi:
+#👉 Aniq va tabiiy fanlarni zamonaviy pedagogik texnologiyalar asosida o‘qitish  metodikasi.
+#👉 Umumta’lim  fanlarini o‘qitishda  STEAM yondashuvning o’rni va ahamiyati. """
 
-andoza = '[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+'
-email = re.findall(andoza,matn)
-print(email)
+#andoza = '[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+'
+#email = re.findall(andoza,matn)
+#rint(email)
 
 # Kuchli parolni tekshirish
-andoza = '^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$'
-msg = "Yangi parol kiriting"
-msg += '(kamida 8 belgidan iborat, kamida 1 ta lotin bosh harf, 1 ta kichik harf, '
-msg += '1 ta son va 1 ta maxsus belgi boʻlishi kerak): '
+##ndoza = '^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$'
+#msg = "Yangi parol kiriting"
+#msg += '(kamida 8 belgidan iborat, kamida 1 ta lotin bosh harf, 1 ta kichik harf, '
+#msg += '1 ta son va 1 ta maxsus belgi boʻlishi kerak): '
 
-while True:
-    password = input(msg)
-    if re.match(andoza,password):
-        print("Maxfiy so'z qabul qilindi")
-        break
-    else:
-        print("Maxfiy so'z talabga javob bermadi")
+#while True:
+#    password = input(msg)
+#   if re.match(andoza,password):
+#        print("Maxfiy so'z qabul qilindi")
+#        break
+#    else:
+#        print("Maxfiy so'z talabga javob bermadi")
         
 #******************************************************************************
 
