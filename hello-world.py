@@ -6387,43 +6387,50 @@
 #DATE
 
 #bugun = dt.date.today()
-print(f"bugun sana {bugun}")
-ertaga = dt.date(2023,3,12)
-print(f"ertaga sana {ertaga}")
+#print(f"bugun sana {bugun}")
+#ertaga = dt.date(2023,3,12)
+#print(f"ertaga sana {ertaga}")
 
 #******************************************************************************
 #TIME
 
-hozir = dt.datetime.now()
-vaqtHozir = hozir.time()
-print(f"hozir soat: {vaqtHozir}")
-vaqtKeyin = dt.time(21,40,15)
-print(f"birozdan keyin soat {vaqtKeyin}")
+#hozir = dt.datetime.now()
+#vaqtHozir = hozir.time()
+#print(f"hozir soat: {vaqtHozir}")
+#vaqtKeyin = dt.time(21,40,15)
+#print(f"birozdan keyin soat {vaqtKeyin}")
 
 #******************************************************************************
 #SANALAR ORASIDAGI FARQ
 
-bugun = dt.date.today()
-print(f"bugun sana {bugun}")
-ramazon = dt.date(2023,3,23)
-farq = ramazon-bugun
-print(farq)
-print(f"Ramazonga {farq.days} kun qoldi")
+#bugun = dt.date.today()
+#print(f"bugun sana {bugun}")
+#ramazon = dt.date(2023,3,23)
+#farq = ramazon-bugun
+#rint(farq)
+#print(f"Ramazonga {farq.days} kun qoldi")
 
 #******************************************************************************
 #SOATLAR ORASIDAGI FARQ
 
-hozir = dt.datetime.now()
-futbol = dt.datetime(2023,3,15,12,45,00)
-farq = futbol - hozir
-print(farq)
-sekundldar = farq.seconds
-minutlar = int(sekundldar/60)
-soatlar = int(minutlar/60)
-print(f"futbol boshlanishiga {farq.days} kunu {soatlar} soat qoldi")
+#hozir = dt.datetime.now()
+#futbol = dt.datetime(2023,3,15,12,45,00)
+#farq = futbol - hozir
+#print(farq)
+#sekundldar = farq.seconds
+#minutlar = int(sekundldar/60)
+#soatlar = int(minutlar/60)
+#print(f"futbol boshlanishiga {farq.days} kunu {soatlar} soat qoldi")
 
 #******************************************************************************
+#******************************************************************************
 
+import math
+
+PI = math.pi
+print(PI)
+E = math.e
+print(E)
 
 
 
