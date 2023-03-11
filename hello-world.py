@@ -6374,15 +6374,41 @@
 #***************************** DARS 38 ********************
 
 import datetime as dt
-now = dt.datetime.now()
-print(now)
-print(now.date())
-print(now.time())
-print(now.day)
-print(now.hour)
-print(now.minute)
-print(now.second)
+#now = dt.datetime.now()
+#print(now)
+#print(now.date())
+#print(now.time())
+#print(now.day)
+#print(now.hour)
+#print(now.minute)
+#print(now.second)
 
+#******************************************************************************
+#DATE
+
+bugun = dt.date.today()
+print(f"bugun sana {bugun}")
+ertaga = dt.date(2023,3,12)
+print(f"ertaga sana {ertaga}")
+
+#******************************************************************************
+#TIME
+
+hozir = dt.datetime.now()
+vaqtHozir = hozir.time()
+print(f"hozir soat: {vaqtHozir}")
+vaqtKeyin = dt.time(21,40,15)
+print(f"birozdan keyin soat {vaqtKeyin}")
+
+#******************************************************************************
+#SANALAR ORASIDAGI FARQ
+
+bugun = dt.date.today()
+print(f"bugun sana {bugun}")
+ramazon = dt.date(2023,3,23)
+farq = ramazon-bugun
+print(farq)
+print(f"Ramazonga {farq.days} kun qoldi")
 
 
 
