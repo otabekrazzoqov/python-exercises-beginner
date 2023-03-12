@@ -6561,20 +6561,49 @@ print(duration)
 AFewDaysLater = dt.date(2023,3,26)
 print(AFewDaysLater)
 
+#******************************************************************************
 
 
+from datetime import datetime, timedelta
 
+# get today's date
+today = datetime.today()
 
+# print 10 dates with 2 week difference
+for i in range(10):
+    date = today + timedelta(days=i*14)
+    print(date.strftime("%Y-%m-%d"))
+
+#******************************************************************************
 #Ramazon va qurbon hayitigacha qolgan kunlarni konsolga chiqaring
 
+bugun = dt.date.today()
+print(f"bugun sana {bugun}")
+ramazon = dt.date(2023,3,23)
+farq = ramazon-bugun
+print(farq)
+print(f"Ramazonga {farq.days} kun qoldi")
 
-
+#******************************************************************************
 #Tug'ilgan kuningizdan bugungi sanagacha qancha yil, oy, kun o'tganini 
 #qaytaruvchi funksiya yozing
 
+birthdate = dt.date(1996,8,24)
+length = bugun - birthdate
+print(length)
 
+#******************************************************************************
 #Foydalanuvchidan telefon raqamini kiritishni so'rang. 
 #Kiritlgan qiymatni andoza yordamida tekshiring
+
+import re
+PhoneNumber = input("telefonraqamingizni kiriting: ")
+andoza = '^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$'
+PN = re.findall(andoza, PhoneNumber)
+print(PN)
+
+
+
 
 
 #Berilgan matndan veb sahifa manzilini ajratib olyuvchi funksiya yozing. 
