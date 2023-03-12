@@ -6542,74 +6542,282 @@
 #        break
 #    else:
 #        print("Maxfiy so'z talabga javob bermadi")
-        
-#******************************************************************************
+  
 
-        
+      
+#******************************************************************************
 #Bugungi sanadan boshlab 2 hafta farq bilan 10 ta sanani konsolga chiqaring
 
-import datetime as dt
-today = dt.date.today()
-print(today)
+#import datetime as dt
+#today = dt.date.today()
+#print(today)
 
-arrival = dt.date(2022,9,5)
-print(arrival)
+#arrival = dt.date(2022,9,5)
+#print(arrival)
 
-duration = today - arrival
-print(duration)
+#duration = today - arrival
+#print(duration)
 
-AFewDaysLater = dt.date(2023,3,26)
-print(AFewDaysLater)
+#AFewDaysLater = dt.date(2023,3,26)
+#print(AFewDaysLater)
 
 #******************************************************************************
 
 
-from datetime import datetime, timedelta
+#from datetime import datetime, timedelta
 
 # get today's date
-today = datetime.today()
+#today = datetime.today()
 
 # print 10 dates with 2 week difference
-for i in range(10):
-    date = today + timedelta(days=i*14)
-    print(date.strftime("%Y-%m-%d"))
+#for i in range(10):
+#    date = today + timedelta(days=i*14)
+#    print(date.strftime("%Y-%m-%d"))
 
 #******************************************************************************
 #Ramazon va qurbon hayitigacha qolgan kunlarni konsolga chiqaring
 
-bugun = dt.date.today()
-print(f"bugun sana {bugun}")
-ramazon = dt.date(2023,3,23)
-farq = ramazon-bugun
-print(farq)
-print(f"Ramazonga {farq.days} kun qoldi")
+#bugun = dt.date.today()
+#print(f"bugun sana {bugun}")
+#ramazon = dt.date(2023,3,23)
+#farq = ramazon-bugun
+#print(farq)
+#print(f"Ramazonga {farq.days} kun qoldi")
 
 #******************************************************************************
 #Tug'ilgan kuningizdan bugungi sanagacha qancha yil, oy, kun o'tganini 
 #qaytaruvchi funksiya yozing
 
-birthdate = dt.date(1996,8,24)
-length = bugun - birthdate
-print(length)
+#birthdate = dt.date(1996,8,24)
+#length = bugun - birthdate
+#print(length)
 
 #******************************************************************************
 #Foydalanuvchidan telefon raqamini kiritishni so'rang. 
 #Kiritlgan qiymatni andoza yordamida tekshiring
 
-import re
-PhoneNumber = input("telefonraqamingizni kiriting: ")
-andoza = '^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$'
-PN = re.findall(andoza, PhoneNumber)
-print(PN)
+#import re
+#PhoneNumber = input("telefonraqamingizni kiriting: ")
+#andoza = '^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$'
+#PN = re.findall(andoza, PhoneNumber)
+#print(PN)
 
 #******************************************************************************
 #Berilgan matndan veb sahifa manzilini ajratib olyuvchi funksiya yozing. 
 #Quyidagi matndan namuna sifatida foydalanishingiz mumkin:
 
 
-matn = "Assalom alaykum hurmatli do'stlar. Navbatdagi darsimiz YouTubega yuklandi: https://youtu.be/vsxJPRLXpgI Ushbu darsimizda unittest moduli yordamida klasslarning xususiyatlar va metodlarini tekshiruvchi dastur yozishni o'rganamiz. Bugungi dars manzili: https://python.sariq.dev/testing/37-klass-test  "
-W = '^(https?|ftp)://[^\s/$.?#].[^\s]*$'
+#atn = "Assalom alaykum hurmatli do'stlar. Navbatdagi darsimiz YouTubega yuklandi: https://youtu.be/vsxJPRLXpgI Ushbu darsimizda unittest moduli yordamida klasslarning xususiyatlar va metodlarini tekshiruvchi dastur yozishni o'rganamiz. Bugungi dars manzili: https://python.sariq.dev/testing/37-klass-test  "
+#W = '^(https?|ftp)://[^\s/$.?#].[^\s]*$'
 
-WS = re.findall(W, matn)
-print(WS) 
-     
+#WS = re.findall(W, matn)
+#print(WS) 
+   
+#******************************************************************************
+
+
+#***************************** DARS 39 ********************
+
+#pip install googletrans==3.1.0a0
+#from googletrans import Translator
+#tarjimon = Translator() # Translator bu maxsus klass (tarjimon esa obyekt)
+
+#matn_uz = "Python - dunyodagi eng mashxur dasturlash tili va men uni o'rganayapman"
+
+#Istalgan matnni ingliz tiliga tarjima qilish uchun tranlsate metodini chariqamiz
+
+#tarjima = tarjimon.translate(matn_uz)
+#Original matn
+#print(tarjima.origin)
+
+#Tarjima
+#print(tarjima.text)
+
+#Original matn tili
+#rint(tarjima.src)
+
+#******************************************************************************
+#Boshqa tilga tarjima qilish uchun dest parametridan foydalanamiz
+#tarjima_ru = tarjimon.translate(matn_uz, dest='ru')
+#print(tarjima_ru.text)
+
+#******************************************************************************
+#Ingliz tilidan tarjima
+#matn_en = "Tashkent is the capital of Uzbekistan"
+#tarjima_uz = tarjimon.translate(matn_en, dest='uz')
+#print(tarjima_uz.text)
+
+#******************************************************************************
+
+#import requests
+#from pprint import pprint
+
+#sahifa = "https://kun.uz/news/main"
+#r = requests.get(sahifa)
+#pprint(r.text)
+
+#restcountries API
+#country = "Uzbekistan"
+#url = f"https://restcountries.eu/rest/v2/name/{country}"
+#r = requests.get(url)
+#r_json = r.json()[0]
+#print(r_json.keys())
+#print(r_json['capital'])
+
+#******************************************************************************
+
+#from googletrans import Translator
+#arjimon = Translator()
+
+#msg = "Tarjima uchun so'z kiriting (chiqib ketish uchun \"q\" deb yozing): "
+#while True:
+#    text = input(msg)
+#   if text == "q":
+#        break
+#    else:
+#        tarjima = tarjimon.translate(text, src='uz', dest='en')
+#        print(tarjima.text)  
+        
+#******************************************************************************
+
+#import requests
+#import googletrans
+
+#url = "https://api.adviceslip.com/advice"
+#r = requests.get(url)
+#dvice = r.json()['slip']['advice']
+#print(advice)
+
+#translator = googletrans.Translator()
+#tarjima = translator.translate(advice, dest='uz')
+#print(tarjima.text)
+
+
+#******************************************************************************
+
+#import requests
+
+#from bs4 import BeautifulSoup
+#rom wordcloud import WordCloud 
+#mport matplotlib.pyplot as plt 
+
+
+#sahifa = "https://kun.uz/news/main"
+#r = requests.get(sahifa)
+# pprint(r.text)
+
+#soup = BeautifulSoup(r.text, 'html.parser')
+# print(soup.prettify())
+#news = soup.find_all(class_="news-title")
+#matn=""
+#for n in news:
+#    matn += n.text
+
+#stopwords = ["учун","бўйича","лекин","билан","ва","бор","ҳам","хил","йил"]
+#wordcloud = WordCloud(width = 1000, height = 1000, 
+#                background_color ='white', 
+#                stopwords = stopwords, 
+#                min_font_size = 20).generate(matn) 
+  
+# plot the WordCloud image                        
+#plt.figure(figsize = (8, 8), facecolor = None) 
+#plt.imshow(wordcloud) 
+#plt.axis("off") 
+#plt.tight_layout(pad = 0) 
+#plt.show() 
+
+#******************************************************************************
+
+#import cv2
+
+#cap = cv2.VideoCapture(0)
+#face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+#ye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+
+#while True:
+#    ret, frame = cap.read()
+
+#    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+#    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+#    for (x, y, w, h) in faces:
+#        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 5)
+#        roi_gray = gray[y:y+w, x:x+w]
+#        roi_color = frame[y:y+h, x:x+w]
+#        eyes = eye_cascade.detectMultiScale(roi_gray, 1.3, 5)
+#       for (ex, ey, ew, eh) in eyes:
+#            cv2.rectangle(roi_color, (ex, ey), (ex + ew, ey + eh), (0, 255, 0), 5)
+
+#    cv2.imshow('frame', frame)
+
+#    if cv2.waitKey(1) == ord('q'):
+#        break
+
+#cap.release()
+#cv2.destroyAllWindows()
+
+
+#******************************************************************************
+
+#from fuzzywuzzy import fuzz
+#rom fuzzywuzzy import process
+#rom uzwords import words
+
+# # ikki so'z 'ortasida o'xshashlik foizini topish
+# print(fuzz.ratio("salom",'assalom'))
+# print(fuzz.ratio("salom","salim"))
+
+# Matnlar orasidan 3 ta eng o'xshashlarini ajratib olish
+# text = "салом"
+# matches = process.extract(text, words, limit=3)
+# print(matches)
+
+# # Matnlar orasidan eng o'xshashini topish
+#text = "талба"
+#match = process.extractOne(text,words)
+#print(match)
+
+
+#******************************************************************************
+
+#import wx
+#from googletrans import Translator
+
+#tarjimon = Translator()
+#class MyFrame(wx.Frame):    
+#    def __init__(self):
+#        super().__init__(parent=None, title='Oʻzbek-Ingliz Lugʻat')
+#        panel = wx.Panel(self)        
+#        my_sizer = wx.BoxSizer(wx.VERTICAL)        
+#        self.text_ctrl = wx.TextCtrl(panel)
+#       my_sizer.Add(self.text_ctrl, 0, wx.ALL | wx.EXPAND, 5)        
+        
+#        my_btn = wx.Button(panel, label='TARJIMA')
+#        my_btn.Bind(wx.EVT_BUTTON, self.on_press)
+#        my_sizer.Add(my_btn, 0, wx.ALL | wx.CENTER, 5)        
+        
+#        self.text_out = wx.TextCtrl(panel,style = wx.TE_READONLY)        
+#        my_sizer.Add(self.text_out, 0, wx.ALL | wx.EXPAND, 5)         
+#       panel.SetSizer(my_sizer)        
+#        self.Show()
+
+#    def on_press(self, event):
+#        value = self.text_ctrl.GetValue()
+#        if not value:                       
+#            self.text_out.SetValue("Soʻz kiritmadingiz")
+#        else:
+#           tarjima = tarjimon.translate(value, src='uz', dest='en')
+#            self.text_out.SetValue(tarjima.text.capitalize()) 
+    
+
+#if __name__ == '__main__':
+#   app = wx.App()
+#   frame = MyFrame()
+#   app.MainLoop()        
+    
+    
+#******************************************************************************
+
+
+
+
+    
