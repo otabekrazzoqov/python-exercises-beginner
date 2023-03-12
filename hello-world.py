@@ -6602,9 +6602,14 @@ andoza = '^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$'
 PN = re.findall(andoza, PhoneNumber)
 print(PN)
 
-
-
-
-
+#******************************************************************************
 #Berilgan matndan veb sahifa manzilini ajratib olyuvchi funksiya yozing. 
-#Quyidagi matndan namuna sifatida foydalanishingiz mumkin:        
+#Quyidagi matndan namuna sifatida foydalanishingiz mumkin:
+
+
+matn = "Assalom alaykum hurmatli do'stlar. Navbatdagi darsimiz YouTubega yuklandi: https://youtu.be/vsxJPRLXpgI Ushbu darsimizda unittest moduli yordamida klasslarning xususiyatlar va metodlarini tekshiruvchi dastur yozishni o'rganamiz. Bugungi dars manzili: https://python.sariq.dev/testing/37-klass-test  "
+W = '^(https?|ftp)://[^\s/$.?#].[^\s]*$'
+
+WS = re.findall(W, matn)
+print(WS) 
+     
