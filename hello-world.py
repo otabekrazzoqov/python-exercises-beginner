@@ -6821,7 +6821,7 @@
 # ma'lumotlar tuzilmasi 
 # algoritmlar
 # ma'lumotlar bazasi
-# the end
+# the end 
 
 
     
